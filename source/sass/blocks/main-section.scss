@@ -1,1 +1,28 @@
 // Блок главной секции
+.main-section {
+  color: $text-white;
+  outline: 1px solid blueviolet;
+  text-align: center;
+  background: $basic-green;
+  text-transform: uppercase;
+}
+
+.main-section__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.main-section__content {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.main-section__link {
+  margin: 0 20px;
+  display: block;
+  padding: 7px 44px;
+  color: inherit;
+  background-color: $text-black;
+}
