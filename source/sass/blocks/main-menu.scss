@@ -1,6 +1,13 @@
 .main-menu {
+  margin: 0;
+  padding: 0;
   list-style: none;
   text-transform: uppercase;
+}
+
+.main-menu__item {
+  text-align: center;
+  border-bottom: 1px solid $border-grey;
 }
 
 .main-menu__link {

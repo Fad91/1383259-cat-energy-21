@@ -1,7 +1,12 @@
-a {
+.page a {
   text-decoration: none;
 }
 
-li {
+.page li {
   list-style: none;
+}
+
+.page img {
+  width: 100%;
+  height: auto;
 }

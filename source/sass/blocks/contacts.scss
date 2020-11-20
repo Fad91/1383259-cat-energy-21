@@ -1,1 +1,24 @@
 // Блок для секции контактов
+.contacts {
+  padding: 0 20px;
+}
+
+.contacts__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $footer-black;
+}
+
+.contacts__address {
+  font-family: "Arial";
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+color: $text-grey;
+}
+
+.contacts__logo {
+  border-bottom: 1px solid $contacts-grey;
+}

@@ -1,4 +1,12 @@
 // Блок секции с программами
+.programms-section__list {
+padding: 0 20px;
+}
+
+.programms-section__item {
+  background-color: $basic-grey;
+}
+
 .programms-section__title {
   font-weight: 400;
   font-size: 24px;
@@ -7,11 +15,11 @@
 }
 
 .programms-section__content {
-  font-family: Arial;
+  font-family: "Arial", sans-serif;
   color: $text-grey;
   font-weight: 400;
   font-size: 14px;
-  line-height: 18px
+  line-height: 18px;
 }
 
 .programms-section__link {

@@ -1,3 +1,18 @@
 .example-section {
-  background-color: #eaeaea;
+  padding: 0 20px;
+  background-color: $background-grey;
+}
+
+.example-section__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.example-section__content {
+  font-family: "Arial", sans-serif;
+  color: $text-grey;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
 }
