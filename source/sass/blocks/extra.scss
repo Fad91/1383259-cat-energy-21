@@ -1,0 +1,14 @@
+.extra {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+.extra__title {
+  @include form-title();
+}
+
+.extra__label {
+  @include form-label-text();
+  color: $text-black;
+}

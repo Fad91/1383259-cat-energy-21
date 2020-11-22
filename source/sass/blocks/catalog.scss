@@ -1,0 +1,8 @@
+
+.catalog__title {
+  @include title-text();
+}
+
+.catalog__list {
+  padding: 0;
+}

@@ -1,0 +1,5 @@
+// Секция выбора программы
+.programm-select {
+  @include form-label-text();
+  border: none;
+}

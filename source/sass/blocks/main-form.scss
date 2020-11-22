@@ -1,0 +1,22 @@
+// Секция формы страницы form
+.main-form__title {
+  @include title-text();
+}
+
+.main-form__content {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+
+.main-form__button {
+  border: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: $basic-green;
+  color: $text-white;
+  padding: 7px 44px;
+  display: block;
+}

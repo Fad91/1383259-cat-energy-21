@@ -1,0 +1,11 @@
+.owner-contacts {
+  border: none;
+}
+
+.owner-contacts__title {
+  @include form-title();
+}
+
+.owner-contacts__label {
+  @include form-label-text();
+}

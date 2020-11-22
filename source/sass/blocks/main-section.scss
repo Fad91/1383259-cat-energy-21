@@ -4,19 +4,22 @@
   outline: 1px solid blueviolet;
   text-align: center;
   background: $basic-green;
-  text-transform: uppercase;
 }
 
 .main-section__title {
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+  outline: 1px solid red;
+  text-align: center;
+  margin: 0;
 }
 
 .main-section__content {
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
+  text-transform: uppercase;
 }
 
 .main-section__link {
