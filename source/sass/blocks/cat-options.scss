@@ -1,0 +1,5 @@
+.cat-options {
+  @include form-label-text();
+  flex-wrap: wrap;
+  border: none;
+}

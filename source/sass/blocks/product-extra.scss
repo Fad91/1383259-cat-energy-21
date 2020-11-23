@@ -1,0 +1,19 @@
+.product-extra__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $text-dark-grey;
+}
+
+.product-extra__content {
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: $text-grey;
+}
+
+.product-extra__link {
+  @include product-link();
+}

@@ -1,0 +1,20 @@
+// Блок товара
+.product {
+  border-top: 1px solid $catalog-border-grey;
+  padding-top: 10px;
+}
+
+.product__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $text-dark-grey;
+}
+
+.product__content {
+  @include arial-product-text();
+}
+
+.product__link {
+  @include product-link();
+}

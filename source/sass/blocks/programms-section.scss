@@ -1,6 +1,6 @@
 // Блок секции с программами
 .programms-section__list {
-padding: 0 20px;
+  padding: 0 20px;
 }
 
 .programms-section__item {
@@ -15,11 +15,7 @@ padding: 0 20px;
 }
 
 .programms-section__content {
-  font-family: "Arial", sans-serif;
-  color: $text-grey;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
+  @include arial-text-section;
 }
 
 .programms-section__link {

@@ -1,0 +1,46 @@
+// Файл с миксинами
+@mixin arial-text-section {
+  font-family: "Arial", sans-serif;
+  color: $text-grey;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+@mixin title-text {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+@mixin form-label-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: $text-grey;
+  text-transform: uppercase;
+}
+
+@mixin form-title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+}
+
+@mixin arial-product-text {
+  font-family: "Arial", sans-serif;
+  color: $text-grey;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+@mixin product-link {
+  color: $text-white;
+  text-transform: uppercase;
+  background-color: $basic-green;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 0px;
+  padding: 10px 109px;
+}

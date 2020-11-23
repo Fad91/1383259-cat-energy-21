@@ -1,0 +1,16 @@
+.product-last__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $footer-black;
+}
+
+.product-last__content {
+  @include arial-product-text();
+}
+
+.product-last__show-link {
+  @include product-link();
+  background-color: $basic-grey;
+  color: $text-grey;
+}
