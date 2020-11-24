@@ -11,4 +11,5 @@
 
 .example-section__content {
   @include arial-text-section();
+  padding-right: 10px;
 }

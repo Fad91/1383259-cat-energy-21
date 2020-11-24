@@ -1,10 +1,17 @@
 // Блок для секции контактов
+.contacts {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+}
+
 .contacts__title {
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: $footer-black;
+  padding: 10px 20px;
 }
 
 .contacts__address {
@@ -13,11 +20,6 @@
   font-size: 14px;
   line-height: 20px;
   color: $text-grey;
-}
-
-.contacts__title,
-.contacts__address {
-  padding: 0 20px;
 }
 
 .contacts__logo {

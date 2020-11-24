@@ -1,5 +1,15 @@
 // Блок с соц.сетями
 .socials {
   display: flex;
+  justify-content: center;
   border-bottom: 1px solid $contacts-grey;
+  padding: 0;
+  margin: 0;
+}
+
+.socials__item {
+  outline: 1px solid red;
+  width: 25px;
+  margin-right: 10px;
+  height: 25px;
 }

@@ -5,6 +5,7 @@
 
 .programms-section__item {
   background-color: $basic-grey;
+  padding-bottom: 18px;
 }
 
 .programms-section__title {
@@ -12,10 +13,16 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+  text-align: center;
+  padding-top: 30px;
 }
 
 .programms-section__content {
   @include arial-text-section;
+  margin-left: 20px;
+  margin-right: 33px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid $border-grey;
 }
 
 .programms-section__link {
@@ -24,4 +31,5 @@
   line-height: 16px;
   color: $text-black;
   text-transform: uppercase;
+  margin-left: 20px;
 }

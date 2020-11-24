@@ -3,6 +3,10 @@
   padding: 0 20px;
 }
 
+.description-section__item {
+  margin-bottom: 20px;
+}
+
 .description-section__title {
   font-weight: 400;
   font-size: 36px;
@@ -11,4 +15,5 @@
 
 .description-section__content {
   @include arial-text-section();
+  padding-left: 40px;
 }

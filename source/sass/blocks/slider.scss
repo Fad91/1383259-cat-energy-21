@@ -1,4 +1,15 @@
 // Блок слайдера
 .slider {
   background-color: $background-grey;
+  padding-bottom: 25px;
+}
+
+.slider__button {
+  font-family: "Oswald", sans-serif;
+  color: $text-black;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
 }
