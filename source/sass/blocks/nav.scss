@@ -37,3 +37,9 @@
     right: 27px;
   }
 }
+
+@media(min-width: $tablet-width) {
+  .nav__button--closed {
+    display: none;
+  }
+}

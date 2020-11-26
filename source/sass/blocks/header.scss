@@ -1,1 +1,6 @@
 // Блок хэдера
+@media(min-width: $tablet-width) {
+  .header {
+    display: flex;
+  }
+}
