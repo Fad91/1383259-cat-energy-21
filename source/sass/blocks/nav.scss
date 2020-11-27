@@ -1,6 +1,10 @@
 .nav {
-  outline: 1px solid green;
-  position: relative;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .nav__logo {
@@ -16,6 +20,8 @@
   background-color: black;
   border: none;
   cursor: pointer;
+  position: relative;
+
 
   &::before {
     content: "";
@@ -23,8 +29,8 @@
     height: 2px;
     background-color: black;
     position: absolute;
-    top: 5px;
-    right: 27px;
+    top: 6px;
+    right: 0;
   }
 
   &::after {
@@ -34,11 +40,11 @@
     background-color: black;
     position: absolute;
     top: 12px;
-    right: 27px;
+    right: 0;
   }
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .nav__button--closed {
     display: none;
   }

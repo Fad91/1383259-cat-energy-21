@@ -1,6 +1,10 @@
 // Блок секции с программами
 .programms-section__list {
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
 }
 
 .programms-section__item {
@@ -15,6 +19,11 @@
   text-transform: uppercase;
   text-align: center;
   padding-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    padding-left: 53px;
+  }
 }
 
 .programms-section__content {
@@ -23,6 +32,11 @@
   margin-right: 33px;
   padding-bottom: 23px;
   border-bottom: 1px solid $border-grey;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 32px;
+    width: 370px;
+  }
 }
 
 .programms-section__link {
@@ -32,4 +46,8 @@
   color: $text-black;
   text-transform: uppercase;
   margin-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 52px;
+  }
 }

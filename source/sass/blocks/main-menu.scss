@@ -3,12 +3,20 @@
   padding: 0;
   list-style: none;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .main-menu__item {
   text-align: center;
   border-bottom: 1px solid $border-grey;
   padding: 20px 0;
+
+  @media(min-width: $tablet-width) {
+    margin-right: 23px;
+  }
 }
 
 .main-menu__link {

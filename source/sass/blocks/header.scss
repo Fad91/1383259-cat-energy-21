@@ -1,6 +1,12 @@
 // Блок хэдера
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .header {
     display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    justify-content: space-between;
   }
 }
