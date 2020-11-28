@@ -14,7 +14,7 @@
   padding-top: 30px;
 
   @media (min-width: $tablet-width) {
-   @include tablet-text-title;
+    @include tablet-text-title;
   }
 }
 
