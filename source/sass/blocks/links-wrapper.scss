@@ -1,0 +1,8 @@
+// Блок ссылок с логотипами
+
+.links-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}

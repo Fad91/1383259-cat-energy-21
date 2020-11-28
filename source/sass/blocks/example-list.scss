@@ -2,6 +2,17 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 0;
+
+  @media (min-width:$tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: min-content min-content;
+    column-gap: 50px;
+    padding: 0;
+  }
 }
 
 .example-list__item {

@@ -3,6 +3,10 @@
   display: flex;
   justify-content: baseline;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+  }
 }
 
 .contacts__title {
@@ -12,6 +16,10 @@
   text-transform: uppercase;
   color: $footer-black;
   padding: 10px 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 180px;
+  }
 }
 
 .contacts__address {
@@ -20,6 +28,10 @@
   font-size: 14px;
   line-height: 20px;
   color: $text-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 180px;
+  }
 }
 
 .contacts__logo {

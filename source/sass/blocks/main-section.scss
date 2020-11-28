@@ -4,7 +4,7 @@
   text-align: center;
   background: $basic-green;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     background: none;
     color: $text-black;
     text-align: left;
@@ -22,9 +22,7 @@
   padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {
-    font-weight: 400;
-    font-size: 60px;
-    line-height: 60px;
+    @include tablet-text-title;
     text-align: left;
   }
 }

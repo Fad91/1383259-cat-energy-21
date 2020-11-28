@@ -1,9 +1,10 @@
 // Блок секции с программами
 .programms-section__list {
-  padding: 0 20px;
+  padding: 0;
 
-  @media (min-width: $tablet-width) {
-    padding: 0 30px;
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-around;
   }
 }
 
@@ -24,6 +25,10 @@
     text-align: left;
     padding-left: 53px;
   }
+
+  @media (min-width: $desktop-width) {
+    @include title-text;
+  }
 }
 
 .programms-section__content {
@@ -36,6 +41,10 @@
   @media (min-width: $tablet-width) {
     padding-left: 32px;
     width: 370px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include tablet-text-content;
   }
 }
 
