@@ -1,5 +1,10 @@
 .cat-options {
   @include form-label-text();
-  flex-wrap: wrap;
   border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cat-options__label {
+  display: block;
 }

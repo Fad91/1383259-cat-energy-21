@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -38,12 +39,15 @@
       <p class="main-form__content">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <fieldset class="cat-options">
         <legend class="visually-hidden">Данные о коте</legend>
-        <label class="cat-options__label" for="name">Имя:*</label>
-        <input class="cat-options__input text-input" type="text" name="name" id="name" value="Барсик">
-        <label class="cat-options__label" for="weight">Вес (кг):*</label>
-        <input class="cat-options__input text-input" type="text" name="weight" id="weight" value="7">
-        <label class="cat-options__label" for="age">Возраст (лет):</label>
+        <label class="cat-options__label" for="name">Имя:*
+          <input class="cat-options__input text-input" type="text" name="name" id="name" value="Барсик">
+        </label>
+        <label class="cat-options__label" for="weight">Вес (кг):*
+          <input class="cat-options__input text-input" type="text" name="weight" id="weight" value="7">
+        </label>
+        <label class="cat-options__label" for="age">Возраст (лет):
         <input class="cat-options__input text-input" type="text" name="age" id="age" value="7">
+      </label>
       </fieldset>
       <fieldset class="programm-select">
         <legend class="visually-hidden">Выбор программы</legend>
@@ -85,25 +89,27 @@
     <div class="contacts">
       <h3 class="contacts__title">приглашаем к сотрудничеству дилеров!</h3>
       <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-      <img src="https://via.placeholder.com/320x362" alt="Местоположение Cat Energy" class="contacts__map">
-      <div class="contacts__logo">
+    </div>
+    <img src="https://via.placeholder.com/320x362" alt="Местоположение Cat Energy" class="contacts__map">
+    <div class="links-wrapper">
+      <div class="links__logo">
         <img src="https://via.placeholder.com/128x24" alt="Логотип Cat Energy">
       </div>
       <ul class="socials">
         <li class="socials__item">
-          <a href="" class="socials__link--vk">
+          <a href="" class="socials__link socials__link--vk">
             <span class="visually-hidden">Вконтакте</span>
             <svg></svg>
           </a>
         </li>
         <li class="socials__item">
-          <a href="" class="socials__link--instagram">
+          <a href="" class="socials__link socials__link--instagram">
             <span class="visually-hidden">Instagram</span>
             <svg></svg>
           </a>
         </li>
         <li class="socials__item">
-          <a href="" class="social__link--facebook">
+          <a href="" class="socials__link socials__link--facebook">
             <span class="visually-hidden">Facebook</span>
             <svg></svg>
           </a>
@@ -114,6 +120,7 @@
         <svg></svg>
       </div>
     </div>
+
   </footer>
 </body>
 
