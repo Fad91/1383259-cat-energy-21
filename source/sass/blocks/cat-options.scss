@@ -3,8 +3,22 @@
   border: none;
   margin: 0;
   padding: 0;
+  padding-bottom: 25px;
+  border-bottom: 1px solid $catalog-border-grey;
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+  }
 }
 
 .cat-options__label {
-  display: block;
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 20px;
+}
+
+.cat-options__input {
+  flex-grow: 1;
+  height: 32px;
+  margin-left: 10px;
 }

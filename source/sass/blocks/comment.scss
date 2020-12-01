@@ -1,3 +1,14 @@
 .comment__label {
   @include form-title();
+  display: block;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    @include title-text;
+  }
+}
+
+.comment__text {
+  resize: none;
+  width: 100%;
 }

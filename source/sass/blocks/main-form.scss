@@ -1,6 +1,10 @@
 // Секция формы страницы form
 .main-form__title {
   @include title-text();
+
+  @media (min-width: $tablet-width) {
+    @include tablet-text-title;
+  }
 }
 
 .main-form__content {
@@ -8,8 +12,26 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (max-width: $mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
+.main-form__button-wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
 
 .main-form__button {
   border: none;
@@ -20,4 +42,26 @@
   color: $text-white;
   padding: 7px 44px;
   display: block;
+  width: 100%;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 302px;
+    height: 52px;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 0px;
+  }
+}
+
+.main-form__note {
+  margin-top: 20px;
+  display: block;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
