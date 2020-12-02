@@ -1,11 +1,31 @@
 .owner-contacts {
   border: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 25px;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .owner-contacts__title {
   @include form-title();
+  margin-bottom: 32px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    @include title-text;
+  }
 }
 
 .owner-contacts__label {
   @include form-label-text();
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.owner-contacts__input {
+  flex-grow: 1;
 }

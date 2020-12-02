@@ -2,4 +2,16 @@
 .programm-select {
   @include form-label-text();
   border: none;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $catalog-border-grey;
+
+  @media (min-width: $desktop-width) {
+    display: inline-flex;
+  }
+}
+
+.programm-select__label {
+  margin-bottom: 15px;
 }

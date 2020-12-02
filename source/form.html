@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -15,8 +16,8 @@
           <img src="https://via.placeholder.com/33x37" alt="Логотип Cat Energy">
           <img src="https://via.placeholder.com/101x18" alt="Логотип Cat Energy">
         </a>
-        <button class="nav__button nav__button--open">
-          <span class="visually-hidden"> Открыть меню</span>
+        <button class="nav__button nav__button--open nav__button--closed">
+          <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
       <ul class="nav__list main-menu">
@@ -35,31 +36,39 @@
   <main class="page-main">
     <form class="main-form" action="https://echo.htmlacademy.ru/" method="get">
       <h1 class="main-form__title">Подбор программы</h1>
-      <p class="main-form__content">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <p class="main-form__content">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
       <fieldset class="cat-options">
         <legend class="visually-hidden">Данные о коте</legend>
-        <label class="cat-options__label" for="name">Имя:*</label>
-        <input class="cat-options__input text-input" type="text" name="name" id="name" value="Барсик">
-        <label class="cat-options__label" for="weight">Вес (кг):*</label>
-        <input class="cat-options__input text-input" type="text" name="weight" id="weight" value="7">
-        <label class="cat-options__label" for="age">Возраст (лет):</label>
-        <input class="cat-options__input text-input" type="text" name="age" id="age" value="7">
+        <label class="cat-options__label" for="name">Имя:*
+          <input class="cat-options__input text-input" type="text" name="name" id="name" value="Барсик">
+        </label>
+        <label class="cat-options__label" for="weight">Вес (кг):*
+          <input class="cat-options__input text-input" type="text" name="weight" id="weight" value="7">
+        </label>
+        <label class="cat-options__label" for="age">Возраст (лет):
+          <input class="cat-options__input text-input" type="text" name="age" id="age" value="7">
+        </label>
       </fieldset>
       <fieldset class="programm-select">
         <legend class="visually-hidden">Выбор программы</legend>
-        <input class="programm-select__radio programm-select__radio--active" type="radio" name="slim" id="slim" checked>
-        <label class="programm-select__label" for="slim">Похудение</label>
-        <input class="programm-select__radio" type="radio" name="gain" id="gain">
-        <label class="programm-select__label" for="slim">Набор массы</label>
-        <input class="programm-select__radio" type="radio" name="advise" id="advise">
-        <label class="programm-select__label" for="slim">Не знаю (Нужен ваш совет)</label>
+        <label class="programm-select__label" for="slim">
+          <input class="programm-select__radio programm-select__radio--active" type="radio" name="slim" id="slim"
+            checked>Похудение</label>
+        <label class="programm-select__label" for="slim">
+          <input class="programm-select__radio" type="radio" name="gain" id="gain">
+          Набор массы</label>
+        <label class="programm-select__label" for="slim">
+          <input class="programm-select__radio" type="radio" name="advise" id="advise">
+          Не знаю (Нужен ваш совет)</label>
       </fieldset>
       <fieldset class="owner-contacts">
         <legend class="owner-contacts__title">Контактные данные (владельца кота)</legend>
-        <label class="owner-contacts__label" for="email">e-mail:*</label>
-        <input class="owner-contacts__input" type="email" name="email" id="email" value="kuklachev@gmail.com">
-        <label class="owner-contacts__label" for="tel">Телефон:*</label>
-        <input class="owner-contacts__input" type="tel" name="tel" id="tel" value="8 (960) 900-60-90">
+        <label class="owner-contacts__label" for="email">e-mail:*
+          <input class="owner-contacts__input" type="email" name="email" id="email" value="kuklachev@gmail.com">
+        </label>
+        <label class="owner-contacts__label" for="tel">Телефон:*
+          <input class="owner-contacts__input" type="tel" name="tel" id="tel" value="8 (960) 900-60-90">
+        </label>
       </fieldset>
       <div class="comment">
         <label class="comment__label" for="comment">Комментарий</label>
@@ -68,42 +77,52 @@
       </div>
       <fieldset class="extra">
         <legend class="extra__title">Дополнительно</legend>
-        <input class="extra__checkbox" type="checkbox" name="sweetener" id="sweetener" checked>
-        <label class="extra__label" for="sweetener">Сахарозаменитель</label>
-        <input class="extra__checkbox" type="checkbox" name="water" id="water">
-        <label class="extra__label" for="water">Питьевая вода</label>
-        <input class="extra__checkbox" type="checkbox" name="milk" id="milk">
-        <label class="extra__label" for="milk">Молоко</label>
-        <input class="extra__checkbox" type="checkbox" name="vitamins" id="vitamins">
-        <label class="extra__label" for="vitamins">Витамины</label>
+        <div class="extra__wrapper">
+          <label class="extra__label" for="sweetener">
+            <input class="extra__checkbox" type="checkbox" name="sweetener" id="sweetener" checked>
+            Сахарозаменитель</label>
+          <label class="extra__label" for="water">
+            <input class="extra__checkbox" type="checkbox" name="water" id="water">
+            Питьевая вода</label>
+          <label class="extra__label" for="milk">
+            <input class="extra__checkbox" type="checkbox" name="milk" id="milk">
+            Молоко</label>
+          <label class="extra__label" for="vitamins">
+            <input class="extra__checkbox" type="checkbox" name="vitamins" id="vitamins">
+            Витамины</label>
+        </div>
       </fieldset>
-      <button class="main-form__button" type="submit">Отправить заявку</button>
-      <small>* __ обязательные поля</small>
+      <div class="main-form__button-wrapper">
+        <button class="main-form__button" type="submit">Отправить заявку</button>
+        <small class="main-form__note note">*<sup>__</sup> обязательные поля</small>
+      </div>
     </form>
   </main>
   <footer class="page-footer">
     <div class="contacts">
       <h3 class="contacts__title">приглашаем к сотрудничеству дилеров!</h3>
       <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-      <img src="https://via.placeholder.com/320x362" alt="Местоположение Cat Energy" class="contacts__map">
-      <div class="contacts__logo">
+    </div>
+    <img src="https://via.placeholder.com/320x362" alt="Местоположение Cat Energy" class="contacts__map">
+    <div class="links-wrapper">
+      <div class="links__logo">
         <img src="https://via.placeholder.com/128x24" alt="Логотип Cat Energy">
       </div>
       <ul class="socials">
         <li class="socials__item">
-          <a href="" class="socials__link--vk">
+          <a href="" class="socials__link socials__link--vk">
             <span class="visually-hidden">Вконтакте</span>
             <svg></svg>
           </a>
         </li>
         <li class="socials__item">
-          <a href="" class="socials__link--instagram">
+          <a href="" class="socials__link socials__link--instagram">
             <span class="visually-hidden">Instagram</span>
             <svg></svg>
           </a>
         </li>
         <li class="socials__item">
-          <a href="" class="social__link--facebook">
+          <a href="" class="socials__link socials__link--facebook">
             <span class="visually-hidden">Facebook</span>
             <svg></svg>
           </a>
@@ -114,7 +133,9 @@
         <svg></svg>
       </div>
     </div>
+
   </footer>
+  <script src="js/app.js"></script>
 </body>
 
 </html>

@@ -2,13 +2,40 @@
   display: flex;
   flex-direction: column;
   border: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 30px;
 }
 
 .extra__title {
   @include form-title();
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    @include title-text;
+  }
 }
 
 .extra__label {
   @include form-label-text();
   color: $text-black;
+  display: block;
+  margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.extra__wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }

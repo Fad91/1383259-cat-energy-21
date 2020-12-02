@@ -7,3 +7,7 @@ menuButton.addEventListener("click", function (evt) {
   evt.preventDefault();
   mainMenu.classList.toggle("main-menu--closed");
 });
+
+if(menuButton.classList.contains("nav__button--closed")) {
+  mainMenu.classList.remove("main-menu--closed")
+};
