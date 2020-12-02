@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -13,9 +14,11 @@
       <div class="nav__logo">
         <a class="nav__link">
           <img src="https://via.placeholder.com/33x37" alt="Логотип Cat Energy">
+        </a>
+        <a class="nav__link">
           <img src="https://via.placeholder.com/101x18" alt="Логотип Cat Energy">
         </a>
-        <button class="nav__button nav__button--open">
+        <button class="nav__button nav__button--open nav__button--closed">
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
@@ -34,7 +37,7 @@
   </header>
   <main class="page-main">
     <section class="main-section">
-      <h1 class="main-section__title">Функциональное питание для котов</h1>
+      <h1 class="main-section__title">Функциональное <br> питание для котов</h1>
       <p class="main-section__content">Занялся собой? Займись котом!</p>
       <a href="#" class="main-section__link">Подобрать программу</a>
     </section>
@@ -81,6 +84,7 @@
       </ul>
     </section>
     <section class="example-section">
+      <div class="example-section__wrapper">
       <h2 class="example-section__title">Живой пример</h2>
       <p class="example-section__content">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
         Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
@@ -98,38 +102,41 @@
           <p>Затраты на питание: 15000 руб.</p>
         </li>
       </ul>
-    </section>
+    </div>
     <div class="slider">
       <img class="slider__image" src="https://via.placeholder.com/311x232" alt="Фото кота до диеты">
       <img class="slider__image" src="https://via.placeholder.com/251x240" alt="Фото кота после диеты">
       <button class="slider__button">Было</button>
       <button class="slider__button">Стало</button>
     </div>
+  </section>
 
   </main>
   <footer class="page-footer">
     <div class="contacts">
       <h3 class="contacts__title">приглашаем к сотрудничеству дилеров!</h3>
       <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+    </div>
       <img src="https://via.placeholder.com/320x362" alt="Местоположение Cat Energy" class="contacts__map">
-      <div class="contacts__logo">
+      <div class="links-wrapper">
+      <div class="links__logo">
         <img src="https://via.placeholder.com/128x24" alt="Логотип Cat Energy">
       </div>
       <ul class="socials">
         <li class="socials__item">
-          <a href="" class="socials__link--vk">
+          <a href="" class="socials__link socials__link--vk">
             <span class="visually-hidden">Вконтакте</span>
             <svg></svg>
           </a>
         </li>
         <li class="socials__item">
-          <a href="" class="socials__link--instagram">
+          <a href="" class="socials__link socials__link--instagram">
             <span class="visually-hidden">Instagram</span>
             <svg></svg>
           </a>
         </li>
         <li class="socials__item">
-          <a href="" class="socials__link--facebook">
+          <a href="" class="socials__link socials__link--facebook">
             <span class="visually-hidden">Facebook</span>
             <svg></svg>
           </a>
@@ -140,7 +147,9 @@
         <svg></svg>
       </div>
     </div>
+
   </footer>
+  <script src="js/app.js"></script>
 </body>
 
 </html>

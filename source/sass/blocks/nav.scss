@@ -1,25 +1,26 @@
 .nav {
-  outline: 1px solid green;
-  position: relative;
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .nav__logo {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
   border-bottom: 1px solid $border-grey;
 }
 
 .nav__button {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  top: 15px;
-  right: 20px;
   width: 24px;
   height: 2px;
   background-color: black;
   border: none;
   cursor: pointer;
+  position: relative;
+
 
   &::before {
     content: "";
@@ -27,7 +28,7 @@
     height: 2px;
     background-color: black;
     position: absolute;
-    top: 5px;
+    top: 6px;
     right: 0;
   }
 
@@ -37,7 +38,13 @@
     height: 2px;
     background-color: black;
     position: absolute;
-    top: 10px;
+    top: 12px;
     right: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .nav__button--closed {
+    display: none;
   }
 }

@@ -1,14 +1,24 @@
 .page {
   font-family: "Oswald", "Arial", sans-serif;
-  width: 320px;
-  margin: 0 auto;
-  outline: 1px solid tomato;
   color: $text-black;
+  outline: 1px solid tomato;
+  margin: 0 auto;
 }
 
 .page__body {
-  width: 100%;
   margin: 0 auto;
+
+  @media (min-width: $mobile-width) {
+    width: 280px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
 }
 
 .visually-hidden {

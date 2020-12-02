@@ -4,6 +4,7 @@
 @import "general/common.scss";
 @import "general/mixin.scss";
 @import "blocks/page.scss";
+@import "blocks/header.scss";
 @import "blocks/nav.scss";
 @import "blocks/main-menu.scss";
 @import "blocks/main-section.scss";
@@ -15,8 +16,10 @@
 @import "blocks/slider.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/contacts.scss";
+@import "blocks/links-wrapper.scss";
 @import "blocks/socials.scss";
 @import "blocks/academy-logo.scss";
+
 // form.html
 @import "blocks/main-form.scss";
 @import "blocks/cat-options.scss";

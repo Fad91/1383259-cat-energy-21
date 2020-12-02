@@ -1,18 +1,30 @@
 // Блок главной секции
 .main-section {
   color: $text-white;
-  outline: 1px solid blueviolet;
   text-align: center;
   background: $basic-green;
+
+  @media (min-width: $tablet-width) {
+    background: none;
+    color: $text-black;
+    text-align: left;
+    padding-left: 117px;
+  }
 }
 
 .main-section__title {
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  outline: 1px solid red;
   text-align: center;
   margin: 0;
+  padding-top: 27px;
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    @include tablet-text-title;
+    text-align: left;
+  }
 }
 
 .main-section__content {
@@ -28,4 +40,13 @@
   padding: 7px 44px;
   color: inherit;
   background-color: $text-black;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic-green;
+    color: $text-white;
+    width: 244px;
+    margin: 0;
+    margin-top: 49px;
+  }
 }

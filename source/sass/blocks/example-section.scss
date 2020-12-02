@@ -1,14 +1,28 @@
 .example-section {
   padding: 0 20px;
   background-color: $background-grey;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .example-section__title {
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+  padding-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    @include tablet-text-title;
+  }
 }
 
 .example-section__content {
   @include arial-text-section();
+  padding-right: 10px;
+
+  @media (min-width: $tablet-width) {
+    @include tablet-text-content;
+  }
 }
