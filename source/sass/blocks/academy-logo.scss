@@ -1,4 +1,11 @@
 // Блок для лого академии
 .academy-logo {
-  width: 163px;
+  margin: 5px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.academy__link {
+  @include arial-text-section;
 }

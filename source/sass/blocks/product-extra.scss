@@ -16,4 +16,5 @@
 
 .product-extra__link {
   @include product-link();
+  padding: 7px 109px;
 }

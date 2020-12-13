@@ -1,33 +1,104 @@
 // Блок секции с программами
 .programms-section__list {
-  padding: 0;
+  padding: 0 20px;
+  list-style: none;
 
   @media (min-width: $desktop-width) {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 
 .programms-section__item {
   background-color: $basic-grey;
   padding-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
 }
 
 .programms-section__title {
+  position: relative;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 25px;
+  padding-left: 12px;
 
   @media (min-width: $tablet-width) {
     text-align: left;
-    padding-left: 53px;
+    padding-left: 35px;
   }
 
   @media (min-width: $desktop-width) {
     @include title-text;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
+}
+
+.programms-section__item:first-child .programms-section__title::before {
+  content: "";
+  background-image: url("../../img/slim-cat-icon.svg");
+  position: absolute;
+  width: 50px;
+  height: 52px;
+  top: 15px;
+  left: 23px;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 211px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 470px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 106px;
+    left: 25px;
+    top: 0;
+  }
+}
+
+.programms-section__item:last-child .programms-section__title {
+  padding-left: 35px;
+}
+
+.programms-section__item:last-child .programms-section__title::before {
+  content: "";
+  background-image: url("../../img/mass-cat-icon.svg");
+  position: absolute;
+  width: 67px;
+  height: 50px;
+  top: 19px;
+  left: 12px;
+
+  @media (min-width: $tablet-width) {
+    width: 268px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 420px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    height: 100px;
+    left: 25px;
+    top: 0;
   }
 }
 
@@ -35,12 +106,13 @@
   @include arial-text-section;
   margin-left: 20px;
   margin-right: 33px;
-  padding-bottom: 23px;
+  padding-bottom: 25px;
+  padding-top: 5px;
   border-bottom: 1px solid $border-grey;
 
   @media (min-width: $tablet-width) {
-    padding-left: 32px;
-    width: 370px;
+    padding-left: 17px;
+    width: 360px;
   }
 
   @media (min-width: $desktop-width) {
@@ -54,9 +126,20 @@
   line-height: 16px;
   color: $text-black;
   text-transform: uppercase;
-  margin-left: 20px;
+  margin-left: 18px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
-    margin-left: 52px;
+    margin-left: 37px;
   }
+}
+
+.programms-section__link::after {
+  content: "";
+  position: absolute;
+  background-image: url("../../img/arrow-icon.svg");
+  width: 24px;
+  height: 12px;
+  top: 5px;
+  left: 100px;
 }

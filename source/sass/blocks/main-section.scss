@@ -1,14 +1,75 @@
 // Блок главной секции
 .main-section {
+  position: relative;
   color: $text-white;
   text-align: center;
-  background: $basic-green;
+  background: url("../../img/cat-background.jpg") 60% 0;
+  background-repeat: no-repeat;
+  height: 480px;
+
+  &::before {
+    content: "";
+    background-image: url("../../img/can-image.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 55%;
+    top: 165px;
+    left: 20px;
+    z-index: 1;
+
+    @media (min-width: $desktop-width) {
+      content: "";
+      position: absolute;
+      width: 552px;
+      height: 499px;
+      left: 20%;
+      top: 10px;
+    }
+  }
+
+  &::after {
+    content: "";
+    background: rgba(104, 183, 56, 0.85);
+    position: absolute;
+    width: 100%;
+    height: 63%;
+    top: 0;
+    left: 0;
+  }
 
   @media (min-width: $tablet-width) {
     background: none;
     color: $text-black;
     text-align: left;
-    padding-left: 117px;
+    padding-left: 60px;
+    height: 878px;
+
+    &::before {
+      background-image: url("../../img/can-tablet-image.png");
+      width: 100%;
+      height: 609px;
+      z-index: 0;
+      top: 220px;
+    }
+
+    &::after {
+      background: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
+    padding-left: 0;
+    height: 650px;
+
+    &::before {
+      background-image: url("../../img/can-desktop-image.png");
+      width: 100%;
+      height: 100%;
+      top: 40px;
+      left: 450px;
+    }
   }
 }
 
@@ -18,12 +79,19 @@
   line-height: 36px;
   text-align: center;
   margin: 0;
-  padding-top: 27px;
-  padding-bottom: 25px;
+  padding: 27px 20px 8px 20px;
+  position: relative;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     @include tablet-text-title;
     text-align: left;
+    padding-top: 70px;
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
   }
 }
 
@@ -32,21 +100,41 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+  position: relative;
+  z-index: 2;
 }
 
 .main-section__link {
-  margin: 0 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  position: absolute;
+  bottom: 0;
+  left: 20px;
   display: block;
-  padding: 7px 44px;
   color: inherit;
-  background-color: $text-black;
+  background-color: $basic-green;
   text-transform: uppercase;
+  width: 280px;
+  padding: 11px 0;
 
   @media (min-width: $tablet-width) {
     background-color: $basic-green;
     color: $text-white;
     width: 244px;
-    margin: 0;
-    margin-top: 49px;
+    height: 20px;
+    text-align: center;
+    position: absolute;
+    top: 240px;
+    left: 60px;
+    padding: 12px 0;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 0;
+    top: 340px;
   }
 }

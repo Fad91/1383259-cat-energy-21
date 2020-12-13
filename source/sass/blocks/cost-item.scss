@@ -2,6 +2,19 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  padding-top: 7px;
   text-transform: uppercase;
   grid-column: 1 / -1;
+  background: none;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    width: 184px;
+    text-align: right;
+    background: none;
+    margin-left: auto;
+  }
 }

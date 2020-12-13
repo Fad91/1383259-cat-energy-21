@@ -13,10 +13,10 @@
     <nav class="nav">
       <div class="nav__logo">
         <a class="nav__link">
-          <img src="https://via.placeholder.com/33x37" alt="Логотип Cat Energy">
+          <img src="img/logo-icon.svg" width="33" height="37" alt="Логотип Cat Energy">
         </a>
         <a class="nav__link">
-          <img src="https://via.placeholder.com/101x18" alt="Логотип Cat Energy">
+          <img src="img/logo-words.svg" width="101" height="18" alt="Логотип Cat Energy">
         </a>
         <button class="nav__button nav__button--open nav__button--closed">
           <span class="visually-hidden">Открыть меню</span>
@@ -85,66 +85,91 @@
     </section>
     <section class="example-section">
       <div class="example-section__wrapper">
-      <h2 class="example-section__title">Живой пример</h2>
-      <p class="example-section__content">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
-        Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
-        часов в день.</p>
-      <ul class="example-section__list example-list">
-        <li class="example-list__item">
-          <h3 class="example-list__title">5 кг</h3>
-          <p class="example-list__content">Снижение веса</p>
-        </li>
-        <li class="example-list__item">
-          <h3 class="example-list__title">60 дней</h3>
-          <p class="example-list__content">Затрачено времени</p>
-        </li>
-        <li class="example-list__item cost-item">
-          <p>Затраты на питание: 15000 руб.</p>
-        </li>
-      </ul>
-    </div>
-    <div class="slider">
-      <img class="slider__image" src="https://via.placeholder.com/311x232" alt="Фото кота до диеты">
-      <img class="slider__image" src="https://via.placeholder.com/251x240" alt="Фото кота после диеты">
-      <button class="slider__button">Было</button>
-      <button class="slider__button">Стало</button>
-    </div>
-  </section>
+        <h2 class="example-section__title">Живой пример</h2>
+        <p class="example-section__content">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
+          Energy
+          Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
+          16
+          часов в день.</p>
+        <ul class="example-section__list example-list">
+          <li class="example-list__item">
+            <h3 class="example-list__title">5 кг</h3>
+            <p class="example-list__content">Снижение веса</p>
+          </li>
+          <li class="example-list__item">
+            <h3 class="example-list__title">60 дней</h3>
+            <p class="example-list__content">Затрачено времени</p>
+          </li>
+          <li class="example-list__item cost-item">
+            <p>Затраты на питание: 15000 руб.</p>
+          </li>
+        </ul>
+      </div>
+      <div class="slider">
+        <picture class="slider__image">
+          <source media="(min-width: 768px)" srcset="img/cat-tablet-image.png 1x">
+          <img class="slider__image-before" src="img/cat-before-image.png" alt="Фото кота до диеты"
+            width="311" height="232">
+          <img class="slider__image-after slider__image-after--closed" src="img/cat-after-image.png"
+            alt="Фото кота после диеты" width="251" height="240">
+        </picture>
+        <button class="slider__button slider__button-before">Было</button>
+        <div class="slider__range"></div>
+        <button class="slider__button slider__button-after">Стало</button>
+      </div>
+    </section>
 
   </main>
   <footer class="page-footer">
     <div class="contacts">
-      <h3 class="contacts__title">приглашаем к сотрудничеству дилеров!</h3>
+      <h3 class="contacts__title">приглашаем к&nbsp;сотрудничеству дилеров!</h3>
       <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
     </div>
-      <img src="https://via.placeholder.com/320x362" alt="Местоположение Cat Energy" class="contacts__map">
-      <div class="links-wrapper">
-      <div class="links__logo">
-        <img src="https://via.placeholder.com/128x24" alt="Логотип Cat Energy">
+    <picture>
+      <source media="(min-width: 768px)" srcset="img/map-image-tablet.png 1x, img/map-image-tablet@2x.png 2x">
+      <img src="img/map-image.png" alt="Местоположение Cat Energy" width="320" height="362" class="contacts__map">
+    </picture>
+    <div class="links-wrapper">
+      <div class="links-wrapper__logo">
+        <img src="img/logo-words.svg" width="128" height="24" alt="Логотип Cat Energy">
       </div>
       <ul class="socials">
         <li class="socials__item">
           <a href="" class="socials__link socials__link--vk">
             <span class="visually-hidden">Вконтакте</span>
-            <svg></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="16" fill="none">
+              <path fill="#666"
+                d="M0 4l1-1h4l1 3a29 29 0 002 2V5 4H7V3l3-1h1l1 1 1 1v4h1a13 13 0 002-4l1-1h5v1l-1 2-1 2-1 1h-1l1 1 3 3v1l-1 1h-4l-1-1a182 182 0 01-3-1v1l-1 1h-2l-4-2-3-3a33 33 0 01-3-6zm13 5h-1V4 3H8l1 2v4H8L7 8 4 4H1l1 1 4 7 4 2h2v-1l1-1v-1h1l1 1 2 2h4v-1l-3-3V9 8l1-1 1-1 1-2h-3-1l-3 4-1 1z" />
+            </svg>
           </a>
         </li>
         <li class="socials__item">
           <a href="" class="socials__link socials__link--instagram">
             <span class="visually-hidden">Instagram</span>
-            <svg></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none">
+              <path fill="#666"
+                d="M8 0a92 92 0 015 0 4 4 0 012 3l1 2a92 92 0 01-1 8 4 4 0 01-2 2l-2 1a92 92 0 01-8-1 4 4 0 01-3-2v-2a92 92 0 010-8 4 4 0 013-3h5zm0 1a99 99 0 00-5 0L1 3v2a99 99 0 000 8l2 2h2a99 99 0 008 0l2-2v-2a99 99 0 000-8l-2-2h-2-3zm0 10l2-1 1-2-1-2-2-1-2 1-1 2 1 2 2 1zm0-7l3 1 1 3-1 3-3 1-3-1-1-3 1-3 3-1zm5 0l-1 1V4h-1a1 1 0 011-1h1v1z" />
+            </svg>
           </a>
         </li>
         <li class="socials__item">
           <a href="" class="socials__link socials__link--facebook">
             <span class="visually-hidden">Facebook</span>
-            <svg></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none">
+              <path stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.1"
+                d="M17 2h-3l-3 1-2 3v3H6v4h3v7h4v-7h3l1-4h-4V6s0 0 0 0l1-1h3V2z" />
+            </svg>
           </a>
         </li>
       </ul>
       <div class="academy-logo">
-        <a href="" class="academy__link">HTML Academy</a>
-        <svg></svg>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="academy__link">HTML Academy</a>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="academy__link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="27" height="34" fill="none">
+            <path fill="#666"
+              d="M14 0L0 1v25l14 8 13-8V1L14 0zm11 25l-11 7-12-7V15l11 7v1l-8-5v2l8 4 1 2-9-5v1l9 5 8-5v-5l3-2v10zm0-12l-3 2-1 1-8-4v1l6 4h-1l-5-3v2l4 2-1 1-3-2v1l2 1-2 1-11-6 11-7 12 6zm0-1L13 5 2 12V3l12-1 11 1v9z" />
+          </svg>
+        </a>
       </div>
     </div>
 

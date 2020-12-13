@@ -1,7 +1,18 @@
 // Блок товара
 .product {
+  display: grid;
+  grid-template-rows: 1fr min-content;
+  grid-template-columns: 1fr 1fr;
   border-top: 1px solid $catalog-border-grey;
   padding-top: 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    min-height: 511px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+  }
 }
 
 .product__title {
@@ -9,12 +20,38 @@
   font-size: 16px;
   line-height: 20px;
   color: $text-dark-grey;
+  grid-row: 1 / 2;
+  grid-column: 2 / -1;
+  padding: 0 50px 0 0;
 }
 
 .product__content {
+  display: flex;
+  justify-content: space-between;
+  grid-column: 2 / -1;
+  grid-row: 1 / 2;
+  margin: 0;
+
   @include arial-product-text();
 }
 
 .product__link {
   @include product-link();
+  grid-row: 3;
+  grid-column: 1 / -1;
+}
+
+.product__image {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  margin-top: 20px;
+}
+
+.wrapper {
+  grid-column: 2 / -1;
+  grid-row: 1 / 2;
+
+  @include arial-product-text();
+  margin-top: 70px;
+  margin-bottom: 20px;
 }

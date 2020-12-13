@@ -15,7 +15,7 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $footer-black;
-  padding: 10px 20px;
+  padding: 5px 10px 10px 17px;
 
   @media (min-width: $tablet-width) {
     width: 180px;
@@ -36,4 +36,8 @@
 
 .contacts__logo {
   border-bottom: 1px solid $contacts-grey;
+}
+
+.contacts__map {
+  width: 100%;
 }

@@ -1,5 +1,6 @@
 .example-section {
-  padding: 0 20px;
+  padding: 0 20px 8px 20px;
+  margin-top: 43px;
   background-color: $background-grey;
 
   @media (min-width: $desktop-width) {

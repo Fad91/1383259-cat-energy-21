@@ -13,4 +13,7 @@
   @include product-link();
   background-color: $basic-grey;
   color: $text-grey;
+  display: block;
+  margin-top: 40px;
+  padding: 30px 90px;
 }

@@ -3,14 +3,29 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
   }
 }
 
 .nav__logo {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid $border-grey;
+  margin-top: 13px;
+  padding: 0 20px 10px 20px;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
+}
+
+.nav__link:last-of-type {
+  padding-right: 9px;
 }
 
 .nav__button {
@@ -20,7 +35,6 @@
   border: none;
   cursor: pointer;
   position: relative;
-
 
   &::before {
     content: "";
@@ -46,5 +60,11 @@
 @media (min-width: $tablet-width) {
   .nav__button--closed {
     display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    .nav__button--closed {
+      display: none;
+    }
   }
 }

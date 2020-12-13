@@ -1,7 +1,11 @@
 // Блок слайдера
 .slider {
   background-color: $background-grey;
-  padding-bottom: 25px;
+  padding-bottom: 28px;
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr min-content;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .slider__button {
@@ -12,4 +16,27 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  margin: 40px 30px 10px 35px;
+}
+
+.slider__image {
+  grid-column: 1/-1;
+}
+
+.slider__image-before {
+  width: 311px;
+  height: 232px;
+}
+
+.slider__image-after {
+  position: absolute;
+  top: 0;
+}
+
+.slider__image-before--closed {
+  display: none;
+}
+
+.slider__image-after--closed {
+  display: none;
 }

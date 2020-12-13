@@ -7,15 +7,20 @@
   @media (min-width: $tablet-width) {
     display: flex;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+  }
 }
 
 .main-menu__item {
   text-align: center;
   border-bottom: 1px solid $border-grey;
-  padding: 20px 0;
+  padding: 22px 0 20px 0;
 
   @media (min-width: $tablet-width) {
     margin-right: 23px;
+    border-bottom: none;
   }
 }
 
@@ -30,6 +35,13 @@
     font-weight: 400px;
     font-size: 18px;
     line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $text-white;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 

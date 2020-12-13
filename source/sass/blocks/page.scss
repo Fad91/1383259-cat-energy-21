@@ -1,15 +1,15 @@
 .page {
   font-family: "Oswald", "Arial", sans-serif;
   color: $text-black;
-  outline: 1px solid tomato;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .page__body {
   margin: 0 auto;
 
   @media (min-width: $mobile-width) {
-    width: 280px;
+    width: 320px;
   }
 
   @media (min-width: $tablet-width) {
@@ -18,16 +18,10 @@
 
   @media (min-width: $desktop-width) {
     width: 1220px;
+    background-image: url("../../img/cat-background-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: 100% -30px;
+    background-size: 720px 696px;
+    z-index: 2;
   }
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0);
 }

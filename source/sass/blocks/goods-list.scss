@@ -1,0 +1,9 @@
+// Список товаров
+
+.goods-list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+}
