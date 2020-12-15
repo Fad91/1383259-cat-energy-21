@@ -26,6 +26,11 @@
 .slider__image-before {
   width: 311px;
   height: 232px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .slider__image-after {

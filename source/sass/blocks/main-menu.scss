@@ -5,7 +5,10 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
     display: flex;
+    padding: 20px 0px 5px 0px;
   }
 
   @media (min-width: $desktop-width) {
@@ -19,7 +22,7 @@
   padding: 22px 0 20px 0;
 
   @media (min-width: $tablet-width) {
-    margin-right: 23px;
+    margin-left: 35px;
     border-bottom: none;
   }
 }
@@ -32,7 +35,7 @@
   line-height: 20px;
 
   @media (min-width: $tablet-width) {
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 18px;
     line-height: 24px;
   }
@@ -45,6 +48,15 @@
   }
 }
 
+.main-menu__link--nobackground {
+  color: $text-black;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+}
+
 .main-menu--closed {
-  display: none;
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
 }

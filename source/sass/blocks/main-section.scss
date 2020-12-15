@@ -7,27 +7,6 @@
   background-repeat: no-repeat;
   height: 480px;
 
-  &::before {
-    content: "";
-    background-image: url("../../img/can-image.png");
-    background-repeat: no-repeat;
-    position: absolute;
-    width: 100%;
-    height: 55%;
-    top: 165px;
-    left: 20px;
-    z-index: 1;
-
-    @media (min-width: $desktop-width) {
-      content: "";
-      position: absolute;
-      width: 552px;
-      height: 499px;
-      left: 20%;
-      top: 10px;
-    }
-  }
-
   &::after {
     content: "";
     background: rgba(104, 183, 56, 0.85);
@@ -42,25 +21,20 @@
     background: none;
     color: $text-black;
     text-align: left;
-    padding-left: 60px;
-    height: 878px;
-
-    &::before {
-      background-image: url("../../img/can-tablet-image.png");
-      width: 100%;
-      height: 609px;
-      z-index: 0;
-      top: 220px;
-    }
+    padding-left: 118px;
+    height: 858px;
+    display: flex;
+    flex-direction: column;
 
     &::after {
+      width: 0;
       background: none;
     }
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 100px;
-    padding-left: 0;
+    padding-left: 130px;
     height: 650px;
 
     &::before {
@@ -86,7 +60,8 @@
   @media (min-width: $tablet-width) {
     @include tablet-text-title;
     text-align: left;
-    padding-top: 70px;
+    padding-top: 50px;
+    padding-bottom: 20px;
     padding-left: 0;
   }
 
@@ -102,15 +77,36 @@
   text-transform: uppercase;
   position: relative;
   z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.main-section__image {
+  position: relative;
+  z-index: 3;
+
+  @media (min-width: $tablet-width) {
+    z-index: 1;
+    text-align: center;
+    width: 680px;
+    margin-top: -35px;
+  }
+}
+
+.main-section picture {
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
 }
 
 .main-section__link {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  position: absolute;
-  bottom: 0;
-  left: 20px;
   display: block;
   color: inherit;
   background-color: $basic-green;
@@ -121,16 +117,17 @@
   @media (min-width: $tablet-width) {
     background-color: $basic-green;
     color: $text-white;
+    position: relative;
     width: 244px;
     height: 20px;
     text-align: center;
-    position: absolute;
-    top: 240px;
-    left: 60px;
-    padding: 12px 0;
+    margin-top: 29px;
+    margin-left: -6px;
+    padding: 17px 0;
     font-weight: 400;
     font-size: 20px;
     line-height: 20px;
+    order: 1;
   }
 
   @media (min-width: $desktop-width) {

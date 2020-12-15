@@ -1,12 +1,14 @@
 .nav {
   @media (min-width: $tablet-width) {
-    width: 100%;
+    width: 708px;
     display: flex;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 1220px;
+    padding: 0 110px;
     justify-content: space-between;
   }
 }

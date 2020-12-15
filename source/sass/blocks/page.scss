@@ -6,7 +6,7 @@
 }
 
 .page__body {
-  margin: 0 auto;
+  margin: 0;
 
   @media (min-width: $mobile-width) {
     width: 320px;
@@ -17,11 +17,16 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
+    width: 1440px;
     background-image: url("../../img/cat-background-desktop.jpg");
     background-repeat: no-repeat;
-    background-position: 100% -30px;
+    background-position: 800px -30px;
+    position: fixed;
     background-size: 720px 696px;
     z-index: 2;
   }
+}
+
+.page__body--nobackground {
+  background: none;
 }
