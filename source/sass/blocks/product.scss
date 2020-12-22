@@ -24,6 +24,7 @@
   }
 }
 .product:nth-child(2n) {
+
   @media (min-width: $tablet-width) {
     margin-right: 0;
   }
