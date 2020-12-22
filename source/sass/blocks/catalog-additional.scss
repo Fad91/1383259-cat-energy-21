@@ -1,11 +1,33 @@
+.catalog-additional {
+  margin: 48px 20px 64px 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px 95px 30px;
+  }
+}
+
 .catalog-additional__list {
   padding: 0;
-  margin: 0;
+  margin-top: 50px;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 86px;
+  }
 }
 
 .catalog-additional__title {
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    @include title-text();
+    margin-top: 13px;
+    padding-left: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
+  }
 }

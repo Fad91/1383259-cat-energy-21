@@ -4,10 +4,20 @@
   border: none;
   display: flex;
   flex-direction: column;
-  padding-bottom: 20px;
+  padding-top: 31px;
+  padding-bottom: 0;
   border-bottom: 1px solid $catalog-border-grey;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 38px;
+    margin-left: 41px;
+  }
 }
 
 .programm-select__label {
-  margin-bottom: 15px;
+  margin-bottom: 23px;
+  padding-left: 52px;
 }

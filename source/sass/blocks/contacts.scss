@@ -5,7 +5,13 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
+    padding: 0 55px;
     justify-content: space-between;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
 
@@ -15,10 +21,13 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $footer-black;
-  padding: 5px 10px 10px 17px;
+  padding: 14px 10px 10px 19px;
 
   @media (min-width: $tablet-width) {
     width: 180px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 21px;
   }
 }
 
@@ -31,6 +40,9 @@
 
   @media (min-width: $tablet-width) {
     width: 180px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 

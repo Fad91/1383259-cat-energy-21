@@ -39,9 +39,10 @@
     <section class="main-section">
       <h1 class="main-section__title">Функциональное <br> питание для котов</h1>
       <p class="main-section__content">Занялся собой? Займись котом!</p>
-      <picture>
-        <source media="(min-width: 768px)" srcset="img/can-tablet-image.png 1x, img/can-tablet-image@2x.png 2x">
-        <img srcset="img/can-image.png" alt="Изображение товара" class="main-section__image" width="280" height="270">
+      <picture class="main-section__picture">
+        <source media="(min-width: 1440px)" srcset="img/can-desktop-image.png 1x">
+        <source media="(min-width: 768px)"  srcset="img/can-tablet-image.png 1x, img/can-tablet-image@2x.png 2x">
+        <img src="img/can-image.png" alt="Изображение товара" class="main-section__image" width="280" height="270">
       </picture>
       <a href="#" class="main-section__link">Подобрать программу</a>
     </section>
@@ -105,7 +106,8 @@
             <p class="example-list__content">Затрачено времени</p>
           </li>
           <li class="example-list__item cost-item">
-            <p>Затраты на питание: 15000 руб.</p>
+            <p class="cost-item__expenses">Затраты на питание: </p>
+            <p class="cost-item__price-content">15 000 руб.</p>
           </li>
         </ul>
       </div>
@@ -114,13 +116,19 @@
           <source media="(min-width: 768px)" srcset="img/cat-tablet-image.png 1x">
           <img class="slider__image-before" src="img/cat-before-image.png" alt="Фото кота до диеты" width="311"
             height="232">
-          </picture>
-          <picture class="slider__image">
+        </picture>
+        <picture class="slider__image">
           <img class="slider__image-after slider__image-after--closed" src="img/cat-after-image.png"
             alt="Фото кота после диеты" width="251" height="240">
         </picture>
+        <picture class="slider__image">
+          <source media="(min-width: 1440px)" srcset="img/cat-desktop-image.png 1x">
+            <img src="img/cat-desktop-image.png" alt="Фото кота">
+        </picture>
         <button class="slider__button slider__button-before">Было</button>
-        <div class="slider__range"></div>
+        <div class="slider__range">
+          <div class="scale"></div>
+        </div>
         <button class="slider__button slider__button-after">Стало</button>
       </div>
     </section>
@@ -132,6 +140,7 @@
       <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
     </div>
     <picture>
+      <source media="(min-width: 1440px)" srcset="img/map-image-desktop.png 1x">
       <source media="(min-width: 768px)" srcset="img/map-image-tablet.png 1x, img/map-image-tablet@2x.png 2x">
       <img src="img/map-image.png" alt="Местоположение Cat Energy" width="320" height="362" class="contacts__map">
     </picture>

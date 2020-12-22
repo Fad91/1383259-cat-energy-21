@@ -1,33 +1,45 @@
 // Блок секции с программами
+.programms-section {
+  margin-top: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 110px;
+  }
+}
+
 .programms-section__list {
   padding: 0 20px;
+  margin-bottom: 30px;
   list-style: none;
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    min-height: 370px;
     margin-top: 0;
-    padding: 0 30px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 40px;
   }
 }
 
 .programms-section__item {
   background-color: $basic-grey;
-  padding-bottom: 18px;
+  padding-bottom: 14px;
 
   @media (min-width: $tablet-width) {
     position: relative;
     padding: 40px 10px 58px 40px;
     margin-bottom: 32px;
+    min-height: 370px;
   }
 
   @media (min-width: $desktop-width) {
     width: 570px;
+    min-height: 375px;
+    padding: 0;
   }
 }
 
@@ -38,7 +50,7 @@
   line-height: 37px;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 25px;
+  padding-top: 27px;
   padding-left: 12px;
 
   @media (min-width: $tablet-width) {
@@ -52,11 +64,26 @@
 
   @media (min-width: $desktop-width) {
     @include title-text;
+
+    text-align: center;
+    padding: 0;
+    padding-top: 42px;
+    margin-left: 24px;
   }
+}
+
+.programms-section__item:last-child .programms-section__title {
+  padding-top: 27px;
+  padding-left: 38px;
 
   @media (min-width: $desktop-width) {
-    text-align: center;
+    padding-top: 42px;
+    margin-left: 27px;
   }
+}
+
+.programms-section__item:last-child .programms-section__content {
+  padding-top: 5px;
 }
 
 .programms-section__item:first-child .programms-section__title::before {
@@ -81,8 +108,8 @@
   @media (min-width: $desktop-width) {
     width: 100px;
     height: 106px;
-    left: 25px;
-    top: 0;
+    left: 28px;
+    top: 7px;
   }
 }
 
@@ -108,8 +135,8 @@
   @media (min-width: $desktop-width) {
     width: 134px;
     height: 100px;
-    left: 25px;
-    top: 0;
+    left: 7px;
+    top: 10px;
   }
 }
 
@@ -118,7 +145,7 @@
   margin-left: 20px;
   margin-right: 33px;
   padding-bottom: 25px;
-  padding-top: 5px;
+  padding-top: 6px;
   border-bottom: 1px solid $border-grey;
 
   @media (min-width: $tablet-width) {
@@ -132,6 +159,11 @@
 
   @media (min-width: $desktop-width) {
     @include tablet-text-content;
+    margin-left: 51px;
+    margin-top: 67px;
+    margin-bottom: 0;
+    margin-right: 0;
+    width: 475px;
   }
 }
 
@@ -149,6 +181,10 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 52px;
   }
 }
 

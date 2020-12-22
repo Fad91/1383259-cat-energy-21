@@ -21,7 +21,7 @@
     background: none;
     color: $text-black;
     text-align: left;
-    padding-left: 118px;
+    padding-left: 87px;
     height: 858px;
     display: flex;
     flex-direction: column;
@@ -33,17 +33,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 100px;
-    padding-left: 130px;
-    height: 650px;
-
-    &::before {
-      background-image: url("../../img/can-desktop-image.png");
-      width: 100%;
-      height: 100%;
-      top: 40px;
-      left: 450px;
-    }
+    padding-top: 50px;
+    padding-left: 190px;
+    height: 602px;
+    display: grid;
+    grid-template-columns: 450px 550px;
+    grid-template-rows: 190px min-content min-content;
   }
 }
 
@@ -53,14 +48,14 @@
   line-height: 36px;
   text-align: center;
   margin: 0;
-  padding: 27px 20px 8px 20px;
+  padding: 27px 20px 10px 20px;
   position: relative;
   z-index: 1;
 
   @media (min-width: $tablet-width) {
     @include tablet-text-title;
     text-align: left;
-    padding-top: 50px;
+    padding-top: 48px;
     padding-bottom: 20px;
     padding-left: 0;
   }
@@ -88,18 +83,24 @@
 .main-section__image {
   position: relative;
   z-index: 3;
+  margin-top: 15px;
 
   @media (min-width: $tablet-width) {
-    z-index: 1;
+    z-index: 0;
     text-align: center;
     width: 680px;
     margin-top: -35px;
   }
 }
 
-.main-section picture {
+.main-section__picture {
   @media (min-width: $tablet-width) {
     order: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 1;
+    grid-column: 2;
   }
 }
 
@@ -113,6 +114,7 @@
   text-transform: uppercase;
   width: 280px;
   padding: 11px 0;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     background-color: $basic-green;
@@ -131,7 +133,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    left: 0;
-    top: 340px;
+    grid-column: 1;
+    grid-row: 3;
+    margin-left: 0;
+    margin-top: 30px;
   }
 }

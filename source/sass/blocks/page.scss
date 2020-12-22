@@ -10,19 +10,21 @@
 
   @media (min-width: $mobile-width) {
     width: 320px;
+    margin: 0 auto;
   }
 
   @media (min-width: $tablet-width) {
-    width: 708px;
+    width: 768px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
     width: 1440px;
+    margin: 0 auto;
     background-image: url("../../img/cat-background-desktop.jpg");
     background-repeat: no-repeat;
-    background-position: 800px -30px;
-    position: fixed;
-    background-size: 720px 696px;
+    background-position: 806px -8px;
+    background-size: 720px 709px;
     z-index: 2;
   }
 }

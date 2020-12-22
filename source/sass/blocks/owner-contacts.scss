@@ -1,8 +1,11 @@
 .owner-contacts {
   border: none;
   padding: 0;
-  margin: 0;
-  margin-top: 25px;
+  margin: 32px 0 11px 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 80px 0 47px 68px;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -11,12 +14,25 @@
 
 .owner-contacts__title {
   @include form-title();
-  margin-bottom: 32px;
+  margin-bottom: 31px;
   padding: 0;
+  position: relative;
+  padding-right: 50px;
 
   @media (min-width: $tablet-width) {
     @include title-text;
+    margin-bottom: 73px;
   }
+}
+
+.owner-contacts__title::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 18px;
+  display: block;
+  width: 96px;
+  border: 1px solid $basic-green;
 }
 
 .owner-contacts__label {
@@ -24,8 +40,27 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 15px;
+  align-items: baseline;
+  margin-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 1px;
+    margin-right: 65px;
+  }
 }
 
 .owner-contacts__input {
   flex-grow: 1;
+  font: inherit;
+  color: $text-grey;
+  text-transform: inherit;
+  padding: 12px 15px;
+  margin-left: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 21px;
+  }
 }

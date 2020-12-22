@@ -1,11 +1,20 @@
 .example-section {
-  padding: 0 20px 8px 20px;
   margin-top: 43px;
   background-color: $background-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 0 30px;
+    background: none;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;
   }
+}
+
+.example-section__wrapper {
+  padding: 0 20px;
 }
 
 .example-section__title {
@@ -16,6 +25,14 @@
 
   @media (min-width: $tablet-width) {
     @include tablet-text-title;
+    padding-top: 40px;
+    margin-top: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    margin-left: 60px;
+    padding-top: 0;
   }
 }
 
@@ -25,5 +42,12 @@
 
   @media (min-width: $tablet-width) {
     @include tablet-text-content;
+    margin-top: 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 435px;
+    margin-top: 144px;
+    margin-left: 60px;
   }
 }

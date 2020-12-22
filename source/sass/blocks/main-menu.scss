@@ -6,9 +6,9 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    padding: 0;
     display: flex;
-    padding: 20px 0px 5px 0px;
+    flex-wrap: wrap;
+    padding: 20px 2px 5px 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -19,7 +19,7 @@
 .main-menu__item {
   text-align: center;
   border-bottom: 1px solid $border-grey;
-  padding: 22px 0 20px 0;
+  padding: 22px 0 19px 0;
 
   @media (min-width: $tablet-width) {
     margin-left: 35px;
@@ -49,10 +49,9 @@
 }
 
 .main-menu__link--nobackground {
-  color: $text-black;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 20px;
+  @media (min-width: $desktop-width) {
+    color: $text-black;
+  }
 }
 
 .main-menu--closed {

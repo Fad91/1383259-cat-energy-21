@@ -1,11 +1,20 @@
 // Блок слайдера
 .slider {
   background-color: $background-grey;
-  padding-bottom: 28px;
+  padding-bottom: 10px;
   position: relative;
   display: grid;
   grid-template-rows: 1fr min-content;
   grid-template-columns: 1fr 1fr 1fr;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 53px;
+    background-color: $background-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
 }
 
 .slider__button {
@@ -16,7 +25,19 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  margin: 40px 30px 10px 35px;
+  margin: 26px 27px 24px 35px;
+  text-align: right;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.slider__button-after {
+  text-align: left;
+  margin-left: 0;
 }
 
 .slider__image {
@@ -31,6 +52,15 @@
     width: 100%;
     height: auto;
   }
+}
+
+.slider__range {
+  width: 82px;
+  height: 12px;
+  background-color: $text-white;
+  margin: auto 0;
+  border: 1px solid $text-grey;
+  border-radius: 10px;
 }
 
 .slider__image-after {
