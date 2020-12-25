@@ -18,7 +18,9 @@
     text-align: right;
     background: none;
     margin: 0;
+    padding: 0;
     margin-left: auto;
+    flex-direction: column;
   }
 
   @media (min-width: $desktop-width) {

@@ -9,6 +9,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    margin: 38px 0 47px 68px;
   }
 }
 
@@ -47,8 +48,13 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
-    margin-left: 1px;
-    margin-right: 65px;
+    margin-right: 70px;
+  }
+}
+
+.owner-contacts__label:nth-of-type(2) {
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
   }
 }
 
@@ -59,8 +65,13 @@
   text-transform: inherit;
   padding: 12px 15px;
   margin-left: 10px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     margin-left: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 455px;
   }
 }

@@ -10,6 +10,8 @@ mainMenu.classList.add("main-menu--closed");
 menuButton.addEventListener("click", function (evt) {
   evt.preventDefault();
   mainMenu.classList.toggle("main-menu--closed");
+  menuButton.classList.toggle("nav__button");
+  menuButton.classList.toggle("nav__button--open");
 });
 
 if(menuButton.classList.contains("nav__button--closed")) {

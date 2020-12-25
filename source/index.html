@@ -18,11 +18,11 @@
         <a class="nav__link">
           <img src="img/logo-words.svg" width="101" height="18" alt="Логотип Cat Energy">
         </a>
-        <button class="nav__button nav__button--open nav__button--closed">
+        <button class="nav__button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
-      <ul class="nav__list main-menu">
+      <ul class="nav__list main-menu main-menu--closed">
         <li class="main-menu__item">
           <a class="main-menu__link">Главная</a>
         </li>
@@ -83,7 +83,7 @@
           </p>
         </li>
         <li class="description-section__item">
-          <p class="description-section__content">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+          <p class="description-section__content">Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!
           </p>
         </li>
       </ul>
@@ -112,18 +112,15 @@
         </ul>
       </div>
       <div class="slider">
-        <picture class="slider__image">
+        <picture class="slider__picture">
           <source media="(min-width: 768px)" srcset="img/cat-tablet-image.png 1x">
+            <source media="(min-width: 1440px)" srcset="img/cat-desktop-image.png 1x">
           <img class="slider__image-before" src="img/cat-before-image.png" alt="Фото кота до диеты" width="311"
             height="232">
         </picture>
-        <picture class="slider__image">
+        <picture class="slider__picture slider__picture-after">
           <img class="slider__image-after slider__image-after--closed" src="img/cat-after-image.png"
             alt="Фото кота после диеты" width="251" height="240">
-        </picture>
-        <picture class="slider__image">
-          <source media="(min-width: 1440px)" srcset="img/cat-desktop-image.png 1x">
-            <img src="img/cat-desktop-image.png" alt="Фото кота">
         </picture>
         <button class="slider__button slider__button-before">Было</button>
         <div class="slider__range">

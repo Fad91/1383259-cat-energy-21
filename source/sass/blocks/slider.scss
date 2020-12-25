@@ -8,7 +8,7 @@
   grid-template-columns: 1fr 1fr 1fr;
 
   @media (min-width: $tablet-width) {
-    margin-top: 53px;
+    padding-bottom: 40px;
     background-color: $background-grey;
   }
 
@@ -25,28 +25,42 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  margin: 26px 27px 24px 35px;
+  margin: 17px 0 24px 15px;
   text-align: right;
+  background-color: inherit;
 
   @media (min-width: $tablet-width) {
+    text-align: right;
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
+    margin: 26px 0 24px 15px;
   }
 }
 
 .slider__button-after {
   text-align: left;
   margin-left: 0;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
 }
 
-.slider__image {
+.slider__picture {
   grid-column: 1/-1;
+  grid-row: 1;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    height: 559px;
+  }
 }
 
 .slider__image-before {
+  grid-row: 1;
   width: 311px;
-  height: 232px;
+  height: 240px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -54,18 +68,28 @@
   }
 }
 
+.slider__picture-after {
+  width: 251px;
+  height: 240px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .slider__range {
   width: 82px;
   height: 12px;
   background-color: $text-white;
-  margin: auto 0;
+  margin: 22px 12px;
   border: 1px solid $text-grey;
   border-radius: 10px;
-}
 
-.slider__image-after {
-  position: absolute;
-  top: 0;
+  @media (min-width: $tablet-width) {
+    width: 428px;
+    margin: 36px 15px;
+  }
 }
 
 .slider__image-before--closed {

@@ -15,9 +15,30 @@
     margin-top: 38px;
     margin-left: 41px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    width: 568px;
+    padding-top: 34px;
+  }
 }
 
 .programm-select__label {
   margin-bottom: 23px;
   padding-left: 52px;
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 102px;
+  }
+}
+
+  .programm-select__label>.programm-select__radio {
+  background: url("../../img/radiobutton-icon.svg");
+  width: 30px;
+  height: 30px;
+  outline: 2px solid red;
+  display: block;
+  position: absolute;
+  left: 0;
 }

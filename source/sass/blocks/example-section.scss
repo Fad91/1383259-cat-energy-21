@@ -3,8 +3,6 @@
   background-color: $background-grey;
 
   @media (min-width: $tablet-width) {
-    width: 708px;
-    padding: 0 30px;
     background: none;
   }
 
@@ -14,14 +12,18 @@
 }
 
 .example-section__wrapper {
-  padding: 0 20px;
+  margin: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px;
+  }
 }
 
 .example-section__title {
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  padding-top: 30px;
+  padding-top: 31px;
 
   @media (min-width: $tablet-width) {
     @include tablet-text-title;

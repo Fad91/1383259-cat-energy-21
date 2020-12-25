@@ -6,7 +6,7 @@
   margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 40px;
+    margin-top: 44px;
     display: flex;
   }
 
@@ -26,8 +26,7 @@
     padding: 0;
     margin: 0;
     width: 172px;
-    padding-top: 10px;
-    margin-right: 25px;
+    margin-right: 20px;
   }
 }
 
@@ -36,7 +35,7 @@
   background-image: url("../../img/example-list-item-border-mobile.svg");
   background-repeat: no-repeat;
   position: absolute;
-  top: 7px;
+  top: 11px;
   width: 124px;
   height: 100%;
 
@@ -57,8 +56,8 @@
   background-image: url("../../img/example-list-item-border-mobile.svg");
   background-repeat: no-repeat;
   position: absolute;
-  top: 7px;
-  left: 25px;
+  top: 11px;
+  left: 15px;
   width: 124px;
   height: 100%;
 
@@ -66,7 +65,7 @@
     background-image: url("../../img/example-list-second-border.svg");
     position: absolute;
     width: 162px;
-    left: 5px;
+    left: 12px;
   }
 
   @media (min-width: $desktop-width) {
@@ -81,7 +80,7 @@
   line-height: 24px;
   text-transform: uppercase;
   text-align: center;
-  margin: 21px 0 8px 0;
+  margin: 25px 15px 8px 0;
 
   @media (min-width: $tablet-width) {
     font-weight: 400;
@@ -110,8 +109,10 @@
 }
 
 .example-list__item:first-child .example-list__title {
-  margin-right: 16px;
-  margin-top: 25px;
+  @media (min-width: $tablet-width) {
+    margin-right: 10px;
+    margin-top: 25px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-left: 16px;
@@ -120,13 +121,22 @@
 }
 
 .example-list__item:nth-child(2) .example-list__title {
-  margin-left: 15px;
+  margin-left: 30px;
   margin-top: 25px;
 
   @media (min-width: $desktop-width) {
     margin-left: 0;
   }
 }
+
+.example-list__item:first-child .example-list__content {
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    padding-left: 32px;
+    margin: 0;
+  }
+}
+
 
 .example-list__item:nth-child(2) .example-list__content {
   margin-left: 37px;

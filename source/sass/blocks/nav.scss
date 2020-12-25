@@ -19,7 +19,7 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid $border-grey;
-  margin-top: 13px;
+  margin-top: 11px;
   padding: 0 20px 10px 20px;
 
   @media (min-width: $tablet-width) {
@@ -28,7 +28,8 @@
 }
 
 .nav__link:last-of-type {
-  padding-right: 9px;
+  padding-right: 11px;
+  padding-top: 7px;
 }
 
 .nav__button {
@@ -45,7 +46,7 @@
     height: 2px;
     background-color: black;
     position: absolute;
-    top: 6px;
+    top: -6px;
     right: 0;
   }
 
@@ -55,8 +56,31 @@
     height: 2px;
     background-color: black;
     position: absolute;
-    top: 12px;
+    top: 6px;
     right: 0;
+  }
+}
+
+.nav__button--open {
+  width: 2px;
+  height: 24px;
+  background-color: $text-black;
+  border: none;
+  padding: 0;
+  transform: rotate(45deg);
+  display: block;
+  position: relative;
+  margin-right: 10px;
+
+  &::before {
+    content: "";
+    width: 2px;
+    height: 24px;
+    background-color: $text-black;
+    border: none;
+    padding: 0;
+    display: block;
+    transform: rotate(-90deg);
   }
 }
 

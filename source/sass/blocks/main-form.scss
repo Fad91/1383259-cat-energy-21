@@ -3,6 +3,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 105px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 65px 40px;
+  }
 }
 
 .main-form__title {

@@ -2,6 +2,10 @@
 .programms-section {
   margin-top: 20px;
 
+  @media (min-width: $tablet-width) {
+    margin: 0 30px;
+  }
+
   @media (min-width: $desktop-width) {
     margin: 0 110px;
   }
@@ -31,9 +35,9 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-    padding: 40px 10px 58px 40px;
-    margin-bottom: 32px;
-    min-height: 370px;
+    padding: 40px 10px 0 40px;
+    margin-bottom: 30px;
+    min-height: 332px;
   }
 
   @media (min-width: $desktop-width) {
@@ -50,7 +54,7 @@
   line-height: 37px;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 27px;
+  padding-top: 30px;
   padding-left: 12px;
 
   @media (min-width: $tablet-width) {
@@ -59,7 +63,7 @@
     font-size: 36px;
     line-height: 36px;
     padding-top: 2px;
-    margin-bottom: 5px;
+    margin-bottom: 19px;
   }
 
   @media (min-width: $desktop-width) {
@@ -73,8 +77,8 @@
 }
 
 .programms-section__item:last-child .programms-section__title {
-  padding-top: 27px;
-  padding-left: 38px;
+  padding-top: 28px;
+  padding-left: 39px;
 
   @media (min-width: $desktop-width) {
     padding-top: 42px;
@@ -84,6 +88,10 @@
 
 .programms-section__item:last-child .programms-section__content {
   padding-top: 5px;
+
+  @media (min-width: $tablet-width) {
+    width: 342px;
+  }
 }
 
 .programms-section__item:first-child .programms-section__title::before {
@@ -129,7 +137,7 @@
     background-size: contain;
     position: absolute;
     left: 370px;
-    top: 10px;
+    top: 15px;
   }
 
   @media (min-width: $desktop-width) {
