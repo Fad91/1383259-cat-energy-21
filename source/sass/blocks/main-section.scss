@@ -88,14 +88,22 @@
   @media (min-width: $tablet-width) {
     z-index: 0;
     text-align: center;
-    width: 680px;
+    width: 700px;
     margin-top: -35px;
+    height: 610px;
   }
 }
 
 .main-section__picture {
+  width: 100%;
+  height: auto;
+
   @media (min-width: $tablet-width) {
+    width: 710px;
+    height: 610px;
     order: 2;
+    margin-top: -47px;
+    margin-left: -82px;
   }
 
   @media (min-width: $desktop-width) {
@@ -137,5 +145,13 @@
     grid-row: 3;
     margin-left: 0;
     margin-top: 30px;
+  }
+}
+
+.main-section__link:hover {
+  background-color: $hover-link-green;
+
+  &:active {
+    color: $hover-link-white;
   }
 }

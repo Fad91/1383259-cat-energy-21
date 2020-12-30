@@ -1,7 +1,7 @@
 .owner-contacts {
   border: none;
   padding: 0;
-  margin: 32px 0 11px 20px;
+  margin: 26px 0 13px 20px;
 
   @media (min-width: $tablet-width) {
     margin: 80px 0 47px 68px;
@@ -15,7 +15,7 @@
 
 .owner-contacts__title {
   @include form-title();
-  margin-bottom: 31px;
+  margin-bottom: 33px;
   padding: 0;
   position: relative;
   padding-right: 50px;
@@ -30,7 +30,7 @@
   content: "";
   position: absolute;
   right: 0;
-  top: 18px;
+  top: 16px;
   display: block;
   width: 96px;
   border: 1px solid $basic-green;
@@ -40,15 +40,16 @@
   @include form-label-text();
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px;
-  align-items: baseline;
+  align-items: center;
   margin-right: 20px;
+  position: relative;
+  margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
-    margin-right: 70px;
+    margin-right: 66px;
   }
 }
 
@@ -64,14 +65,22 @@
   color: $text-grey;
   text-transform: inherit;
   padding: 12px 15px;
-  margin-left: 10px;
+  margin-left: 11px;
   position: relative;
 
   @media (min-width: $tablet-width) {
     margin-left: 21px;
+    margin-top: 4px;
+    padding: 9px 0 9px 15px;
   }
 
   @media (min-width: $desktop-width) {
     width: 455px;
   }
+}
+
+.owner-contacts__icon {
+  position: absolute;
+  right: 17px;
+  top: 22px;
 }

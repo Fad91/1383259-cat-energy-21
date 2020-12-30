@@ -5,8 +5,7 @@
   grid-template-rows: 1fr min-content;
   grid-template-columns: 1fr 1fr;
   border-top: 1px solid $catalog-border-grey;
-  padding-top: 10px;
-  margin-bottom: 7px;
+  margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
     width: 324px;
@@ -48,7 +47,7 @@
   grid-row: 1 / 2;
   grid-column: 2 / -1;
   padding: 0 61px 0 0;
-  margin: 27px 0;
+  margin: 20px 0;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
@@ -94,18 +93,26 @@
   }
 }
 
+.product__link:hover {
+  background-color: $hover-link-green;
+
+  &:active {
+    color: $hover-link-white;
+  }
+}
+
 .product__picture {
   @media (min-width: $tablet-width) {
     text-align: center;
     margin-bottom: 22px;
-    margin-top: 30px;
+    margin-top: 35px;
   }
 }
 
 .product__image {
   grid-row: 1 / 2;
   grid-column: 1 / 2;
-  margin-top: 25px;
+  margin-top: 20px;
   margin-left: 20px;
 
   @media (min-width: $tablet-width) {
@@ -118,10 +125,10 @@
 .wrapper {
   grid-column: 2 / -1;
   grid-row: 1 / 2;
-  padding-right: 21px;
+  margin-right: 20px;
 
   @include arial-product-text();
-  margin-top: 80px;
+  margin-top: 74px;
   margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {

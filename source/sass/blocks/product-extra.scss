@@ -1,5 +1,5 @@
 .product-extra {
-  margin-bottom: 41px;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 32px;
@@ -23,6 +23,7 @@
   text-transform: uppercase;
   color: $text-dark-grey;
   margin-bottom: 14px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     font-weight: 400;
@@ -57,7 +58,7 @@
 
 .product-extra__link {
   @include product-link();
-  padding: 10px 109px;
+  padding: 8px 109px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1/-1;
@@ -67,5 +68,13 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 3;
+  }
+}
+
+.product__link:hover {
+  background-color: $hover-link-green;
+
+  &:active {
+    color: $hover-link-white;
   }
 }

@@ -34,7 +34,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
-    margin: 26px 0 24px 15px;
+    margin: 21px 0 25px 15px;
   }
 }
 
@@ -63,18 +63,20 @@
   height: 240px;
 
   @media (min-width: $tablet-width) {
-    width: 100%;
-    height: auto;
+    width: 677px;
+    height: 520px;
+    padding-top: 22px;
   }
 }
 
-.slider__picture-after {
+.slider__image-after {
   width: 251px;
   height: 240px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    display: none;
+    width: 545px;
+    height: 520px;
   }
 }
 

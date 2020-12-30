@@ -4,8 +4,8 @@
   border: none;
   display: flex;
   flex-direction: column;
-  padding-top: 31px;
-  padding-bottom: 0;
+  padding-top: 20px;
+  padding-bottom: 8px;
   border-bottom: 1px solid $catalog-border-grey;
 
   @media (min-width: $tablet-width) {
@@ -24,7 +24,8 @@
 }
 
 .programm-select__label {
-  margin-bottom: 23px;
+  padding-bottom: 15px;
+  padding-top: 10px;
   padding-left: 52px;
   position: relative;
 
@@ -33,12 +34,35 @@
   }
 }
 
-  .programm-select__label>.programm-select__radio {
-  background: url("../../img/radiobutton-icon.svg");
+// .programm-select__label > .programm-select__input::before {
+// content: "";
+// background: url("../../img/radiobutton-icon.svg");
+// width: 30px;
+// height: 30px;
+// display: block;
+// position: absolute;
+// left: 7px;
+// top: 3px;
+// outline: 2px solid red;
+// }
+
+// .programm-select__label:disabled::before {
+// opacity: 0.3;
+// }
+
+.programm-select__radio {
+  appearance: none;
+  position: absolute;
+}
+
+.programm-select__label-custom {
   width: 30px;
   height: 30px;
-  outline: 2px solid red;
-  display: block;
-  position: absolute;
-  left: 0;
+  background: url("../../img/radiobutton-icon.svg") no-repeat;
+  left: 1px;
+  top: 0;
+}
+
+.programm-select__radio:checked {
+  background-image: url("../../img/radiobutton-active-icon.svg");
 }

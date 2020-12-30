@@ -1,6 +1,4 @@
 .comment {
-  margin: 0 20px;
-
   @media (min-width: $tablet-width) {
     margin: 0 69px 60px 69px;
   }
@@ -10,6 +8,8 @@
   @include form-title();
   display: block;
   margin-bottom: 35px;
+  position: relative;
+  margin-left: 20px;
 
   @media (min-width: $tablet-width) {
     @include title-text;
@@ -17,16 +17,27 @@
   }
 }
 
+.comment__label::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 14px;
+  display: block;
+  width: 156px;
+  border: 1px solid $basic-green;
+}
+
 .comment__text {
   resize: none;
-  width: 100%;
+  width: 280px;
   padding: 0;
-  padding-top: 5px;
+  padding-top: 6px;
   text-align: center;
   font: inherit;
   color: $text-grey;
   text-transform: uppercase;
   min-height: 145px;
+  margin: 0 20px;
 
   @media (min-width: $tablet-width) {
     font-weight: 400;

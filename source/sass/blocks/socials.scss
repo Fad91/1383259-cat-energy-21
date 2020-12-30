@@ -17,8 +17,26 @@
   margin-right: 32px;
   height: 20px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .socials__item:last-child {
   margin-right: 0;
+}
+
+.socials__link:hover path {
+  fill: $basic-green;
+}
+
+.socials__link:active path {
+  opacity: 0.3;
+}
+
+.socials__link--facebook:hover path {
+  stroke: $basic-green;
+  fill: none;
 }

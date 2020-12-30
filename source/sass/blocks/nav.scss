@@ -24,12 +24,35 @@
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
+    padding-left: 0;
+    margin-top: 23px;
+  }
+}
+
+.nav__link:hover {
+  @media (min-width: $tablet-width) {
+    opacity: 0.8;
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+}
+
+.nav__link img {
+  @media (min-width: $tablet-width) {
+    width: 172px;
+    height: 51px;
   }
 }
 
 .nav__link:last-of-type {
   padding-right: 11px;
   padding-top: 7px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .nav__button {
@@ -59,38 +82,48 @@
     top: 6px;
     right: 0;
   }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .nav__button--open {
-  width: 2px;
-  height: 24px;
-  background-color: $text-black;
-  border: none;
-  padding: 0;
-  transform: rotate(45deg);
-  display: block;
-  position: relative;
-  margin-right: 10px;
-
-  &::before {
-    content: "";
+  @media (max-width: $mobile-width-only) {
     width: 2px;
     height: 24px;
     background-color: $text-black;
     border: none;
     padding: 0;
+    transform: rotate(45deg);
     display: block;
-    transform: rotate(-90deg);
+    position: relative;
+    margin-right: 10px;
+
+    &::before {
+      content: "";
+      width: 2px;
+      height: 24px;
+      background-color: $text-black;
+      border: none;
+      padding: 0;
+      display: block;
+      transform: rotate(-90deg);
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .nav__button--closed {
-    display: none;
-  }
-
-  @media (min-width: $desktop-width) {
+.nav__button--closed {
+  @media (min-width: $tablet-width) {
     .nav__button--closed {
+      display: none;
+    }
+
+    @media (min-width: $desktop-width) {
       display: none;
     }
   }

@@ -11,7 +11,7 @@
 
 .main-form__title {
   @include title-text();
-  margin: 25px 20px 37px 20px;
+  margin: 27px 20px 37px 20px;
 
   @media (min-width: $tablet-width) {
     @include tablet-text-title;
@@ -41,7 +41,7 @@
 }
 
 .main-form__button-wrapper {
-  margin: 18px 20px 35px 20px;
+  margin: 16px 20px 34px 20px;
 
   @media (min-width: $tablet-width) {
     display: grid;

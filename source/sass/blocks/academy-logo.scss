@@ -18,3 +18,15 @@
     margin-right: 24px;
   }
 }
+
+.academy__link:active {
+  opacity: 0.3;
+}
+
+.academy__link:hover path {
+  fill: $basic-green;
+}
+
+.academy__link:active path {
+  opacity: 0.3;
+}

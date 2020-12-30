@@ -23,6 +23,8 @@
   text-transform: uppercase;
   color: $footer-black;
   padding: 14px 10px 10px 19px;
+  margin-top: 10px;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     width: 180px;
@@ -38,7 +40,7 @@
   font-size: 14px;
   line-height: 20px;
   color: $text-grey;
-  margin-top: 10px;
+  font-style: normal;
 
   @media (min-width: $tablet-width) {
     width: 180px;

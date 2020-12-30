@@ -3,7 +3,7 @@
   flex-direction: column;
   border: none;
   padding: 0;
-  margin: 15px 20px;
+  margin: 18px 0 0 18px;
 
   @media (min-width: $tablet-width) {
     margin: 15px 68px 34px 68px;
@@ -13,11 +13,23 @@
 .extra__title {
   @include form-title();
   margin-bottom: 40px;
+  position: relative;
+  width: 298px;
 
   @media (min-width: $tablet-width) {
     @include title-text;
     margin-bottom: 62px;
   }
+}
+
+.extra__title::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 14px;
+  display: block;
+  width: 134px;
+  border: 1px solid $basic-green;
 }
 
 .extra__label {
