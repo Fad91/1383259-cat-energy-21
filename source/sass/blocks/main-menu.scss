@@ -60,7 +60,7 @@
 
 .main-menu__link--active {
   @media (min-width: $tablet-width) {
-    padding-bottom: 7px;
+    padding-bottom: 4px;
     border-bottom: 2px solid $basic-green;
   }
 }

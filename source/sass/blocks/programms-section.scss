@@ -86,7 +86,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 28px;
+    padding-top: 38px;
     padding-left: 39px;
   }
 }
@@ -97,6 +97,10 @@
   @media (min-width: $tablet-width) {
     width: 342px;
     padding-top: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 450px;
   }
 }
 
@@ -123,7 +127,7 @@
     width: 100px;
     height: 106px;
     left: 28px;
-    top: 7px;
+    top: 4px;
   }
 }
 
@@ -174,10 +178,11 @@
   @media (min-width: $desktop-width) {
     @include tablet-text-content;
     margin-left: 51px;
-    margin-top: 67px;
+    margin-top: 68px;
     margin-bottom: 0;
     margin-right: 0;
     width: 475px;
+    border: none;
   }
 }
 
@@ -209,7 +214,7 @@
 .programms-section__link::after {
   content: "";
   position: absolute;
-  background-image: url("../../img/arrow-icon.svg");
+  background-image: url("../../img/icons/arrow-icon.svg");
   width: 24px;
   height: 12px;
   top: 5px;
@@ -219,6 +224,16 @@
     top: 9px;
     left: 131px;
   }
+
+  @media (min-width: $desktop-width) {
+    top: 11px;
+    left: 129px;
+  }
+}
+
+.programms-section__item:first-of-type .programms-section__link::after {
+  top: 11px;
+  left: 135px;
 }
 
 .programms-section__link:hover::after {

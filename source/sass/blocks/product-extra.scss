@@ -1,5 +1,7 @@
 .product-extra {
-  margin-bottom: 40px;
+  padding-top: 13px;
+  padding-bottom: 26px;
+  border-top: 1px solid $catalog-additional-border-grey;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 32px;
@@ -24,6 +26,7 @@
   color: $text-dark-grey;
   margin-bottom: 14px;
   position: relative;
+  margin-top: 0;
 
   @media (min-width: $tablet-width) {
     font-weight: 400;

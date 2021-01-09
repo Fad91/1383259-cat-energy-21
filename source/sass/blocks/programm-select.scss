@@ -12,14 +12,17 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
-    margin-top: 38px;
-    margin-left: 41px;
+    margin-top: 43px;
+    margin-left: 20px;
+    margin-right: 12px;
+    padding-bottom: 12px;
+    border: 1px solid $form-border-grey;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    width: 568px;
-    padding-top: 34px;
+    width: 540px;
+    padding-top: 24px;
   }
 }
 
@@ -29,40 +32,50 @@
   padding-left: 52px;
   position: relative;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 9px;
+    padding-left: 73px;
+  }
+
   @media (min-width: $desktop-width) {
-    padding-left: 102px;
+    // 1111111
   }
 }
 
-// .programm-select__label > .programm-select__input::before {
-// content: "";
-// background: url("../../img/radiobutton-icon.svg");
-// width: 30px;
-// height: 30px;
-// display: block;
-// position: absolute;
-// left: 7px;
-// top: 3px;
-// outline: 2px solid red;
-// }
-
-// .programm-select__label:disabled::before {
-// opacity: 0.3;
-// }
-
-.programm-select__radio {
+.programm-select__label > .programm-select__radio {
   appearance: none;
   position: absolute;
 }
 
-.programm-select__label-custom {
+.programm-select__label > span::before {
+  content: "";
+  display: block;
   width: 30px;
   height: 30px;
   background: url("../../img/radiobutton-icon.svg") no-repeat;
-  left: 1px;
-  top: 0;
+  position: absolute;
+  left: 7px;
+  top: 3px;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    left: 12px;
+    top: 3px;
+    background: url("../../img/radiobutton-icon-tablet.svg") no-repeat;
+  }
 }
 
-.programm-select__radio:checked {
-  background-image: url("../../img/radiobutton-active-icon.svg");
+.programm-select__label > .programm-select__radio:checked + span::before {
+  background: url("../../img/radiobutton-active-icon.svg") no-repeat;
+  display: block;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    left: 12px;
+    top: 3px;
+    background: url("../../img/radiobutton-active-icon-tablet.svg") no-repeat;
+  }
 }

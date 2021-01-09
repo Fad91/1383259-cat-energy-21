@@ -26,7 +26,10 @@
   @media (min-width: $desktop-width) {
     display: flex;
     align-items: baseline;
-    margin-top: 27px;
+    flex-direction: row;
+    margin-top: 33px;
+    grid-column: 1 / -1;
+    width: 100%;
   }
 }
 
@@ -36,7 +39,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 10px;
+    margin-right: 20px;
   }
 }
 
@@ -46,6 +49,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 21px 63px 21px 4px;
+    margin: 21px 60px 21px 0;
   }
 }

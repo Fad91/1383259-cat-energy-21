@@ -17,6 +17,12 @@
   @media (min-width: $tablet-width) {
     margin: 0 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    background: $basic-grey;
+    margin: 0;
+    padding: 0 105px 0 30px;
+  }
 }
 
 .example-section__title {
@@ -33,7 +39,7 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 0;
-    margin-left: 60px;
+    margin-left: 80px;
     padding-top: 0;
   }
 }
@@ -49,7 +55,7 @@
 
   @media (min-width: $desktop-width) {
     width: 435px;
-    margin-top: 144px;
-    margin-left: 60px;
+    margin-top: 145px;
+    margin-left: 80px;
   }
 }

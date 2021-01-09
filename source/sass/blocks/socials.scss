@@ -10,6 +10,10 @@
   margin: 10px 20px 15px 20px;
   height: 44px;
   list-style: none;
+
+  @media (min-width: $desktop-width) {
+    border: none;
+  }
 }
 
 .socials__item {

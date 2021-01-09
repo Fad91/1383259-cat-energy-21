@@ -11,7 +11,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 80px;
+    padding: 32px 78px 30px 90px;
   }
 }
 
@@ -21,4 +21,8 @@
   padding-bottom: 8px;
   border-bottom: 1px solid $contacts-grey;
   height: 45px;
+
+  @media (min-width: $desktop-width) {
+    border: none;
+  }
 }

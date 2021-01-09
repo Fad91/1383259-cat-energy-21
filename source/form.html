@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body page__body--nobackground">
@@ -58,16 +58,17 @@
         <fieldset class="programm-select">
           <legend class="visually-hidden">Выбор программы</legend>
           <label class="programm-select__label" for="slim">
-            <input class="programm-select__radio programm-select__radio--active" type="radio" name="slim" id="slim"
-              checked>
-            <span class="programm-select__label-custom">Похудение</span>
+            <input class="programm-select__radio" type="radio" name="programm" id="slim" checked>
+            <span>Похудение</span>
           </label>
           <label class="programm-select__label" for="gain">
-            <input class="visually-hidden programm-select__radio" type="radio" name="gain" id="gain">
-            Набор массы</label>
+            <input class="visually-hidden programm-select__radio" type="radio" name="programm" id="gain">
+            <span>Набор массы</span>
+          </label>
           <label class="programm-select__label" for="advise">
-            <input class="visually-hidden programm-select__radio" type="radio" name="advise" id="advise">
-            Не знаю (Нужен ваш совет)</label>
+            <input class="visually-hidden programm-select__radio" type="radio" name="programm" id="advise">
+            <span>Не знаю (Нужен ваш совет)</span>
+          </label>
         </fieldset>
       </div>
       <fieldset class="owner-contacts">
@@ -101,17 +102,21 @@
         <legend class="extra__title">Дополнительно</legend>
         <div class="extra__wrapper">
           <label class="extra__label" for="sweetener">
-            <input class="extra__checkbox visually-hidden" type="checkbox" name="sweetener" id="sweetener" checked>
-            Сахарозаменитель</label>
+            <input class="extra__checkbox" type="checkbox" name="sweetener" id="sweetener" checked>
+            <span>Сахарозаменитель</span>
+          </label>
           <label class="extra__label" for="water">
-            <input class="extra__checkbox visually-hidden" type="checkbox" name="water" id="water">
-            Питьевая вода</label>
+            <input class="extra__checkbox" type="checkbox" name="water" id="water">
+            <span>Питьевая вода</span>
+          </label>
           <label class="extra__label" for="milk">
-            <input class="extra__checkbox visually-hidden" type="checkbox" name="milk" id="milk">
-            Молоко</label>
+            <input class="extra__checkbox" type="checkbox" name="milk" id="milk">
+            <span>Молоко</span>
+          </label>
           <label class="extra__label" for="vitamins">
-            <input class="extra__checkbox visually-hidden" type="checkbox" name="vitamins" id="vitamins">
-            Витамины</label>
+            <input class="extra__checkbox" type="checkbox" name="vitamins" id="vitamins">
+            <span>Витамины</span>
+          </label>
         </div>
       </fieldset>
       <div class="main-form__button-wrapper">
@@ -126,6 +131,7 @@
       <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
     </div>
     <picture>
+      <source media="(min-width: 1440px)" srcset="img/map-image-desktop.png 1x, img/map-image-desktop@2x.png 2x">
       <source media="(min-width: 768px)" srcset="img/map-image-tablet.png 1x, img/map-image-tablet@2x.png 2x">
       <img src="img/map-image.png" alt="Местоположение Cat Energy" width="320" height="362" class="contacts__map">
     </picture>

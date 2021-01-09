@@ -5,15 +5,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body">
+
+
   <header class="page-header header">
     <nav class="nav">
       <div class="nav__logo">
         <a class="nav__link">
           <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-icon-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-icon-tablet.svg">
             <img src="img/logo-icon.svg" width="33" height="37" alt="Логотип Cat Energy">
           </picture>
@@ -43,7 +46,7 @@
       <h1 class="main-section__title">Функциональное <br> питание для котов</h1>
       <p class="main-section__content">Занялся собой? Займись котом!</p>
       <picture class="main-section__picture">
-        <source media="(min-width: 1440px)" srcset="img/can-desktop-image.png 1x">
+        <source media="(min-width: 1440px)" srcset="img/can-desktop-image.png 1x, img/can-desktop-image@2x.png 2x">
         <source media="(min-width: 768px)" srcset="img/can-tablet-image.png 1x, img/can-tablet-image@2x.png 2x">
         <img src="img/can-image.png" alt="Изображение товара" class="main-section__image" width="280" height="270">
       </picture>
@@ -130,7 +133,7 @@
         </picture>
         <button class="slider__button slider__button-before">Было</button>
         <div class="slider__range">
-          <div class="scale"></div>
+          <div class="slider__scale"></div>
         </div>
         <button class="slider__button slider__button-after">Стало</button>
       </div>

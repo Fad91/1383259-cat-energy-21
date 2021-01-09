@@ -5,7 +5,7 @@
   text-align: center;
   background: url("../../img/cat-background.jpg") 60% 0;
   background-repeat: no-repeat;
-  height: 480px;
+  height: 477px;
 
   &::after {
     content: "";
@@ -83,7 +83,8 @@
 .main-section__image {
   position: relative;
   z-index: 3;
-  margin-top: 15px;
+  margin-top: 16px;
+  height: 267px;
 
   @media (min-width: $tablet-width) {
     z-index: 0;
@@ -91,6 +92,12 @@
     width: 700px;
     margin-top: -35px;
     height: 610px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 14px;
+    width: 552px;
+    height: 499px;
   }
 }
 
@@ -123,6 +130,7 @@
   width: 280px;
   padding: 11px 0;
   margin: 0 auto;
+  height: 18px;
 
   @media (min-width: $tablet-width) {
     background-color: $basic-green;

@@ -14,6 +14,9 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 0;
+    width: 690px;
+    padding-right: 62px;
+    padding-left: 40px;
   }
 }
 
@@ -45,6 +48,10 @@
   @media (min-width: $tablet-width) {
     text-align: left;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 5px;
+  }
 }
 
 .slider__picture {
@@ -54,6 +61,11 @@
 
   @media (min-width: $tablet-width) {
     height: 559px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 551px;
+    margin-top: -74px;
   }
 }
 
@@ -85,12 +97,39 @@
   height: 12px;
   background-color: $text-white;
   margin: 22px 12px;
-  border: 1px solid $text-grey;
+  border: 1px solid $catalog-additional-border-grey;
   border-radius: 10px;
 
   @media (min-width: $tablet-width) {
     width: 428px;
     margin: 36px 15px;
+    height: 6px;
+    background-color: $slider-tablet-grey;
+    border: none;
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 35px 15px;
+  }
+}
+
+.slider__scale {
+  background-color: $basic-green;
+  width: 35px;
+  height: 6px;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-top: 3px;
+
+  @media (min-width: $tablet-width) {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 14px solid $text-white;
+    position: absolute;
+    top: -20px;
+    left: 214px;
   }
 }
 

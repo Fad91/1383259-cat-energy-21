@@ -3,7 +3,10 @@
   text-align: center;
 
   @media (min-width: $desktop-width) {
-    width: 245px;
+    width: 241px;
+    height: 430px;
+    margin-top: 90px;
+    border: 2px solid $basic-grey;
   }
 }
 
@@ -18,6 +21,13 @@
   padding-top: 80px;
   position: relative;
 
+  @media (min-width: $desktop-width) {
+    padding: 159px 32px 0 32px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+  }
+
   &::before {
     content: "";
     background: url("../../img/plus-icon.svg");
@@ -26,12 +36,28 @@
     position: absolute;
     top: 26px;
     left: 145px;
+
+    @media (min-width: $desktop-width) {
+      background: url("../../img/plus-icon-desktop.svg");
+      width: 60px;
+      height: 60px;
+      top: 50px;
+      left: 90px;
+      outline: 2px solid red;
+    }
   }
 }
 
 .product-last__content {
   @include arial-product-text();
   margin-top: 7px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 23px;
+    padding: 0 20px;
+  }
 }
 
 .product-last__show-link {
@@ -41,6 +67,11 @@
   display: block;
   padding: 10px 90px;
   margin: 21px 20px 0 20px;
+
+  @media (min-width: $desktop-width) {
+    margin: 87px 37px 20px 37px;
+    padding: 10px;
+  }
 }
 
 .product-last__show-link:hover {
