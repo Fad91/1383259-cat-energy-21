@@ -5,7 +5,7 @@
   text-align: center;
   background: url("../../img/cat-background.jpg") 60% 0;
   background-repeat: no-repeat;
-  height: 477px;
+  height: 479px;
 
   &::after {
     content: "";
@@ -56,7 +56,7 @@
     @include tablet-text-title;
     text-align: left;
     padding-top: 48px;
-    padding-bottom: 20px;
+    padding-bottom: 27px;
     padding-left: 0;
   }
 
@@ -72,6 +72,7 @@
   text-transform: uppercase;
   position: relative;
   z-index: 2;
+  margin-top: 15px;
 
   @media (min-width: $tablet-width) {
     font-weight: 400;
@@ -89,7 +90,7 @@
   @media (min-width: $tablet-width) {
     z-index: 0;
     text-align: center;
-    width: 700px;
+    width: 708px;
     margin-top: -35px;
     height: 610px;
   }
@@ -109,13 +110,14 @@
     width: 710px;
     height: 610px;
     order: 2;
-    margin-top: -47px;
-    margin-left: -82px;
+    margin-top: -49px;
+    margin-left: -88px;
   }
 
   @media (min-width: $desktop-width) {
     grid-row: 1;
     grid-column: 2;
+    margin-left: -82px;
   }
 }
 
@@ -152,7 +154,7 @@
     grid-column: 1;
     grid-row: 3;
     margin-left: 0;
-    margin-top: 30px;
+    margin-top: 35px;
   }
 }
 

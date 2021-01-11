@@ -4,7 +4,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  padding-top: 7px;
+  padding-top: 6px;
   text-transform: uppercase;
   grid-column: 1 / -1;
   background: none;
@@ -45,7 +45,8 @@
 
 .cost-item__expenses {
   @media (min-width: $tablet-width) {
-    margin-bottom: 0;
+    margin-bottom: 5px;
+    margin-top: 20px;
   }
 
   @media (min-width: $desktop-width) {

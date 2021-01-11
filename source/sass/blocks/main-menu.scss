@@ -8,7 +8,7 @@
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-    padding: 20px 2px 5px 20px;
+    padding: 20px 0 5px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -19,10 +19,10 @@
 .main-menu__item {
   text-align: center;
   border-bottom: 1px solid $border-grey;
-  padding: 23px 0 19px 0;
+  padding: 23px 0 18px 0;
 
   @media (min-width: $tablet-width) {
-    margin-left: 35px;
+    margin-left: 36px;
     border-bottom: none;
   }
 }
@@ -60,7 +60,7 @@
 
 .main-menu__link--active {
   @media (min-width: $tablet-width) {
-    padding-bottom: 4px;
+    padding-bottom: 6px;
     border-bottom: 2px solid $basic-green;
   }
 }

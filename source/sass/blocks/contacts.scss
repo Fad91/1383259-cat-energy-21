@@ -6,12 +6,17 @@
   background-color: $basic-grey;
 
   @media (min-width: $tablet-width) {
-    padding: 34px 55px 40px 55px;
+    padding: 36px 69px 47px;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
-    display: none;
+    width: 433px;
+    height: 131px;
+    position: absolute;
+    top: 95px;
+    left: 109px;
+    background-color: $text-white;
   }
 }
 
@@ -30,6 +35,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 22px;
+    padding: 14px 10px 0 0;
   }
 }
 
@@ -40,12 +46,15 @@
   line-height: 20px;
   color: $text-grey;
   font-style: normal;
+  margin-top: 7px;
 
   @media (min-width: $tablet-width) {
     width: 180px;
+    text-align: right;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
+    margin-top: 0;
   }
 }
 

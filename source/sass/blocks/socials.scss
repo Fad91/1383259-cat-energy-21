@@ -11,6 +11,10 @@
   height: 44px;
   list-style: none;
 
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+
   @media (min-width: $desktop-width) {
     border: none;
   }
@@ -21,15 +25,17 @@
   margin-right: 32px;
   height: 20px;
   text-align: center;
-
-  @media (min-width: $tablet-width) {
-    width: 30px;
-    height: 30px;
-  }
 }
 
 .socials__item:last-child {
   margin-right: 0;
+}
+
+.socials__link {
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .socials__link:hover path {
@@ -43,4 +49,11 @@
 .socials__link--facebook:hover path {
   stroke: $basic-green;
   fill: none;
+}
+
+.socials__link__vk-icon {
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 30px;
+  }
 }

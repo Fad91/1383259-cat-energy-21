@@ -28,7 +28,7 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
-      <ul class="nav__list main-menu main-menu--closed">
+      <ul class="nav__list main-menu">
         <li class="main-menu__item">
           <a class="main-menu__link main-menu__link--active">Главная</a>
         </li>
@@ -46,9 +46,14 @@
       <h1 class="main-section__title">Функциональное <br> питание для котов</h1>
       <p class="main-section__content">Занялся собой? Займись котом!</p>
       <picture class="main-section__picture">
+        <source type="image/webp" media="(min-width: 1440px)"
+        srcset="img/can-desktop-image.webp 1x, img/can-desktop-image@2x.webp 2x">
+      <source type="image/webp" media="(min-width: 768px)"
+        srcset="img/can-tablet-image.webp 1x, img/can-tablet-image@2x.webp 2x">
+      <source type="image/webp" srcset="img/can-image.webp 1x, img/can-image@2x.webp 2x">
         <source media="(min-width: 1440px)" srcset="img/can-desktop-image.png 1x, img/can-desktop-image@2x.png 2x">
         <source media="(min-width: 768px)" srcset="img/can-tablet-image.png 1x, img/can-tablet-image@2x.png 2x">
-        <img src="img/can-image.png" alt="Изображение товара" class="main-section__image" width="280" height="270">
+        <img src="img/can-image.png" srcset="img/can-image@2x.png 2x" alt="Изображение товара" class="main-section__image" width="280" height="270">
       </picture>
       <a href="#" class="main-section__link">Подобрать программу</a>
     </section>
@@ -120,15 +125,20 @@
       </div>
       <div class="slider">
         <picture class="slider__picture">
-          <source media="(min-width: 768px)" srcset="img/cat-before-image-big.png 1x, img/cat-before-image-big@2x.png 2x">
-          <source media="(min-width: 1440px)" srcset="img/cat-before-image-big.png 1x, img/cat-before-image-big.png@2x 2x">
-          <img class="slider__image-before" src="img/cat-before-image.png" alt="Фото кота до диеты" width="311"
+        <source type="image/webp" media="(min-width: 768px)"
+          srcset="img//cat-before-image-big.webp 1x, img/cat-before-image-big@2x.webp 2x">
+        <source type="image/webp" srcset="img/cat-before-image.webp 1x, img/cat-before-image@2x.webp 2x">
+          <source media="(min-width: 768px)"
+            srcset="img/cat-before-image-big.png 1x, img/cat-before-image-big@2x.png 2x">
+          <img src="img/cat-before-image.png" srcset="img/cat-before-image@2x.png 2x" class="slider__image-before"  alt="Фото кота до диеты" width="311"
             height="232">
         </picture>
         <picture class="slider__picture slider__picture-after">
+          <source type="image/webp" media="(min-width: 768px)"
+          srcset="img//cat-after-image-big.webp 1x, img/cat-after-image-big@2x.webp 2x">
+          <source type="image/webp" srcset="img/cat-after-image.webp 1x, img/cat-after-image@2x.webp 2x">
           <source media="(min-width: 768px)" srcset="img/cat-after-image-big.png 1x, img/cat-after-image-big@2x.png 2x">
-            <source media="(min-width: 1440px)" srcset="img/cat-after-image-big.png 1x, img/cat-after-image-big.png@2x 2x">
-          <img class="slider__image-after slider__image-after--closed" src="img/cat-after-image.png"
+          <img src="img/cat-after-image.png" srcset="img/cat-after-image@2x.png 2x" class="slider__image-after slider__image-after--closed"
             alt="Фото кота после диеты" width="251" height="240">
         </picture>
         <button class="slider__button slider__button-before">Было</button>
@@ -146,9 +156,15 @@
       <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
     </div>
     <picture>
+      <source type="image/webp" media="(min-width: 1440px)"
+        srcset="img/map-image-desktop.webp 1x, img/map-image-desktop@2x.webp 2x">
+      <source type="image/webp" media="(min-width: 768px)"
+        srcset="img/map-image-tablet.webp 1x, img/map-image-tablet@2x.webp 2x">
+      <source type="image/webp" srcset="img/map-image.webp 1x, img/map-image@2x.webp 2x">
       <source media="(min-width: 1440px)" srcset="img/map-image-desktop.png 1x, img/map-image-desktop@2x.png 2x">
       <source media="(min-width: 768px)" srcset="img/map-image-tablet.png 1x, img/map-image-tablet@2x.png 2x">
-      <img src="img/map-image.png" alt="Местоположение Cat Energy" width="320" height="362" class="contacts__map">
+      <img src="img/map-image.png" srcset="img/map-image@2x.png 2x" alt="Местоположение Cat Energy" width="320"
+        height="362" class="contacts__map">
     </picture>
     <div class="links-wrapper">
       <div class="links-wrapper__logo">
@@ -158,9 +174,8 @@
         <li class="socials__item">
           <a href="#" class="socials__link socials__link--vk">
             <span class="visually-hidden">Вконтакте</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="16" fill="none">
-              <path fill="#666"
-                d="M0 4l1-1h4l1 3a29 29 0 002 2V5 4H7V3l3-1h1l1 1 1 1v4h1a13 13 0 002-4l1-1h5v1l-1 2-1 2-1 1h-1l1 1 3 3v1l-1 1h-4l-1-1a182 182 0 01-3-1v1l-1 1h-2l-4-2-3-3a33 33 0 01-3-6zm13 5h-1V4 3H8l1 2v4H8L7 8 4 4H1l1 1 4 7 4 2h2v-1l1-1v-1h1l1 1 2 2h4v-1l-3-3V9 8l1-1 1-1 1-2h-3-1l-3 4-1 1z" />
+            <svg class="socials__link__vk-icon" xmlns="http://www.w3.org/2000/svg" width="23" height="16" fill="none">
+              <use xlink:href="#vk-icon" xmlns="http://www.w3.org/2000/svg"></use>
             </svg>
           </a>
         </li>
@@ -195,7 +210,7 @@
     </div>
 
   </footer>
-  <script src="js/app.js"></script>
+ <script src="js/script.min.js"></script>
 </body>
 
 </html>

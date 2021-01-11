@@ -20,12 +20,17 @@
   align-items: center;
   border-bottom: 1px solid $border-grey;
   margin-top: 11px;
-  padding: 0 20px 10px 20px;
+  padding: 0 20px 12px 20px;
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
-    padding-left: 0;
-    margin-top: 23px;
+    padding-left: 1px;
+    margin-top: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 26px;
+    padding: 0 0 7px 0;
   }
 }
 
@@ -43,6 +48,11 @@
   @media (min-width: $tablet-width) {
     width: 172px;
     height: 51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 60px;
   }
 }
 

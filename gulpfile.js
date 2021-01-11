@@ -14,15 +14,6 @@ const uglify = require("gulp-uglify");
 const htmlmin = require("gulp-htmlmin");
 const sync = require("browser-sync").create();
 
-// Task
-const pages = () => {
-  return gulp.src("source/*.html")
-    .pipe(minifyhtml())
-    .pipe(gulp.dest("source/html"))
-}
-
-exports.pages = pages;
-
 // Styles
 
 const styles = () => {
@@ -75,7 +66,7 @@ exports.createWebp = createWebp;
 // Sprite
 
 const sprite = () => {
-  return gulp.src("source/img/**/*.svg")
+  return gulp.src("source/img/icons/*.svg")
     .pipe(svgstore())
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"))
@@ -155,7 +146,8 @@ const reload = done => {
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-  gulp.watch("source/*.html").on("change", sync.reload);
+  gulp.watch("source/js/script.js", gulp.series(scripts));
+  gulp.watch("source/*.html", gulp.series(html, reload));
 }
 
 exports.default = gulp.series(
