@@ -1,4 +1,15 @@
 // Файл с миксинами
+@mixin mobile-blocks-width {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@mixin tablet-blocks-width {
+  width: 768px;
+  margin: 0 auto;
+}
+
+
 @mixin arial-text-section {
   font-family: "Arial", sans-serif;
   color: $text-grey;

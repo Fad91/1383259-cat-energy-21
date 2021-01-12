@@ -3,10 +3,9 @@
   display: flex;
   justify-content: baseline;
   align-items: center;
-  background-color: $basic-grey;
 
   @media (min-width: $tablet-width) {
-    padding: 36px 69px 47px;
+    padding: 36px 69px 50px;
     justify-content: space-between;
   }
 
@@ -27,8 +26,8 @@
   text-transform: uppercase;
   color: $footer-black;
   padding: 14px 10px 10px 19px;
-  margin-top: 16px;
-  margin-bottom: 22px;
+  margin-top: 15px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     width: 180px;
@@ -46,7 +45,6 @@
   line-height: 20px;
   color: $text-grey;
   font-style: normal;
-  margin-top: 7px;
 
   @media (min-width: $tablet-width) {
     width: 180px;

@@ -11,7 +11,7 @@
 <body class="page__body">
 
 
-  <header class="page-header header">
+  <header class="page__header header">
     <nav class="nav">
       <div class="nav__logo">
         <a class="nav__link">
@@ -41,23 +41,27 @@
       </ul>
     </nav>
   </header>
-  <main class="page-main">
+  <main class="page__main">
     <section class="main-section">
+      <div class="main-section__wrapper">
       <h1 class="main-section__title">Функциональное <br> питание для котов</h1>
       <p class="main-section__content">Занялся собой? Займись котом!</p>
       <picture class="main-section__picture">
         <source type="image/webp" media="(min-width: 1440px)"
-        srcset="img/can-desktop-image.webp 1x, img/can-desktop-image@2x.webp 2x">
-      <source type="image/webp" media="(min-width: 768px)"
-        srcset="img/can-tablet-image.webp 1x, img/can-tablet-image@2x.webp 2x">
-      <source type="image/webp" srcset="img/can-image.webp 1x, img/can-image@2x.webp 2x">
+          srcset="img/can-desktop-image.webp 1x, img/can-desktop-image@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)"
+          srcset="img/can-tablet-image.webp 1x, img/can-tablet-image@2x.webp 2x">
+        <source type="image/webp" srcset="img/can-image.webp 1x, img/can-image@2x.webp 2x">
         <source media="(min-width: 1440px)" srcset="img/can-desktop-image.png 1x, img/can-desktop-image@2x.png 2x">
         <source media="(min-width: 768px)" srcset="img/can-tablet-image.png 1x, img/can-tablet-image@2x.png 2x">
-        <img src="img/can-image.png" srcset="img/can-image@2x.png 2x" alt="Изображение товара" class="main-section__image" width="280" height="270">
+        <img src="img/can-image.png" srcset="img/can-image@2x.png 2x" alt="Изображение товара"
+          class="main-section__image" width="280" height="270">
       </picture>
       <a href="#" class="main-section__link">Подобрать программу</a>
+    </div>
     </section>
     <section class="programms-section">
+      <div class="programms-section__wrapper">
       <h2 class="visually-hidden">Наши программы</h2>
       <ul class="programms-section__list">
         <li class="programms-section__item">
@@ -77,8 +81,10 @@
           <a href="#" class="programms-section__link">Каталог Pro</a>
         </li>
       </ul>
+    </div>
     </section>
     <section class="description-section">
+      <div class="description-section__wrapper">
       <h2 class="description-section__title">Как это работает</h2>
       <ul class="description-section__list">
         <li class="description-section__item">
@@ -99,6 +105,7 @@
           </p>
         </li>
       </ul>
+    </div>
     </section>
     <section class="example-section">
       <div class="example-section__wrapper">
@@ -125,21 +132,22 @@
       </div>
       <div class="slider">
         <picture class="slider__picture">
-        <source type="image/webp" media="(min-width: 768px)"
-          srcset="img//cat-before-image-big.webp 1x, img/cat-before-image-big@2x.webp 2x">
-        <source type="image/webp" srcset="img/cat-before-image.webp 1x, img/cat-before-image@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img//cat-before-image-big.webp 1x, img/cat-before-image-big@2x.webp 2x">
+          <source type="image/webp" srcset="img/cat-before-image.webp 1x, img/cat-before-image@2x.webp 2x">
           <source media="(min-width: 768px)"
             srcset="img/cat-before-image-big.png 1x, img/cat-before-image-big@2x.png 2x">
-          <img src="img/cat-before-image.png" srcset="img/cat-before-image@2x.png 2x" class="slider__image-before"  alt="Фото кота до диеты" width="311"
-            height="232">
+          <img src="img/cat-before-image.png" srcset="img/cat-before-image@2x.png 2x" class="slider__image-before"
+            alt="Фото кота до диеты" width="311" height="232">
         </picture>
         <picture class="slider__picture slider__picture-after">
           <source type="image/webp" media="(min-width: 768px)"
-          srcset="img//cat-after-image-big.webp 1x, img/cat-after-image-big@2x.webp 2x">
+            srcset="img//cat-after-image-big.webp 1x, img/cat-after-image-big@2x.webp 2x">
           <source type="image/webp" srcset="img/cat-after-image.webp 1x, img/cat-after-image@2x.webp 2x">
           <source media="(min-width: 768px)" srcset="img/cat-after-image-big.png 1x, img/cat-after-image-big@2x.png 2x">
-          <img src="img/cat-after-image.png" srcset="img/cat-after-image@2x.png 2x" class="slider__image-after slider__image-after--closed"
-            alt="Фото кота после диеты" width="251" height="240">
+          <img src="img/cat-after-image.png" srcset="img/cat-after-image@2x.png 2x"
+            class="slider__image-after slider__image-after--closed" alt="Фото кота после диеты" width="251"
+            height="240">
         </picture>
         <button class="slider__button slider__button-before">Было</button>
         <div class="slider__range">
@@ -150,7 +158,8 @@
     </section>
 
   </main>
-  <footer class="page-footer">
+  <footer class="page__footer footer">
+    <div class="footer__wrapper">
     <div class="contacts">
       <h3 class="contacts__title">приглашаем к&nbsp;сотрудничеству дилеров!</h3>
       <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
@@ -174,32 +183,30 @@
         <li class="socials__item">
           <a href="#" class="socials__link socials__link--vk">
             <span class="visually-hidden">Вконтакте</span>
-            <svg class="socials__link__vk-icon" xmlns="http://www.w3.org/2000/svg" width="23" height="16" fill="none">
-              <use xlink:href="#vk-icon" xmlns="http://www.w3.org/2000/svg"></use>
+            <svg class="socials__svg socials__svg--vk-icon" xmlns="http://www.w3.org/2000/svg" width="23" height="16" fill="none">
+              <use xlink:href="img/sprite.svg#vk-icon"></use>
             </svg>
           </a>
         </li>
         <li class="socials__item">
           <a href="#" class="socials__link socials__link--instagram">
             <span class="visually-hidden">Instagram</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none">
-              <path fill="#666"
-                d="M8 0a92 92 0 015 0 4 4 0 012 3l1 2a92 92 0 01-1 8 4 4 0 01-2 2l-2 1a92 92 0 01-8-1 4 4 0 01-3-2v-2a92 92 0 010-8 4 4 0 013-3h5zm0 1a99 99 0 00-5 0L1 3v2a99 99 0 000 8l2 2h2a99 99 0 008 0l2-2v-2a99 99 0 000-8l-2-2h-2-3zm0 10l2-1 1-2-1-2-2-1-2 1-1 2 1 2 2 1zm0-7l3 1 1 3-1 3-3 1-3-1-1-3 1-3 3-1zm5 0l-1 1V4h-1a1 1 0 011-1h1v1z" />
+            <svg class="socials__svg socials__svg--instagram-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none">
+              <use xlink:href="img/sprite.svg#instagram-icon"></use>
             </svg>
           </a>
         </li>
         <li class="socials__item">
           <a href="#" class="socials__link socials__link--facebook">
             <span class="visually-hidden">Facebook</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none">
-              <path stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.1"
-                d="M17 2h-3l-3 1-2 3v3H6v4h3v7h4v-7h3l1-4h-4V6s0 0 0 0l1-1h3V2z" />
+            <svg class="socials__svg socials__svg--facebook-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none">
+              <use xlink:href="img/sprite.svg#facebook-icon"></use>
             </svg>
           </a>
         </li>
       </ul>
       <div class="academy-logo">
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="academy__link">HTML Academy</a>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="academy__link-text">HTML Academy</a>
         <a href="https://htmlacademy.ru/intensive/adaptive" class="academy__link">
           <svg xmlns="http://www.w3.org/2000/svg" width="27" height="34" fill="none">
             <path fill="#666"
@@ -208,9 +215,9 @@
         </a>
       </div>
     </div>
-
+  </div>
   </footer>
- <script src="js/script.min.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

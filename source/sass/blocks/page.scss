@@ -8,16 +8,6 @@
 .page__body {
   margin: 0;
 
-  @media (min-width: $mobile-width) {
-    width: 320px;
-    margin: 0 auto;
-  }
-
-  @media (min-width: $tablet-width) {
-    width: 768px;
-    margin: 0 auto;
-  }
-
   @media (min-width: $desktop-width) {
     width: 1440px;
     margin: 0 auto;

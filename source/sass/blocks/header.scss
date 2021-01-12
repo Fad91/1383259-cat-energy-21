@@ -1,11 +1,6 @@
 // Блок хэдера
 .header {
-  width: 320px;
-
-  @media (min-width: $tablet-width) {
-    width: 768px;
-    margin: 0;
-  }
+  width: 100%;
 
   @media (min-width: $desktop-width) {
     width: 1440px;

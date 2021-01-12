@@ -1,24 +1,29 @@
 // Блок секции с программами
 .programms-section {
-  margin-top: 23px;
-
-  @media (min-width: $tablet-width) {
-    margin: 0 30px;
-  }
 
   @media (min-width: $desktop-width) {
     margin: 0 110px;
   }
 }
 
+.programms-section__wrapper {
+
+  @include mobile-blocks-width;
+
+  @media (min-width: $tablet-width) {
+
+    @include tablet-blocks-width;
+  }
+}
+
 .programms-section__list {
   padding: 0 20px;
-  margin-bottom: 29px;
+  margin-top: 23px;
+  margin-bottom: 27px;
   list-style: none;
 
   @media (min-width: $tablet-width) {
-    width: 100%;
-    margin-top: 0;
+    margin: 0 30px;
     padding: 0;
   }
 

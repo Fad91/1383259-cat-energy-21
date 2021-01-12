@@ -6,11 +6,11 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    margin: 25px 7px;
+    margin: 22px 30px;
   }
 }
 
-.academy__link {
+.academy__link-text {
   @include arial-text-section;
   font-size: 16px;
 
@@ -19,7 +19,8 @@
   }
 }
 
-.academy__link:active {
+.academy__link:active,
+.academy__link-text:active {
   opacity: 0.3;
 }
 

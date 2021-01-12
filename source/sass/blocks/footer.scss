@@ -1,0 +1,10 @@
+// Блок футера
+.footer__wrapper {
+
+ @include mobile-blocks-width;
+
+ @media (min-width: $tablet-width) {
+
+  @include tablet-blocks-width;
+ }
+}

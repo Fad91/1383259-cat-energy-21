@@ -3,8 +3,6 @@
   position: relative;
   color: $text-white;
   text-align: center;
-  background: url("../../img/cat-background.jpg") 60% 0;
-  background-repeat: no-repeat;
   height: 479px;
 
   &::after {
@@ -21,10 +19,7 @@
     background: none;
     color: $text-black;
     text-align: left;
-    padding-left: 117px;
     height: 858px;
-    display: flex;
-    flex-direction: column;
 
     &::after {
       width: 0;
@@ -42,6 +37,21 @@
   }
 }
 
+.main-section__wrapper {
+  @include mobile-blocks-width;
+  background: url("../../img/cat-background.jpg") 60% 0;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+
+    @include tablet-blocks-width;
+    background: none;
+    display: flex;
+    flex-direction: column;
+
+  }
+}
+
 .main-section__title {
   font-weight: 400;
   font-size: 36px;
@@ -55,9 +65,9 @@
   @media (min-width: $tablet-width) {
     @include tablet-text-title;
     text-align: left;
-    padding-top: 48px;
+    padding-top: 49px;
     padding-bottom: 27px;
-    padding-left: 0;
+    padding-left: 117px;
   }
 
   @media (min-width: $desktop-width) {
@@ -78,6 +88,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 20px;
+    margin: 14px 118px;
   }
 }
 
@@ -86,12 +97,14 @@
   z-index: 3;
   margin-top: 16px;
   height: 267px;
+  order: 2;
 
   @media (min-width: $tablet-width) {
     z-index: 0;
     text-align: center;
     width: 708px;
-    margin-top: -35px;
+    margin-left: 30px;
+    margin-top: -83px;
     height: 610px;
   }
 
@@ -106,13 +119,11 @@
   width: 100%;
   height: auto;
 
-  @media (min-width: $tablet-width) {
-    width: 710px;
-    height: 610px;
-    order: 2;
-    margin-top: -49px;
-    margin-left: -88px;
-  }
+   @media (min-width: $tablet-width) {
+     width: 710px;
+     height: 610px;
+     order: 2;
+   }
 
   @media (min-width: $desktop-width) {
     grid-row: 1;
@@ -141,8 +152,8 @@
     width: 244px;
     height: 20px;
     text-align: center;
-    margin-top: 29px;
-    margin-left: -6px;
+    margin-top: 35px;
+    margin-left: 112px;
     padding: 17px 0;
     font-weight: 400;
     font-size: 20px;

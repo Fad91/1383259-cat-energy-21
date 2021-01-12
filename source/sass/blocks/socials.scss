@@ -13,6 +13,11 @@
 
   @media (min-width: $tablet-width) {
     border: none;
+    margin: 0;
+    padding-bottom: 20px;
+    margin-left: 47px;
+    margin-right: 17px;
+    justify-content: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -25,35 +30,46 @@
   margin-right: 32px;
   height: 20px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: auto;
+    margin-left: 19px;
+    margin-right: 0;
+  }
+}
+
+.socials__item:first-child {
+  margin-left: 0;
 }
 
 .socials__item:last-child {
   margin-right: 0;
 }
 
-.socials__link {
-  @media (min-width: $tablet-width) {
-    width: 30px;
-    height: 30px;
-  }
+.socials__svg:hover {
+  stroke: $basic-green;
 }
 
-.socials__link:hover path {
+.socials__svg--facebook-icon:hover {
   fill: $basic-green;
 }
 
-.socials__link:active path {
-  opacity: 0.3;
-}
-
-.socials__link--facebook:hover path {
-  stroke: $basic-green;
-  fill: none;
-}
-
-.socials__link__vk-icon {
+.socials__svg {
   @media (min-width: $tablet-width) {
     width: 30px;
     height: 30px;
   }
+}
+
+.socials__svg--vk-icon {
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.socials__svg--instagram-icon {
+  width: 23px;
+  height: 23px;
 }
