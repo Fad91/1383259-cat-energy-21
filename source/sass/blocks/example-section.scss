@@ -1,9 +1,21 @@
 .example-section {
-  padding: 0 20px;
+  margin-top: 43px;
   background-color: $background-grey;
+
+  @media (min-width: $tablet-width) {
+    background: none;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;
+  }
+}
+
+.example-section__wrapper {
+  margin: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px;
   }
 }
 
@@ -11,10 +23,18 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  padding-top: 30px;
+  padding-top: 31px;
 
   @media (min-width: $tablet-width) {
     @include tablet-text-title;
+    padding-top: 40px;
+    margin-top: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    margin-left: 60px;
+    padding-top: 0;
   }
 }
 
@@ -24,5 +44,12 @@
 
   @media (min-width: $tablet-width) {
     @include tablet-text-content;
+    margin-top: 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 435px;
+    margin-top: 144px;
+    margin-left: 60px;
   }
 }

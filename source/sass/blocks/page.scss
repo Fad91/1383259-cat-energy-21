@@ -1,33 +1,34 @@
 .page {
   font-family: "Oswald", "Arial", sans-serif;
   color: $text-black;
-  outline: 1px solid tomato;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .page__body {
-  margin: 0 auto;
+  margin: 0;
 
   @media (min-width: $mobile-width) {
-    width: 280px;
+    width: 320px;
+    margin: 0 auto;
   }
 
   @media (min-width: $tablet-width) {
-    width: 708px;
+    width: 768px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
+    width: 1440px;
+    margin: 0 auto;
+    background-image: url("../../img/cat-background-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: 806px -8px;
+    background-size: 720px 709px;
+    z-index: 2;
   }
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0);
+.page__body--nobackground {
+  background: none;
 }

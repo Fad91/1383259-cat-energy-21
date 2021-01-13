@@ -1,7 +1,20 @@
 // Блок слайдера
 .slider {
   background-color: $background-grey;
-  padding-bottom: 25px;
+  padding-bottom: 10px;
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr min-content;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 40px;
+    background-color: $background-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
 }
 
 .slider__button {
@@ -12,4 +25,79 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  margin: 17px 0 24px 15px;
+  text-align: right;
+  background-color: inherit;
+
+  @media (min-width: $tablet-width) {
+    text-align: right;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 21px 0 25px 15px;
+  }
+}
+
+.slider__button-after {
+  text-align: left;
+  margin-left: 0;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+}
+
+.slider__picture {
+  grid-column: 1/-1;
+  grid-row: 1;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    height: 559px;
+  }
+}
+
+.slider__image-before {
+  grid-row: 1;
+  width: 311px;
+  height: 240px;
+
+  @media (min-width: $tablet-width) {
+    width: 677px;
+    height: 520px;
+    padding-top: 22px;
+  }
+}
+
+.slider__image-after {
+  width: 251px;
+  height: 240px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 545px;
+    height: 520px;
+  }
+}
+
+.slider__range {
+  width: 82px;
+  height: 12px;
+  background-color: $text-white;
+  margin: 22px 12px;
+  border: 1px solid $text-grey;
+  border-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 428px;
+    margin: 36px 15px;
+  }
+}
+
+.slider__image-before--closed {
+  display: none;
+}
+
+.slider__image-after--closed {
+  display: none;
 }

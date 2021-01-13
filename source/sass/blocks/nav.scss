@@ -1,16 +1,58 @@
 .nav {
   @media (min-width: $tablet-width) {
-    width: 100%;
+    width: 708px;
     display: flex;
     justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    padding: 0 110px;
+    justify-content: space-between;
+    margin-top: 28px;
   }
 }
 
 .nav__logo {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid $border-grey;
+  margin-top: 11px;
+  padding: 0 20px 10px 20px;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+    padding-left: 0;
+    margin-top: 23px;
+  }
+}
+
+.nav__link:hover {
+  @media (min-width: $tablet-width) {
+    opacity: 0.8;
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+}
+
+.nav__link img {
+  @media (min-width: $tablet-width) {
+    width: 172px;
+    height: 51px;
+  }
+}
+
+.nav__link:last-of-type {
+  padding-right: 11px;
+  padding-top: 7px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .nav__button {
@@ -21,14 +63,13 @@
   cursor: pointer;
   position: relative;
 
-
   &::before {
     content: "";
     width: 24px;
     height: 2px;
     background-color: black;
     position: absolute;
-    top: 6px;
+    top: -6px;
     right: 0;
   }
 
@@ -38,13 +79,52 @@
     height: 2px;
     background-color: black;
     position: absolute;
-    top: 12px;
+    top: 6px;
     right: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .nav__button--closed {
+.nav__button--open {
+  @media (max-width: $mobile-width-only) {
+    width: 2px;
+    height: 24px;
+    background-color: $text-black;
+    border: none;
+    padding: 0;
+    transform: rotate(45deg);
+    display: block;
+    position: relative;
+    margin-right: 10px;
+
+    &::before {
+      content: "";
+      width: 2px;
+      height: 24px;
+      background-color: $text-black;
+      border: none;
+      padding: 0;
+      display: block;
+      transform: rotate(-90deg);
+    }
+  }
+
+  @media (min-width: $tablet-width) {
     display: none;
+  }
+}
+
+.nav__button--closed {
+  @media (min-width: $tablet-width) {
+    .nav__button--closed {
+      display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
   }
 }

@@ -1,7 +1,51 @@
 .cost-item {
+  display: flex;
+  justify-content: center;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  padding-top: 7px;
   text-transform: uppercase;
   grid-column: 1 / -1;
+  background: none;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    width: 184px;
+    text-align: right;
+    background: none;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: baseline;
+    margin-top: 27px;
+  }
+}
+
+.cost-item__price-content {
+  @media (min-width: $tablet-width) {
+    margin-top: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 10px;
+  }
+}
+
+.cost-item__expenses {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 21px 63px 21px 4px;
+  }
 }

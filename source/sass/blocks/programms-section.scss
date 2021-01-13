@@ -1,33 +1,156 @@
 // Блок секции с программами
+.programms-section {
+  margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 110px;
+  }
+}
+
 .programms-section__list {
-  padding: 0;
+  padding: 0 20px;
+  margin-bottom: 30px;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin-top: 0;
+    padding: 0;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-bottom: 40px;
   }
 }
 
 .programms-section__item {
   background-color: $basic-grey;
-  padding-bottom: 18px;
+  padding-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding: 40px 10px 0 40px;
+    margin-bottom: 30px;
+    min-height: 332px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    min-height: 375px;
+    padding: 0;
+  }
 }
 
 .programms-section__title {
+  position: relative;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
   text-align: center;
   padding-top: 30px;
+  padding-left: 12px;
 
   @media (min-width: $tablet-width) {
     text-align: left;
-    padding-left: 53px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    padding-top: 2px;
+    margin-bottom: 20px;
   }
 
   @media (min-width: $desktop-width) {
     @include title-text;
+
+    text-align: center;
+    padding: 0;
+    padding-top: 42px;
+    margin-left: 24px;
+  }
+}
+
+.programms-section__item:last-child .programms-section__title {
+  padding-top: 28px;
+  padding-left: 39px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-left: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 28px;
+    padding-left: 39px;
+  }
+}
+
+.programms-section__item:last-child .programms-section__content {
+  padding-top: 5px;
+
+  @media (min-width: $tablet-width) {
+    width: 342px;
+    padding-top: 7px;
+  }
+}
+
+.programms-section__item:first-child .programms-section__title::before {
+  content: "";
+  background-image: url("../../img/slim-cat-icon.svg");
+  position: absolute;
+  width: 50px;
+  height: 52px;
+  top: 15px;
+  left: 23px;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 211px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 406px;
+    top: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 106px;
+    left: 28px;
+    top: 7px;
+  }
+}
+
+.programms-section__item:last-child .programms-section__title::before {
+  content: "";
+  background-image: url("../../img/mass-cat-icon.svg");
+  position: absolute;
+  width: 67px;
+  height: 50px;
+  top: 19px;
+  left: 12px;
+
+  @media (min-width: $tablet-width) {
+    width: 268px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 370px;
+    top: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    height: 100px;
+    left: 7px;
+    top: 10px;
   }
 }
 
@@ -35,16 +158,26 @@
   @include arial-text-section;
   margin-left: 20px;
   margin-right: 33px;
-  padding-bottom: 23px;
+  padding-bottom: 25px;
+  padding-top: 6px;
   border-bottom: 1px solid $border-grey;
 
   @media (min-width: $tablet-width) {
-    padding-left: 32px;
-    width: 370px;
+    width: 380px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 15px;
+    margin-bottom: 25px;
   }
 
   @media (min-width: $desktop-width) {
     @include tablet-text-content;
+    margin-left: 51px;
+    margin-top: 67px;
+    margin-bottom: 0;
+    margin-right: 0;
+    width: 475px;
   }
 }
 
@@ -54,9 +187,41 @@
   line-height: 16px;
   color: $text-black;
   text-transform: uppercase;
-  margin-left: 20px;
+  margin-left: 18px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
+    margin-left: 12px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
     margin-left: 52px;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.programms-section__link::after {
+  content: "";
+  position: absolute;
+  background-image: url("../../img/arrow-icon.svg");
+  width: 24px;
+  height: 12px;
+  top: 5px;
+  left: 100px;
+
+  @media (min-width: $tablet-width) {
+    top: 9px;
+    left: 131px;
+  }
+}
+
+.programms-section__link:hover::after {
+  width: 32px;
+  height: 12px;
 }

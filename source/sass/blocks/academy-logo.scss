@@ -1,4 +1,32 @@
 // Блок для лого академии
 .academy-logo {
-  width: 163px;
+  margin: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 25px 7px;
+  }
+}
+
+.academy__link {
+  @include arial-text-section;
+  font-size: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 24px;
+  }
+}
+
+.academy__link:active {
+  opacity: 0.3;
+}
+
+.academy__link:hover path {
+  fill: $basic-green;
+}
+
+.academy__link:active path {
+  opacity: 0.3;
 }

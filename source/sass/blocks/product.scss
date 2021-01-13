@@ -1,7 +1,42 @@
 // Блок товара
+
 .product {
+  display: grid;
+  grid-template-rows: 1fr min-content;
+  grid-template-columns: 1fr 1fr;
   border-top: 1px solid $catalog-border-grey;
-  padding-top: 10px;
+  margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    min-height: 511px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 60px;
+    margin-bottom: 50px;
+    background-color: $basic-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    margin-right: 80px;
+  }
+}
+
+.product:nth-child(2n) {
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 80px;
+  }
+}
+
+.product:nth-child(4n) {
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
 }
 
 .product__title {
@@ -9,12 +44,99 @@
   font-size: 16px;
   line-height: 20px;
   color: $text-dark-grey;
+  grid-row: 1 / 2;
+  grid-column: 2 / -1;
+  padding: 0 61px 0 0;
+  margin: 20px 0;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 0;
+    padding: 0;
+    text-align: center;
+  }
 }
 
 .product__content {
+  display: flex;
+  justify-content: space-between;
+  grid-column: 2 / -1;
+  grid-row: 1 / 2;
+  margin: 0;
+
   @include arial-product-text();
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 17px;
+  }
 }
 
 .product__link {
   @include product-link();
+  grid-row: 3;
+  grid-column: 1 / -1;
+  margin: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 38px;
+    padding: 10px 94px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 37px;
+    padding: 10px 58px;
+  }
+}
+
+.product__link:hover {
+  background-color: $hover-link-green;
+
+  &:active {
+    color: $hover-link-white;
+  }
+}
+
+.product__picture {
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    margin-bottom: 22px;
+    margin-top: 35px;
+  }
+}
+
+.product__image {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  margin-top: 20px;
+  margin-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 168px;
+    height: auto;
+  }
+}
+
+.wrapper {
+  grid-column: 2 / -1;
+  grid-row: 1 / 2;
+  margin-right: 20px;
+
+  @include arial-product-text();
+  margin-top: 74px;
+  margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 31px 39px;
+    padding: 0;
+  }
 }
