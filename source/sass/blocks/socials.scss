@@ -27,7 +27,7 @@
 
 .socials__item {
   width: 23px;
-  margin-right: 32px;
+  margin-right: 31px;
   height: 20px;
   text-align: center;
 
@@ -70,6 +70,13 @@
 }
 
 .socials__svg--instagram-icon {
-  width: 23px;
-  height: 23px;
+  margin-top: 5px;
+  width: 16px;
+  height: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 23px;
+    margin-top: 4px;
+  }
 }

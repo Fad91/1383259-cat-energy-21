@@ -9,6 +9,11 @@
   margin: 0 auto;
 }
 
+@mixin desktop-blocks-width {
+  width: 1440px;
+  margin: 0 auto;
+}
+
 
 @mixin arial-text-section {
   font-family: "Arial", sans-serif;

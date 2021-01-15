@@ -1,17 +1,14 @@
 // Блок описания секции "Как это работает"
-.description-section {
-
-  @media (min-width: $desktop-width) {
-    margin: 0 110px;
-  }
-}
 
 .description-section__wrapper {
   @include mobile-blocks-width;
 
   @media (min-width: $tablet-width) {
-
     @include tablet-blocks-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include desktop-blocks-width;
   }
 }
 
@@ -30,6 +27,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    margin: 57px 111px 0;
   }
 }
 
@@ -154,6 +152,10 @@
     @include tablet-text-title;
     text-align: left;
     margin: 46px 30px 35px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 41px 110px 35px;
   }
 }
 

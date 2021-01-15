@@ -16,7 +16,7 @@
     padding: 0;
     margin-top: 48px;
     column-gap: 5px;
-    margin-left: 39px;
+    margin-left: 69px;
   }
 }
 
@@ -31,7 +31,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 7px 0 33px;
+    margin: 0 4px 0 34px;
   }
 }
 
@@ -157,7 +157,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 0;
+    margin-left: -7px;
     margin-top: 11px;
   }
 }

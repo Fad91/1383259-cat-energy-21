@@ -79,3 +79,11 @@
     background: url("../../img/radiobutton-active-icon-tablet.svg") no-repeat;
   }
 }
+
+.programm-select__label > .programm-select__radio:disabled + span {
+  opacity: 0.3;
+}
+
+.programm-select__label > .programm-select__radio:checked:disabled + span {
+  opacity: 0.3;
+}

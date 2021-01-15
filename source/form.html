@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body class="page__body page__body--nobackground">
-  <header class="page-header header">
+<body class="page__body">
+  <header class="page-header header header--nobackground">
     <nav class="nav">
       <div class="nav__logo">
         <a href="index.html" class="nav__link">
@@ -34,13 +34,14 @@
           <a href="catalog.html" class="main-menu__link main-menu__link--nobackground">Каталог продукции</a>
         </li>
         <li class="main-menu__item">
-          <a class="main-menu__link main-menu__link--active main-menu__link--nobackground">Подбор программы</a>
+          <a class="main-menu__link main-menu__link--nobackground main-menu__link--nobackground--active">Подбор программы</a>
         </li>
       </ul>
     </nav>
   </header>
   <main class="page-main">
     <form class="main-form" action="https://echo.htmlacademy.ru/" method="get">
+      <div class="main-form__wrapper">
       <h1 class="main-form__title">Подбор программы</h1>
       <p class="main-form__content">Заполните анкету,&nbsp;и мы подберем <br>программу питания для вашего кота</p>
       <div class="form-wrapper-desktop">
@@ -124,59 +125,62 @@
         <button class="main-form__button" type="submit">Отправить заявку</button>
         <small class="main-form__note note">* <sup>__</sup> Обязательные поля</small>
       </div>
+    </div>
     </form>
   </main>
-  <footer class="page-footer">
+  <footer class="page__footer footer">
+    <div class="footer__wrapper">
     <div class="contacts">
       <h3 class="contacts__title">приглашаем к&nbsp;сотрудничеству дилеров!</h3>
-      <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span>
+      </address>
     </div>
     <picture>
       <source type="image/webp" media="(min-width: 1440px)"
         srcset="img/map-image-desktop.webp 1x, img/map-image-desktop@2x.webp 2x">
       <source type="image/webp" media="(min-width: 768px)"
         srcset="img/map-image-tablet.webp 1x, img/map-image-tablet@2x.webp 2x">
-      <source type="image/webp" srcset="img/map-image.png.webp 1x, img/map-image@2x.webp 2x">
+      <source type="image/webp" srcset="img/map-image.webp 1x, img/map-image@2x.webp 2x">
       <source media="(min-width: 1440px)" srcset="img/map-image-desktop.png 1x, img/map-image-desktop@2x.png 2x">
       <source media="(min-width: 768px)" srcset="img/map-image-tablet.png 1x, img/map-image-tablet@2x.png 2x">
       <img src="img/map-image.png" srcset="img/map-image@2x.png 2x" alt="Местоположение Cat Energy" width="320"
         height="362" class="contacts__map">
     </picture>
+    <iframe class="contacts__map contacts__map--hidden"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002735!2d30.320858715590237!3d59.938719169054785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1610655737500!5m2!1sru!2sru">
+      </iframe>
     <div class="links-wrapper">
       <div class="links-wrapper__logo">
         <img src="img/logo-words.svg" width="128" height="24" alt="Логотип Cat Energy">
       </div>
       <ul class="socials">
         <li class="socials__item">
-          <a href="" class="socials__link socials__link--vk">
+          <a href="#" class="socials__link socials__link--vk">
             <span class="visually-hidden">Вконтакте</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="16" fill="none">
-              <path fill="#666"
-                d="M0 4l1-1h4l1 3a29 29 0 002 2V5 4H7V3l3-1h1l1 1 1 1v4h1a13 13 0 002-4l1-1h5v1l-1 2-1 2-1 1h-1l1 1 3 3v1l-1 1h-4l-1-1a182 182 0 01-3-1v1l-1 1h-2l-4-2-3-3a33 33 0 01-3-6zm13 5h-1V4 3H8l1 2v4H8L7 8 4 4H1l1 1 4 7 4 2h2v-1l1-1v-1h1l1 1 2 2h4v-1l-3-3V9 8l1-1 1-1 1-2h-3-1l-3 4-1 1z" />
+            <svg class="socials__svg socials__svg--vk-icon" xmlns="http://www.w3.org/2000/svg" width="23" height="16" fill="none">
+              <use xlink:href="img/sprite.svg#vk-icon"></use>
             </svg>
           </a>
         </li>
         <li class="socials__item">
-          <a href="" class="socials__link socials__link--instagram">
+          <a href="#" class="socials__link socials__link--instagram">
             <span class="visually-hidden">Instagram</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none">
-              <path fill="#666"
-                d="M8 0a92 92 0 015 0 4 4 0 012 3l1 2a92 92 0 01-1 8 4 4 0 01-2 2l-2 1a92 92 0 01-8-1 4 4 0 01-3-2v-2a92 92 0 010-8 4 4 0 013-3h5zm0 1a99 99 0 00-5 0L1 3v2a99 99 0 000 8l2 2h2a99 99 0 008 0l2-2v-2a99 99 0 000-8l-2-2h-2-3zm0 10l2-1 1-2-1-2-2-1-2 1-1 2 1 2 2 1zm0-7l3 1 1 3-1 3-3 1-3-1-1-3 1-3 3-1zm5 0l-1 1V4h-1a1 1 0 011-1h1v1z" />
+            <svg class="socials__svg socials__svg--instagram-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none">
+              <use xlink:href="img/sprite.svg#instagram-icon"></use>
             </svg>
           </a>
         </li>
         <li class="socials__item">
-          <a href="" class="socials__link socials__link--facebook">
+          <a href="#" class="socials__link socials__link--facebook">
             <span class="visually-hidden">Facebook</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none">
-              <path stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.1"
-                d="M17 2h-3l-3 1-2 3v3H6v4h3v7h4v-7h3l1-4h-4V6s0 0 0 0l1-1h3V2z" />
+            <svg class="socials__svg socials__svg--facebook-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none">
+              <use xlink:href="img/sprite.svg#facebook-icon"></use>
             </svg>
           </a>
         </li>
       </ul>
       <div class="academy-logo">
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="academy__link">HTML Academy</a>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="academy__link-text">HTML Academy</a>
         <a href="https://htmlacademy.ru/intensive/adaptive" class="academy__link">
           <svg xmlns="http://www.w3.org/2000/svg" width="27" height="34" fill="none">
             <path fill="#666"
@@ -185,9 +189,9 @@
         </a>
       </div>
     </div>
-
+  </div>
   </footer>
-  <script src="js/app.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

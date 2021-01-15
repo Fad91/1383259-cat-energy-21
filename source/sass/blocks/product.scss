@@ -14,7 +14,8 @@
     flex-direction: column;
     margin-right: 60px;
     margin-bottom: 35px;
-    background-color: $basic-grey;
+    border: none;
+    background-image: linear-gradient(to bottom, $text-white 0, 106px, $basic-grey 106px);
   }
 
   @media (min-width: $desktop-width) {
@@ -22,6 +23,7 @@
     min-height: 520px;
     margin-right: 80px;
     margin-bottom: 53px;
+    background-image: linear-gradient(to bottom, $text-white 0, 93px, $basic-grey 93px);
   }
 }
 
@@ -41,6 +43,24 @@
   }
 }
 
+.product__image-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    height: 240px;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    height: 215px;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 38px;
+  }
+}
+
 .product__title {
   font-weight: 400;
   font-size: 16px;
@@ -56,7 +76,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-    margin: 0 90px 0 95px;
+    margin: 0 92px 0 95px;
     padding: 0;
     text-align: center;
   }
@@ -81,7 +101,13 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 16px;
-    margin-bottom: 17px;
+    margin-bottom: 7px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid $catalog-additional-border-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    // asfasfasfaf
   }
 }
 
@@ -97,7 +123,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 37px;
+    margin: 0 39px;
     padding: 10px 58px;
   }
 }
@@ -113,14 +139,6 @@
 .product__picture {
   @media (min-width: $tablet-width) {
     text-align: center;
-    margin-bottom: 45px;
-    height: 220px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: 12px;
-    margin-left: 4px;
-    margin-bottom: 40px;
   }
 }
 
@@ -132,7 +150,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    width: 168px;
+    width: 100%;
     height: auto;
   }
 }
@@ -147,11 +165,11 @@
   margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
-    margin: 20px 38px 23px 38px;
+    margin: 20px 38px 27px 38px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 21px 39px;
+    margin: 25px 39px;
     padding: 0;
   }
 }

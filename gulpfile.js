@@ -25,7 +25,7 @@ const styles = () => {
       autoprefixer(),
       csso()
     ]))
-    .pipe(sourcemap.write("."))
+    .pipe(sourcemap.write())
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
@@ -87,7 +87,7 @@ const html = () => {
 // Scripts
 
 const scripts = () => {
-  return gulp.src("source/js/app.js")
+  return gulp.src("source/js/script.js")
     .pipe(uglify())
     .pipe(rename("script.min.js"))
     .pipe(gulp.dest("build/js"))

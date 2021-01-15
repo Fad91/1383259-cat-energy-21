@@ -1,18 +1,14 @@
 // Блок секции с программами
-.programms-section {
-
-  @media (min-width: $desktop-width) {
-    margin: 0 110px;
-  }
-}
 
 .programms-section__wrapper {
-
   @include mobile-blocks-width;
 
   @media (min-width: $tablet-width) {
-
     @include tablet-blocks-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include desktop-blocks-width;
   }
 }
 
@@ -30,7 +26,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 40px;
+    margin: 0 110px;
   }
 }
 
@@ -217,26 +213,6 @@
   }
 }
 
-.programms-section__link::after {
-  content: "";
-  position: absolute;
-  background-image: url("../../img/icons/arrow-icon.svg");
-  width: 24px;
-  height: 12px;
-  top: 5px;
-  left: 101px;
-
-  @media (min-width: $tablet-width) {
-    top: 9px;
-    left: 129px;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 9px;
-    left: 129px;
-  }
-}
-
 .programms-section__item:first-of-type .programms-section__link::after {
   top: 6px;
   left: 103px;
@@ -252,7 +228,14 @@
   }
 }
 
-.programms-section__link:hover::after {
+.programms-section__link .programms-section__svg {
+  margin-left: 21px;
+  width: 24px;
+  height: 12px;
+  margin-bottom: 2px;
+}
+
+.programms-section__link:hover .programms-section__svg {
   width: 32px;
   height: 12px;
 }

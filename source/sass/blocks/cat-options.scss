@@ -41,19 +41,28 @@
   text-transform: inherit;
   padding: 5px 15px;
   margin-top: 1px;
+  border: 1px solid $form-border-grey;
 
   @media (min-width: $tablet-width) {
-    margin-left: 17px;
-    padding: 8px 18px;
+    margin-left: 18px;
+    padding: 8px 16px;
+  }
+
+  &:hover {
+    border: 1px solid $catalog-additional-border-grey;
+  }
+
+  &:active {
+    border: 2px solid $text-grey;
   }
 }
 
 .cat-options__label:nth-of-type(2) .cat-options__input {
   padding: 8px 16px;
-  margin-left: 20px;
+  margin-left: 21px;
 }
 
 .cat-options__label:nth-of-type(3) .cat-options__input {
   padding: 8px 16px;
-  margin-left: 17px;
+  margin-left: 18px;
 }

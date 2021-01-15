@@ -1,29 +1,32 @@
-.catalog-additional {
-  margin: 51px 0 40px 20px;
+// Блок доп товаров
+
+.catalog-additional__container {
+  @include mobile-blocks-width;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 77px 0;
+    @include tablet-blocks-width;
+    margin: 0 auto 76px auto;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 32px 0;
+    @include desktop-blocks-width;
   }
 }
 
 .catalog-additional__list {
   padding: 0;
-  margin-top: 34px;
-  margin-right: 20px;
+  margin: 0 20px;
   list-style: none;
 
   @media (min-width: $tablet-width) {
-    margin: 90px 30px 56px 30px;
+    margin: 80px 30px 66px 30px;
     border: 1px solid $catalog-additional-border-grey;
   }
 
   @media (min-width: $desktop-width) {
     width: 896px;
-    margin: 53px 0 53px 110px;
+    margin: 56px 0 83px 110px;
+    border: none;
   }
 }
 
@@ -32,15 +35,19 @@
   font-size: 24px;
   line-height: 24px;
   position: relative;
+  margin: 50px 0 37px 0;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     @include title-text();
-    margin-top: 32px;
+    margin-top: 37px;
     padding-left: 67px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 110px;
+    margin-top: 23px;
+    margin-bottom: 27px;
   }
 
   &::before {

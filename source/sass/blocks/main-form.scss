@@ -9,13 +9,27 @@
   }
 }
 
+.main-form__wrapper {
+  @media (min-width: $mobile-width) {
+    @include mobile-blocks-width;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include tablet-blocks-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include desktop-blocks-width;
+  }
+}
+
 .main-form__title {
   @include title-text();
   margin: 27px 20px 37px 20px;
 
   @media (min-width: $tablet-width) {
     @include tablet-text-title;
-    margin: 50px 30px 55px 110px;
+    margin: 53px 30px 55px 70px;
   }
 }
 
