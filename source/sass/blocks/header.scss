@@ -13,14 +13,13 @@
 
     @media (min-width: $desktop-width) {
       width: 50%;
-      height: 702px;
+      height: 700px;
       background: url("../../img/cat-background-desktop.jpg") no-repeat #62a53a;
       display: block;
       position: absolute;
       right: 0;
       top: 0;
-      background-position: 0%;
-      background-size: cover;
+      background-position: 173px;
     }
   }
 }

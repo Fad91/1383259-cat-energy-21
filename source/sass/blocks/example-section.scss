@@ -6,7 +6,7 @@
     margin-top: 0;
     background: none;
   }
-  // linear-gradient(to bottom, $text-white 0, 176px, $basic-grey 176px);
+
   @media (min-width: $desktop-width) {
     position: relative;
     z-index: 1;
@@ -15,7 +15,7 @@
       @media (min-width: $desktop-width) {
         content: "";
         position: absolute;
-        background-image: linear-gradient(to right, #f2f2f2 1165px, #eaeaea 1165px);
+        background-image: linear-gradient(to right, #f2f2f2 1335px, #eaeaea 1335px);
         width: 100%;
         height: 463px;
         top: 176px;
