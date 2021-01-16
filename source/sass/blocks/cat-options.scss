@@ -52,8 +52,9 @@
     border: 1px solid $catalog-additional-border-grey;
   }
 
-  &:active {
+  &:focus {
     border: 2px solid $text-grey;
+    outline: none;
   }
 }
 

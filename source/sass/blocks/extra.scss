@@ -139,3 +139,7 @@
     display: block;
   }
 }
+
+.extra__label > .extra__checkbox:disabled + span {
+  opacity: 0.3;
+}

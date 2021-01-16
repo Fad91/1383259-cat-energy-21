@@ -110,6 +110,7 @@
   padding: 12px 15px;
   margin-left: 11px;
   position: relative;
+  border: 1px solid $form-border-grey;
 
   @media (min-width: $tablet-width) {
     margin-left: 18px;
@@ -120,6 +121,10 @@
   @media (min-width: $desktop-width) {
     margin-left: 20px;
     width: 466px;
+  }
+
+  &:disabled {
+    border: 1px solid $text-grey;
   }
 }
 
@@ -137,4 +142,8 @@
   position: absolute;
   right: 17px;
   top: 22px;
+}
+
+.owner-contacts__input:disabled ~ .owner-contacts__icon {
+  stroke: $basic-green;
 }

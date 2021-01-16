@@ -186,6 +186,8 @@
 }
 
 .slider__controls {
+  display: flex;
+
   @media (min-width: $tablet-width) {
     display: flex;
     margin-left: 5px;
