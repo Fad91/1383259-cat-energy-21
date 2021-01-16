@@ -1,11 +1,25 @@
 // Секция формы страницы form
 .main-form {
   @media (min-width: $tablet-width) {
-    margin-bottom: 105px;
+    margin-bottom: 72px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 65px 40px;
+    margin: 63px 0;
+  }
+}
+
+.main-form__wrapper {
+  @media (min-width: $mobile-width) {
+    @include mobile-blocks-width;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include tablet-blocks-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include desktop-blocks-width;
   }
 }
 
@@ -15,7 +29,7 @@
 
   @media (min-width: $tablet-width) {
     @include tablet-text-title;
-    margin: 50px 30px 55px 70px;
+    margin: 53px 30px 55px 70px;
   }
 }
 
@@ -38,15 +52,23 @@
     line-height: 30px;
     margin-left: 70px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 110px;
+  }
 }
 
 .main-form__button-wrapper {
-  margin: 16px 20px 34px 20px;
+  margin: 27px 20px 34px 20px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 18px 20px 35px 71px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 51px 20px 81px 71px;
   }
 }
 
@@ -70,6 +92,11 @@
     font-size: 20px;
     line-height: 0px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 566px;
+    margin-left: 41px;
+  }
 }
 
 .main-form__note {
@@ -85,6 +112,12 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 16px;
+    margin-top: 11px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
     margin-top: 12px;
+    margin-left: 10px;
   }
 }

@@ -1,0 +1,23 @@
+// Блок футера
+.footer {
+  background-color: $basic-grey;
+}
+
+.footer__wrapper {
+  @include mobile-blocks-width;
+
+  @media (min-width: $tablet-width) {
+    @include tablet-blocks-width;
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include desktop-blocks-width;
+  }
+}
+
+.page__footer {
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}

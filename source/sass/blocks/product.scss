@@ -9,17 +9,21 @@
 
   @media (min-width: $tablet-width) {
     width: 324px;
-    min-height: 511px;
+    min-height: 535px;
     display: flex;
     flex-direction: column;
     margin-right: 60px;
-    margin-bottom: 50px;
-    background-color: $basic-grey;
+    margin-bottom: 35px;
+    border: none;
+    background-image: linear-gradient(to bottom, $text-white 0, 106px, $basic-grey 106px);
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
+    min-height: 520px;
     margin-right: 80px;
+    margin-bottom: 53px;
+    background-image: linear-gradient(to bottom, $text-white 0, 93px, $basic-grey 93px);
   }
 }
 
@@ -39,6 +43,24 @@
   }
 }
 
+.product__image-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    height: 240px;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    height: 215px;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 38px;
+  }
+}
+
 .product__title {
   font-weight: 400;
   font-size: 16px;
@@ -54,9 +76,16 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-    margin-top: 0;
+    margin: 0 92px 0 95px;
     padding: 0;
     text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 21px;
+    margin: 0 50px;
   }
 }
 
@@ -72,7 +101,9 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 16px;
-    margin-bottom: 17px;
+    margin-bottom: 7px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid $catalog-additional-border-grey;
   }
 }
 
@@ -88,7 +119,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 37px;
+    margin: 0 39px;
     padding: 10px 58px;
   }
 }
@@ -104,8 +135,6 @@
 .product__picture {
   @media (min-width: $tablet-width) {
     text-align: center;
-    margin-bottom: 22px;
-    margin-top: 35px;
   }
 }
 
@@ -117,12 +146,12 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    width: 168px;
+    width: 100%;
     height: auto;
   }
 }
 
-.wrapper {
+.product__wrapper {
   grid-column: 2 / -1;
   grid-row: 1 / 2;
   margin-right: 20px;
@@ -132,11 +161,11 @@
   margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 45px;
+    margin: 20px 38px 27px 38px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 31px 39px;
+    margin: 25px 39px;
     padding: 0;
   }
 }

@@ -5,5 +5,10 @@
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+    margin: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 110px;
   }
 }

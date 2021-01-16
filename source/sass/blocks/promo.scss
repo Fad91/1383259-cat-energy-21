@@ -1,13 +1,19 @@
 .promo {
-  margin: 0 20px 34px 20px;
+  margin: 39px 20px 34px 20px;
   height: 289px;
   background: url("../../img/gift-background-image.png") 0 0 no-repeat;
   background-color: $basic-green;
   background-size: cover;
 
   @media (min-width: $tablet-width) {
-    margin: 0 30px 109px 30px;
+    margin: 0 30px 0 30px;
     height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    height: 288px;
+    margin: 52px 30px 0 78px;
   }
 }
 
@@ -22,7 +28,13 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    padding: 50px 59px 0 57px;
+    padding: 70px 120px 0 423px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 171px 32px 0 30px;
+    text-align: center;
   }
 
   &::before {
@@ -33,5 +45,15 @@
     left: 100px;
     width: 78px;
     height: 80px;
+
+    @media (min-width: $tablet-width) {
+      top: 58px;
+      left: 79px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 40px;
+      left: 84px;
+    }
   }
 }

@@ -1,15 +1,30 @@
 // Блок хэдера
 .header {
-  width: 320px;
-
-  @media (min-width: $tablet-width) {
-    width: 768px;
-    margin: 0;
-  }
+  width: 100%;
+  position: relative;
 
   @media (min-width: $desktop-width) {
-    width: 1440px;
     padding: 0;
     margin: 0;
   }
+
+  &::before {
+    content: "";
+
+    @media (min-width: $desktop-width) {
+      width: 50%;
+      height: 702px;
+      background: url("../../img/cat-background-desktop.jpg") no-repeat #62a53a;
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      background-position: 0%;
+      background-size: cover;
+    }
+  }
+}
+
+.header--nobackground::before {
+  content: none;
 }

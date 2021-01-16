@@ -1,6 +1,10 @@
 .comment {
   @media (min-width: $tablet-width) {
-    margin: 0 69px 60px 69px;
+    margin-bottom: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 63px;
   }
 }
 
@@ -13,7 +17,29 @@
 
   @media (min-width: $tablet-width) {
     @include title-text;
-    margin-bottom: 76px;
+    margin-bottom: 77px;
+    margin-left: 0;
+    padding: 0 69px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+    margin-bottom: 77px;
+  }
+}
+
+.comment__label::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    top: 23px;
+    border: 1px solid $basic-green;
+    position: absolute;
+    width: 28px;
+    left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 68px;
   }
 }
 
@@ -25,6 +51,15 @@
   display: block;
   width: 156px;
   border: 1px solid $basic-green;
+
+  @media (min-width: $tablet-width) {
+    top: 23px;
+    width: 477px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1106px;
+  }
 }
 
 .comment__text {
@@ -48,5 +83,11 @@
     padding-left: 19px;
     padding-top: 10px;
     text-align: left;
+    margin: 0 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    margin: 0 110px;
   }
 }
