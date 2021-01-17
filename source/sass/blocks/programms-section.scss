@@ -213,26 +213,15 @@
   }
 }
 
-.programms-section__item:first-of-type .programms-section__link::after {
-  top: 6px;
-  left: 103px;
+.programms-section__link .programms-section__svg {
+  margin-left: 13px;
 
   @media (min-width: $tablet-width) {
-    top: 8px;
-    left: 133px;
+    margin-left: 21px;
+    width: 24px;
+    height: 12px;
+    margin-bottom: 2px;
   }
-
-  @media (min-width: $desktop-width) {
-    top: 10px;
-    left: 136px;
-  }
-}
-
-.programms-section__link .programms-section__svg {
-  margin-left: 21px;
-  width: 24px;
-  height: 12px;
-  margin-bottom: 2px;
 }
 
 .programms-section__link:hover .programms-section__svg {

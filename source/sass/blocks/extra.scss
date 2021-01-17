@@ -68,7 +68,7 @@
   @include form-label-text();
   color: $text-black;
   display: block;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
   padding-left: 47px;
   padding-top: 10px;
   position: relative;
@@ -138,4 +138,8 @@
       url("../../img/checkbox-off-tablet-icon.svg") no-repeat;
     display: block;
   }
+}
+
+.extra__label > .extra__checkbox:disabled + span {
+  opacity: 0.3;
 }
