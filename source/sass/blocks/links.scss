@@ -1,24 +1,22 @@
 // Блок ссылок с логотипами
-.links-wrapper {
+.links {
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     padding-top: 25px;
     padding-bottom: 30px;
-    margin-top: -5px;
     align-items: flex-end;
-    background-color: $basic-grey;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 30px 78px 30px 80px;
+    padding: 27px 80px;
   }
 }
 
-.links-wrapper__logo {
+.links__logo {
   text-align: center;
   margin: 0 20px 0 20px;
-  padding-top: 37px;
+  padding-top: 40px;
   padding-bottom: 8px;
   border-bottom: 1px solid $contacts-grey;
   height: 45px;

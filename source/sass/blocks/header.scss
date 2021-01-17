@@ -14,12 +14,18 @@
     @media (min-width: $desktop-width) {
       width: 50%;
       height: 700px;
-      background: url("../../img/cat-background-desktop.jpg") no-repeat #62a53a;
+      background: url("../../img/cat-background-desktop.jpg") no-repeat $cat-background;
       display: block;
       position: absolute;
       right: 0;
       top: 0;
-      background-position: 155px;
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background: url("../../img/cat-background-desktop@2x.jpg") no-repeat $cat-background;
+        width: 50%;
+        height: 700px;
+        background-size: 720px auto;
+      }
     }
   }
 }

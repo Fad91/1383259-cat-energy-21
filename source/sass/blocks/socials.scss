@@ -15,7 +15,7 @@
     border: none;
     margin: 0;
     padding-bottom: 20px;
-    margin-left: 47px;
+    margin-left: 66px;
     margin-right: 17px;
     justify-content: center;
   }
@@ -51,8 +51,12 @@
   stroke: $basic-green;
 }
 
+.socials__svg--facebook-icon {
+  stroke: $social-link-grey;
+}
+
 .socials__svg--facebook-icon:hover {
-  fill: $basic-green;
+  stroke: $basic-green;
 }
 
 .socials__svg {

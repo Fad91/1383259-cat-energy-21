@@ -1,10 +1,10 @@
 .owner-contacts {
   border: none;
   padding: 0;
-  margin: 26px 0 13px 20px;
+  margin: 24px 0 13px 20px;
 
   @media (min-width: $tablet-width) {
-    margin: 75px 0 47px 0;
+    margin: 77px 0 50px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -75,7 +75,7 @@
   align-items: center;
   margin-right: 20px;
   position: relative;
-  margin-bottom: 13px;
+  margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     font-weight: 400;
@@ -140,10 +140,20 @@
 
 .owner-contacts__icon {
   position: absolute;
-  right: 17px;
-  top: 22px;
+  right: 14px;
+  top: 15px;
+  width: 20px;
+  height: 20px;
+}
+
+.owner-contacts__icon--email-icon {
+  stroke: $text-dark-grey;
 }
 
 .owner-contacts__input:disabled ~ .owner-contacts__icon {
   stroke: $basic-green;
+}
+
+.owner-contacts__icon--error {
+  fill: $error-red;
 }

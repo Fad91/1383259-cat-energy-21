@@ -8,7 +8,8 @@
 
   @media (min-width: $desktop-width) {
     width: 800px;
-    background: none;
+    background: linear-gradient(to bottom, $text-white 177px, $transparent 177px),
+      linear-gradient(to right, $basic-grey 0, 382px, $background-grey 382px);
   }
 }
 
@@ -50,6 +51,8 @@
 }
 
 .slider__slide-right {
+  margin: 0 auto;
+
   @media (min-width: $tablet-width) {
     width: 50%;
     position: relative;

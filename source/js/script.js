@@ -4,19 +4,16 @@ var beforeButton = document.querySelector(".slider__button-before");
 var afterButton = document.querySelector(".slider__button-after");
 var beforeSlide = document.querySelector(".slider__image-before");
 var afterSlide = document.querySelector(".slider__image-after");
-var map = document.querySelector("img.contacts__map");
-var frame = document.querySelector("iframe.contacts__map");
+var map = document.querySelector("img.map__image");
+var frame = document.querySelector("iframe.map__image");
 var form = document.querySelector(".modal-form");
 var formButton = document.querySelector(".main-form__button");
 var nameInput = document.querySelector(".cat-options__input[name=name]");
-var weightInput = document.querySelector(".cat-options__input[name=weight]");
-var emailInput = document.querySelector(".owner-contacts__input[name=email]");
-var telInput = document.querySelector(".owner-contacts__input[name=tel]");
 
 menuButton.classList.remove("nav__button--open");
 mainMenu.classList.add("main-menu--closed");
-map.classList.add("contacts__map--hidden");
-frame.classList.remove("contacts__map--hidden");
+map.classList.add("map__image--hidden");
+frame.classList.remove("map__image--hidden");
 
 menuButton.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -30,26 +27,44 @@ if (menuButton.classList.contains("nav__button--closed")) {
 };
 
 
-afterButton.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  afterSlide.classList.remove("slider__image-after--closed");
-  beforeSlide.classList.add("slider__image-before--closed");
-});
+if (afterButton) {
+  afterButton.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    afterSlide.classList.remove("slider__image-after--closed");
+    beforeSlide.classList.add("slider__image-before--closed");
+  });
+}
 
-beforeButton.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  beforeSlide.classList.remove("slider__image-before--closed");
-  afterSlide.classList.add("slider__image-after--closed");
-});
+if (beforeButton) {
+  beforeButton.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    beforeSlide.classList.remove("slider__image-before--closed");
+    afterSlide.classList.add("slider__image-after--closed");
+  });
+}
 
 var valid = function (evt) {
-  console.log(nameInput);
+  var nameInput = document.querySelector(".cat-options__input[name=name]")
+  var weightInput = document.querySelector(".cat-options__input[name=weight]");
+  var emailInput = document.querySelector(".owner-contacts__input[name=email]");
+  var telInput = document.querySelector(".owner-contacts__input[name=tel]");
+  var inputIcon = document.querySelector(".owner-contacts__icon");
+
   if (!nameInput.value) {
-    var nameInput = document.querySelector(".cat-options__input[name=name]")
-    console.log("Еба ты боженька")
+    alert("Заполните обязательные поля");
     nameInput.classList.add("input-error");
+  } else if (!weightInput.value) {
+    alert("Заполните обязательные поля");
+    weightInput.classList.add("input-error");
+  } else if (!emailInput.value) {
+    alert("Заполните обязательные поля");
+    inputIcon.classList.add("owner-contacts__icon--error");
+    emailInput.classList.add("input-error");
+  } else if (!telInput.value) {
+    alert("Заполните обязательные поля");
+    inputIcon.classList.add("owner-contacts__icon--error");
+    telInput.classList.add("input-error");
   } else {
-    console.log ("Это на Элсэ")
     evt.submit();
   }
 };

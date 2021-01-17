@@ -1,19 +1,37 @@
 .promo {
   margin: 39px 20px 34px 20px;
   height: 289px;
-  background: url("../../img/gift-background-image.png") 0 0 no-repeat;
+  background: url("../../img/gift-background-image.jpg") 0 0 no-repeat;
   background-color: $basic-green;
   background-size: cover;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background: url("../../img/gift-background-image@2x.jpg") no-repeat;
+    background-color: $basic-green;
+    background-size: 280px auto;
+  }
 
   @media (min-width: $tablet-width) {
     margin: 0 30px 0 30px;
     height: 200px;
+    background: url("../../img/gift-background-image-tablet.jpg") no-repeat;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: url("../../img/gift-background-image-tablet@2x.jpg") no-repeat;
+      background-size: 708px auto;
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
     height: 288px;
     margin: 52px 30px 0 78px;
+    background: url("../../img/gift-background-image-desktop.jpg") no-repeat;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: url("../../img/gift-background-image-desktop@2x.jpg") no-repeat;
+      background-size: 245px auto;
+    }
   }
 }
 

@@ -21,26 +21,25 @@
 .cat-options__label {
   display: flex;
   align-items: baseline;
-  margin-bottom: 11px;
+  margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 19px;
+    margin-bottom: 21px;
   }
 }
 
 .cat-options__label:last-child {
-  margin-top: 13px;
+  margin-top: 10px;
 }
 
 .cat-options__input {
   flex-grow: 1;
-  height: 32px;
+  height: 35px;
   margin-left: 12px;
   font: inherit;
   color: $text-grey;
   text-transform: inherit;
   padding: 5px 15px;
-  margin-top: 1px;
   border: 1px solid $form-border-grey;
 
   @media (min-width: $tablet-width) {
@@ -59,11 +58,11 @@
 }
 
 .cat-options__label:nth-of-type(2) .cat-options__input {
-  padding: 8px 16px;
-  margin-left: 21px;
+  padding: 7px 21px;
+  margin-left: 18px;
 }
 
 .cat-options__label:nth-of-type(3) .cat-options__input {
-  padding: 8px 16px;
-  margin-left: 18px;
+  padding: 6px 22px;
+  margin-left: 14px;
 }
