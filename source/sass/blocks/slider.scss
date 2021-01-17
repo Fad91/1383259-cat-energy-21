@@ -97,6 +97,8 @@
   }
 
   &:hover {
+    border-bottom: 1px solid $text-black;
+
     @media (min-width: $tablet-width) {
       border-bottom: 1px solid $text-black;
     }
@@ -244,11 +246,11 @@
   }
 
   &:hover {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19);
+    box-shadow: 0 2px 4px $slider-scale-shadow-black;
   }
 
   &:active {
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2), 0 0 0 1px $basic-green;
+    box-shadow: 0 3px 5px $slider-shadow-active-black, 0 0 0 1px $basic-green;
   }
 }
 
