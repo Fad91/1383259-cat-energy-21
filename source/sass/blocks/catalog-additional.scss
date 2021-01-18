@@ -25,8 +25,10 @@
 
   @media (min-width: $desktop-width) {
     width: 896px;
-    margin: 56px 0 83px 110px;
-    border: none;
+    margin: 56px 0 87px 110px;
+    border-bottom: 1px solid $catalog-additional-border-grey;
+    border-left: none;
+    border-right: none;
   }
 }
 

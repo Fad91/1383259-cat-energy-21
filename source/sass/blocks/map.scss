@@ -1,16 +1,4 @@
 // Блок карты
-.map__wrapper {
-  @include mobile-blocks-width;
-  min-height: 362px;
-
-  @media (min-width: $tablet-width) {
-    @include tablet-blocks-width;
-  }
-
-  @media (min-width: $desktop-width) {
-    @include desktop-blocks-width;
-  }
-}
 
 .map__image {
   width: 100%;

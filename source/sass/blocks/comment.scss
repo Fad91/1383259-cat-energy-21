@@ -1,64 +1,72 @@
 .comment {
+  position: relative;
+
   @media (min-width: $tablet-width) {
-    margin-bottom: 61px;
+    margin-bottom: 45px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 63px;
+    margin-bottom: 46px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 17px;
+    display: block;
+    width: 50%;
+    border: 1px solid $basic-green;
+
+    @media (min-width: $tablet-width) {
+      top: 21px;
+      width: 100%;
+      border: 1px solid $basic-green;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 23px;
+    }
+  }
+}
+
+.comment__wrapper {
+  @include mobile-blocks-width;
+
+  @media (min-width: $tablet-width) {
+    @include tablet-blocks-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include desktop-blocks-width;
+    margin: 42px auto;
   }
 }
 
 .comment__label {
   @include form-title();
   display: block;
-  margin-bottom: 35px;
+  margin-bottom: 39px;
   position: relative;
   margin-left: 20px;
 
   @media (min-width: $tablet-width) {
     @include title-text;
     margin-bottom: 77px;
-    margin-left: 0;
-    padding: 0 69px;
+    margin-left: 35px;
+    padding-left: 34px;
+    margin-top: 41px;
+    background-color: $text-white;
+    z-index: 1;
+    width: 220px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 110px;
-    margin-bottom: 77px;
-  }
-}
-
-.comment__label::before {
-  @media (min-width: $tablet-width) {
-    content: "";
-    top: 23px;
-    border: 1px solid $basic-green;
-    position: absolute;
-    width: 28px;
-    left: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 68px;
-  }
-}
-
-.comment__label::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 14px;
-  display: block;
-  width: 156px;
-  border: 1px solid $basic-green;
-
-  @media (min-width: $tablet-width) {
-    top: 23px;
-    width: 477px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1106px;
+    padding: 0;
+    z-index: 1;
+    margin: 0 72px 77px 72px;
+    width: 200px;
+    padding: 0 21px 0 39px;
   }
 }
 
@@ -83,11 +91,11 @@
     padding-left: 19px;
     padding-top: 10px;
     text-align: left;
-    margin: 0 68px;
+    margin: 0 69px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1200px;
-    margin: 0 110px;
+    margin: 0 111px;
   }
 }

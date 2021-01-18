@@ -1,7 +1,9 @@
 // Секция формы страницы form
 .main-form {
+  margin-bottom: 31px;
+
   @media (min-width: $tablet-width) {
-    margin-bottom: 68px;
+    margin-bottom: 71px;
   }
 
   @media (min-width: $desktop-width) {
@@ -9,7 +11,7 @@
   }
 }
 
-.main-form__wrapper {
+.main-form__text-wrapper {
   @media (min-width: $mobile-width) {
     @include mobile-blocks-width;
   }
@@ -57,16 +59,19 @@
 }
 
 .main-form__button-wrapper {
-  margin: 27px 20px 32px 20px;
+  @include mobile-blocks-width;
 
   @media (min-width: $tablet-width) {
+    @include tablet-blocks-width;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 18px 20px 35px 71px;
+    margin-top: 47px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 51px 20px 81px 71px;
+    @include desktop-blocks-width;
+    margin-top: 51px;
+    margin-bottom: 82px;
   }
 }
 
@@ -80,8 +85,10 @@
   color: $text-white;
   padding: 10px 44px;
   display: block;
-  width: 100%;
+  width: 280px;
   text-transform: uppercase;
+  margin-left: 20px;
+  margin-top: 28px;
 
   @media (min-width: $tablet-width) {
     width: 282px;
@@ -89,11 +96,13 @@
     font-weight: normal;
     font-size: 20px;
     line-height: 0px;
+    margin-left: 70px;
+    margin-top: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 566px;
-    margin-left: 41px;
+    margin-left: 112px;
   }
 }
 
@@ -110,12 +119,13 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 16px;
-    margin-top: 11px;
+    margin-top: 10px;
+    margin-left: 27px;
     text-align: left;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 12px;
-    margin-left: 10px;
+    margin-top: 15px;
+    margin-left: 35px;
   }
 }

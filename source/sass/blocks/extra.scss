@@ -1,12 +1,25 @@
 .extra {
-  display: flex;
-  flex-direction: column;
   border: none;
   padding: 0;
-  margin: 18px 0 0 18px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
-    margin: 15px 0 43px 0;
+    margin: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 32px;
+    display: block;
+    width: 50%;
+    border: 1px solid $basic-green;
+
+    @media (min-width: $tablet-width) {
+      width: 100%;
+      top: 37px;
+    }
   }
 }
 
@@ -14,53 +27,29 @@
   @include form-title();
   margin-bottom: 29px;
   position: relative;
-  width: 298px;
+  margin-left: 17px;
+  margin-top: 16px;
+  background-color: $text-white;
+  z-index: 1;
+  margin-right: 135px;
 
   @media (min-width: $tablet-width) {
     @include title-text;
-    margin-bottom: 53px;
-    width: 350px;
-    padding-left: 69px;
-    padding-right: 348px;
+    margin-bottom: 50px;
+    width: 223px;
+    margin-left: 32px;
+    padding-left: 38px;
+    padding-right: 30px;
+    background-color: $text-white;
+    z-index: 1;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 85px 0 110px;
-    width: 1245px;
-  }
-}
-
-.extra__title::before {
-  @media (min-width: $tablet-width) {
-    content: "";
-    top: 22px;
-    border: 1px solid $basic-green;
-    position: absolute;
-    width: 28px;
-    left: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 68px;
-  }
-}
-
-.extra__title::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 14px;
-  display: block;
-  width: 134px;
-  border: 1px solid $basic-green;
-
-  @media (min-width: $tablet-width) {
-    top: 22px;
-    width: 443px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1076px;
+    margin-bottom: 30px;
+    margin-left: 72px;
+    width: 200px;
+    padding-left: 37px;
+    padding-right: 53px;
   }
 }
 
@@ -92,18 +81,36 @@
 }
 
 .extra__wrapper {
+  @include mobile-blocks-width;
+  display: flex;
+  flex-direction: column;
+
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 59px;
-    row-gap: 20px;
-    margin: 0 68px;
+    @include tablet-blocks-width;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
+    @include desktop-blocks-width;
+    flex-wrap: wrap;
+  }
+}
+
+.extra__checkbox-wrapper {
+  margin-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 59px;
+    row-gap: 17px;
+    margin: 0 68px;
+  }
+
+  @media (min-width: $desktop-width) {
     justify-content: space-around;
-    margin: 0 184px 0 84px;
+    margin: 20px 182px 0 84px;
+    display: flex;
   }
 }
 
