@@ -40,6 +40,12 @@
 }
 
 .nav__link:hover {
+  opacity: 0.8;
+
+  &:active {
+    opacity: 0.6;
+  }
+
   @media (min-width: $tablet-width) {
     opacity: 0.8;
 
@@ -73,7 +79,7 @@
 .nav__button {
   width: 24px;
   height: 2px;
-  background-color: black;
+  background-color: $text-black;
   border: none;
   cursor: pointer;
   position: relative;
@@ -82,7 +88,7 @@
     content: "";
     width: 24px;
     height: 2px;
-    background-color: black;
+    background-color: $text-black;
     position: absolute;
     top: -6px;
     right: 0;
@@ -92,14 +98,10 @@
     content: "";
     width: 24px;
     height: 2px;
-    background-color: black;
+    background-color: $text-black;
     position: absolute;
     top: 6px;
     right: 0;
-  }
-
-  @media (min-width: $tablet-width) {
-    display: none;
   }
 }
 

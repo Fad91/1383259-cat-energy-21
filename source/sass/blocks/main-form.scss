@@ -1,7 +1,7 @@
 // Секция формы страницы form
 .main-form {
   @media (min-width: $tablet-width) {
-    margin-bottom: 72px;
+    margin-bottom: 68px;
   }
 
   @media (min-width: $desktop-width) {
@@ -29,7 +29,11 @@
 
   @media (min-width: $tablet-width) {
     @include tablet-text-title;
-    margin: 53px 30px 55px 70px;
+    margin: 53px 30px 50px 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 53px 110px;
   }
 }
 
@@ -39,12 +43,6 @@
   line-height: 18px;
   text-transform: uppercase;
   margin: 30px 30px 30px 20px;
-
-  @media (max-width: $mobile-width-only) {
-    br {
-      display: none;
-    }
-  }
 
   @media (min-width: $tablet-width) {
     font-weight: 400;
@@ -59,7 +57,7 @@
 }
 
 .main-form__button-wrapper {
-  margin: 27px 20px 34px 20px;
+  margin: 27px 20px 32px 20px;
 
   @media (min-width: $tablet-width) {
     display: grid;

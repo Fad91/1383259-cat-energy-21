@@ -8,7 +8,8 @@
 
   @media (min-width: $desktop-width) {
     width: 800px;
-    background: none;
+    background: linear-gradient(to bottom, $text-white 177px, $transparent 177px),
+      linear-gradient(to right, $basic-grey 0, 382px, $background-grey 382px);
   }
 }
 
@@ -20,7 +21,7 @@
 
   @media (min-width: $tablet-width) {
     @include tablet-blocks-width;
-    padding-bottom: 28px;
+    padding-bottom: 30px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -37,7 +38,7 @@
   @media (min-width: $tablet-width) {
     width: 50%;
     position: relative;
-    min-height: 517px;
+    min-height: 540px;
     overflow-x: hidden;
   }
 
@@ -50,10 +51,12 @@
 }
 
 .slider__slide-right {
+  margin: 0 auto;
+
   @media (min-width: $tablet-width) {
     width: 50%;
     position: relative;
-    min-height: 517px;
+    min-height: 540px;
     overflow-x: hidden;
   }
 
@@ -83,7 +86,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
-    margin: 6px 16px 36px 88px;
+    margin: 6px 10px 36px 93px;
     border-bottom: 1px dotted $slider-border-black;
     padding-right: 0;
     padding-left: 0;
@@ -94,6 +97,8 @@
   }
 
   &:hover {
+    border-bottom: 1px solid $text-black;
+
     @media (min-width: $tablet-width) {
       border-bottom: 1px solid $text-black;
     }
@@ -126,11 +131,15 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     display: block;
-    width: 600px;
+    width: 670px;
   }
 
   @media (min-width: $desktop-width) {
     width: 665px;
+  }
+
+  &-before {
+    width: 670px;
   }
 }
 
@@ -141,11 +150,11 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    width: 677px;
-    height: 490px;
+    width: 670px;
+    height: 520px;
     margin-right: 0;
-    margin-top: 15px;
-    left: 80px;
+    left: 48px;
+    top: 10px;
   }
 
   @media (min-width: $desktop-width) {
@@ -165,29 +174,33 @@
 
   @media (min-width: $tablet-width) {
     width: 545px;
-    height: 517px;
+    height: 535px;
     overflow-x: hidden;
     position: absolute;
-    right: 325px;
+    right: 374px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 600px;
+    width: 500px;
+    height: 521px;
     position: absolute;
     overflow-x: hidden;
-    right: 363px;
-    top: -14px;
+    right: 414px;
+    top: -16px;
   }
 }
 
 .slider__controls {
-  @media (min-width: $tablet-width) {
-    display: flex;
-  }
+  display: flex;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    margin-left: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
     justify-content: space-around;
-    margin: 23px 98px 10px 85px;
+    margin: 23px 0 10px 97px;
     align-items: center;
   }
 }
@@ -202,7 +215,7 @@
 
   @media (min-width: $tablet-width) {
     width: 428px;
-    margin: 21px 15px;
+    margin: 17px 15px;
     height: 6px;
     background-color: $slider-tablet-grey;
     border: none;
@@ -210,8 +223,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    // margin: 34px 27px 18px 38px;
-    margin: 0;
+    margin: 0 17px 0 28px;
   }
 }
 
@@ -224,21 +236,21 @@
   margin-top: 3px;
 
   @media (min-width: $tablet-width) {
-    width: 9px;
-    height: 9px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     border: 10px solid $text-white;
     position: absolute;
     top: -16px;
-    left: 198px;
+    left: 192px;
   }
 
   &:hover {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19);
+    box-shadow: 0 2px 4px $slider-scale-shadow-black;
   }
 
   &:active {
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2), 0 0 0 1px $basic-green;
+    box-shadow: 0 3px 5px $slider-shadow-active-black, 0 0 0 1px $basic-green;
   }
 }
 
