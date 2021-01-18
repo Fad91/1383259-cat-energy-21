@@ -19,11 +19,11 @@
 
 .main-section__wrapper {
   @include mobile-blocks-width;
-  background: url("../../img/cat-background.jpg") 60% 0;
+  background: url("../../../build/img/cat-background-desktop.webp") 60% 0;
   background-repeat: no-repeat;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background: url("../../img/cat-background@2x.jpg") no-repeat;
+    background: url("../../../build/img/cat-background-desktop@2x.webp") no-repeat;
     background-size: 320px auto;
   }
 
