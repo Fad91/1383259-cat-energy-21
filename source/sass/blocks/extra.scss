@@ -91,6 +91,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+
     @include desktop-blocks-width;
     flex-wrap: wrap;
   }

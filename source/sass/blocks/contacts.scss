@@ -12,6 +12,7 @@
   display: flex;
   justify-content: baseline;
   align-items: center;
+
   @include mobile-blocks-width;
 
   @media (min-width: $tablet-width) {
