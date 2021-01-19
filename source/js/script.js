@@ -6,7 +6,6 @@ var beforeSlide = document.querySelector(".slider__image-before");
 var afterSlide = document.querySelector(".slider__image-after");
 var map = document.querySelector("img.map__image");
 var frame = document.querySelector("iframe.map__image");
-var form = document.querySelector(".modal-form");
 var formButton = document.querySelector(".main-form__button");
 var nameInput = document.querySelector(".cat-options__input[name=name]");
 
@@ -23,7 +22,7 @@ menuButton.addEventListener("click", function (evt) {
 });
 
 if (menuButton.classList.contains("nav__button--closed")) {
-  mainMenu.classList.remove("main-menu--closed");
+  mainMenu.classList.add("main-menu--closed");
 };
 
 
@@ -41,7 +40,7 @@ if (beforeButton) {
     beforeSlide.classList.remove("slider__image-before--closed");
     afterSlide.classList.add("slider__image-after--closed");
   });
-}
+};
 
 var valid = function (evt) {
   var nameInput = document.querySelector(".cat-options__input[name=name]")
