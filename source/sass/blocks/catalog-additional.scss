@@ -1,26 +1,26 @@
 // Блок доп товаров
 .catalog-additional {
- position: relative;
+  position: relative;
 
- &::before {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 15px;
-  display: block;
-  width: 50%;
-  border: 1px solid $basic-green;
-
-  @media (min-width: $tablet-width) {
-    top: 21px;
-    width: 100%;
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 15px;
+    display: block;
+    width: 50%;
     border: 1px solid $basic-green;
-  }
 
-  @media (min-width: $desktop-width) {
-    top: 23px;
+    @media (min-width: $tablet-width) {
+      top: 21px;
+      width: 100%;
+      border: 1px solid $basic-green;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 23px;
+    }
   }
- }
 }
 
 .catalog-additional__container {
@@ -75,52 +75,10 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 40px;
-    margin-left: 70px;;
+    margin-left: 70px;
     margin-top: 23px;
     margin-bottom: 27px;
   }
-
-  // &::before {
-  //   @media (min-width: $tablet-width) {
-  //     content: "";
-  //     width: 33px;
-  //     height: 2px;
-  //     background-color: $basic-green;
-  //     left: 0;
-  //     top: 15px;
-  //     position: absolute;
-  //   }
-
-  //   @media (min-width: $tablet-width) {
-  //     width: 31px;
-  //     top: 22px;
-  //   }
-
-  //   @media (min-width: $desktop-width) {
-  //     width: 70px;
-  //     top: 25px;
-  //   }
-  // }
-
-  // &::after {
-  //   content: "";
-  //   width: 53px;
-  //   height: 2px;
-  //   background-color: $basic-green;
-  //   right: 0;
-  //   top: 15px;
-  //   position: absolute;
-
-  //   @media (min-width: $tablet-width) {
-  //     width: 326px;
-  //     top: 22px;
-  //   }
-
-  //   @media (min-width: $desktop-width) {
-  //     width: 958px;
-  //     top: 25px;
-  //   }
-  // }
 }
 
 .catalog-additional__wrapper {
