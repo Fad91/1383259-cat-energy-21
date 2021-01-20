@@ -1,4 +1,27 @@
 // Блок доп товаров
+.catalog-additional {
+ position: relative;
+
+ &::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 15px;
+  display: block;
+  width: 50%;
+  border: 1px solid $basic-green;
+
+  @media (min-width: $tablet-width) {
+    top: 21px;
+    width: 100%;
+    border: 1px solid $basic-green;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 23px;
+  }
+ }
+}
 
 .catalog-additional__container {
   @include mobile-blocks-width;
@@ -38,61 +61,66 @@
   line-height: 24px;
   position: relative;
   margin: 50px 0 37px 0;
-  padding: 0 20px;
+  padding: 0 19px;
+  background-color: $text-white;
+  width: 229px;
 
   @media (min-width: $tablet-width) {
     @include title-text();
     margin-top: 37px;
-    padding-left: 67px;
+    width: 355px;
+    margin-left: 30px;
+    padding-left: 37px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 110px;
+    padding-left: 40px;
+    margin-left: 70px;;
     margin-top: 23px;
     margin-bottom: 27px;
   }
 
-  &::before {
-    @media (min-width: $tablet-width) {
-      content: "";
-      width: 33px;
-      height: 2px;
-      background-color: $basic-green;
-      left: 0;
-      top: 15px;
-      position: absolute;
-    }
+  // &::before {
+  //   @media (min-width: $tablet-width) {
+  //     content: "";
+  //     width: 33px;
+  //     height: 2px;
+  //     background-color: $basic-green;
+  //     left: 0;
+  //     top: 15px;
+  //     position: absolute;
+  //   }
 
-    @media (min-width: $tablet-width) {
-      width: 31px;
-      top: 22px;
-    }
+  //   @media (min-width: $tablet-width) {
+  //     width: 31px;
+  //     top: 22px;
+  //   }
 
-    @media (min-width: $desktop-width) {
-      width: 70px;
-      top: 25px;
-    }
-  }
+  //   @media (min-width: $desktop-width) {
+  //     width: 70px;
+  //     top: 25px;
+  //   }
+  // }
 
-  &::after {
-    content: "";
-    width: 53px;
-    height: 2px;
-    background-color: $basic-green;
-    right: 0;
-    top: 15px;
-    position: absolute;
+  // &::after {
+  //   content: "";
+  //   width: 53px;
+  //   height: 2px;
+  //   background-color: $basic-green;
+  //   right: 0;
+  //   top: 15px;
+  //   position: absolute;
 
-    @media (min-width: $tablet-width) {
-      width: 326px;
-      top: 22px;
-    }
+  //   @media (min-width: $tablet-width) {
+  //     width: 326px;
+  //     top: 22px;
+  //   }
 
-    @media (min-width: $desktop-width) {
-      width: 958px;
-      top: 25px;
-    }
-  }
+  //   @media (min-width: $desktop-width) {
+  //     width: 958px;
+  //     top: 25px;
+  //   }
+  // }
 }
 
 .catalog-additional__wrapper {
