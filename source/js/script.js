@@ -10,6 +10,7 @@ var formButton = document.querySelector(".main-form__button");
 var nameInput = document.querySelector(".cat-options__input[name=name]");
 
 menuButton.classList.remove("nav__button--open");
+menuButton.classList.remove("nav__button--nojs");
 mainMenu.classList.add("main-menu--closed");
 map.classList.add("map__image--hidden");
 frame.classList.remove("map__image--hidden");
