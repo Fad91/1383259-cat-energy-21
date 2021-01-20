@@ -137,7 +137,7 @@
 }
 
 .extra__label > .extra__checkbox:checked + span::before {
-  background: url("../img/checkbox-on-icon.svg") no-repeat 6px 8px, url("../../img/checkbox-off-icon.svg") no-repeat;
+  background: url("../img/checkbox-on-icon.svg") no-repeat 6px 8px, url("../img/checkbox-off-icon.svg") no-repeat;
   display: block;
   cursor: pointer;
 
