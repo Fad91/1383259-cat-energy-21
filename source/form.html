@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/oswaldmedium.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/oswaldregular.woff" as="font" type="font/woff" crossorigin>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -22,7 +26,7 @@
         <a href="index.html" class="nav__link">
           <img src="img/logo-words.svg" width="101" height="18" alt="Логотип Cat Energy">
         </a>
-        <button class="nav__button">
+        <button class="nav__button nav__button--open nav__button--closed">
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
@@ -41,9 +45,10 @@
   </header>
   <main class="page-main">
     <form class="main-form" action="https://echo.htmlacademy.ru/" method="get" onsubmit="valid(this); return false">
-      <div class="main-form__wrapper">
+      <div class="main-form__text-wrapper">
       <h1 class="main-form__title">Подбор программы</h1>
       <p class="main-form__content">Заполните анкету,&nbsp;и мы подберем <br>программу питания для вашего кота</p>
+    </div>
       <div class="form-wrapper-desktop">
         <fieldset class="cat-options">
           <legend class="visually-hidden">Данные о коте</legend>
@@ -74,6 +79,7 @@
         </fieldset>
       </div>
       <fieldset class="owner-contacts">
+        <div class="owner-contacts__wrapper">
         <legend class="owner-contacts__title">Контактные данные (владельца кота)</legend>
         <label class="owner-contacts__label" for="email">e-mail:*
           <input class="owner-contacts__input text-input" type="email" name="email" id="email" value="kuklachev@gmail.com">
@@ -87,14 +93,18 @@
             <use xlink:href="img/sprite.svg#phone-icon"></use>
             </svg>
         </label>
+      </div>
       </fieldset>
       <div class="comment">
+        <div class="comment__wrapper">
         <label class="comment__label" for="comment">Комментарий</label>
         <textarea class="comment__text" name="comment" id="comment">Расскажите обо всех повaдках кота</textarea>
       </div>
+    </div>
       <fieldset class="extra">
-        <legend class="extra__title">Дополнительно</legend>
         <div class="extra__wrapper">
+        <legend class="extra__title">Дополнительно</legend>
+        <div class="extra__checkbox-wrapper">
           <label class="extra__label" for="sweetener">
             <input class="extra__checkbox" type="checkbox" name="sweetener" id="sweetener" checked>
             <span>Сахарозаменитель</span>
@@ -112,15 +122,14 @@
             <span>Витамины</span>
           </label>
         </div>
+        </div>
       </fieldset>
       <div class="main-form__button-wrapper">
         <button class="main-form__button" type="submit">Отправить заявку</button>
         <small class="main-form__note note">* <sup>__</sup> Обязательные поля</small>
       </div>
-    </div>
     </form>
-  <section class="contacts-section">
-    <div class="contacts-section__wrapper">
+    <section class="contacts-section">
       <div class="contacts">
         <div class="contacts__wrapper">
           <h3 class="contacts__title">приглашаем к&nbsp;сотрудничеству дилеров!</h3>
@@ -136,7 +145,8 @@
             <source type="image/webp" media="(min-width: 768px)"
               srcset="img/map-image-tablet.webp 1x, img/map-image-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/map-image.webp 1x, img/map-image@2x.webp 2x">
-            <source media="(min-width: 1440px)" srcset="img/map-image-desktop.png 1x, img/map-image-desktop@2x.png 2x">
+            <source media="(min-width: 1440px)"
+              srcset="img/map-image-desktop.png 1x, img/map-image-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/map-image-tablet.png 1x, img/map-image-tablet@2x.png 2x">
             <img src="img/map-image.png" srcset="img/map-image@2x.png 2x" alt="Местоположение Cat Energy" width="320"
               height="362" class="map__image">
@@ -146,7 +156,6 @@
           </iframe>
         </div>
       </div>
-    </div>
   </section>
 </main>
 <footer class="page__footer footer">

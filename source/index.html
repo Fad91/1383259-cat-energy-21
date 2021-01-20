@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/oswaldmedium.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/oswaldregular.woff" as="font" type="font/woff" crossorigin>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -24,7 +28,7 @@
         <a class="nav__link">
           <img src="img/logo-words.svg" width="101" height="18" alt="Логотип Cat Energy">
         </a>
-        <button class="nav__button nav__button--open">
+        <button class="nav__button nav__button--open nav__button--nojs nav__button--closed">
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
@@ -177,7 +181,6 @@
       </div>
     </section>
     <section class="contacts-section">
-      <div class="contacts-section__wrapper">
         <div class="contacts">
           <div class="contacts__wrapper">
             <h3 class="contacts__title">приглашаем к&nbsp;сотрудничеству дилеров!</h3>
@@ -204,7 +207,6 @@
             </iframe>
           </div>
         </div>
-      </div>
     </section>
   </main>
   <footer class="page__footer footer">

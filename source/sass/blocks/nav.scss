@@ -149,14 +149,18 @@
   }
 }
 
+.nav__button--nojs {
+  @media (max-width: $mobile-width-only) {
+    visibility: hidden;
+  }
+}
+
 .nav__button--closed {
   @media (min-width: $tablet-width) {
-    .nav__button--closed {
-      display: none;
-    }
+    display: none;
+  }
 
-    @media (min-width: $desktop-width) {
-      display: none;
-    }
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }

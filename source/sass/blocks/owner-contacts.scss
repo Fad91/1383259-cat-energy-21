@@ -1,70 +1,71 @@
 .owner-contacts {
   border: none;
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    border: none;
+    position: relative;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 43px;
+    display: block;
+    width: 50%;
+    border: 1px solid $basic-green;
+
+    @media (min-width: $tablet-width) {
+      width: 100%;
+      top: 98px;
+      border: 1px solid $basic-green;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 43px;
+    }
+  }
+}
+
+.owner-contacts__wrapper {
+  @include mobile-blocks-width;
+  border: none;
   padding: 0;
-  margin: 24px 0 13px 20px;
 
   @media (min-width: $tablet-width) {
-    margin: 77px 0 50px 0;
+    @include tablet-blocks-width;
   }
 
   @media (min-width: $desktop-width) {
+    @include desktop-blocks-width;
     display: flex;
-    margin: 41px 0 49px 0;
+    flex-wrap: wrap;
+    margin: 0 auto 0 auto;
   }
 }
 
 .owner-contacts__title {
   @include form-title();
   margin-bottom: 33px;
-  padding: 0;
   position: relative;
-  padding-right: 50px;
+  padding: 0 0 0 19px;
+  margin-top: 22px;
+  background-color: $text-white;
+  z-index: 1;
+  margin-right: 98px;
 
   @media (min-width: $tablet-width) {
     @include title-text;
-    margin-bottom: 73px;
-    padding-left: 68px;
-    padding-right: 188px;
+    padding-left: 39px;
+    padding-right: 32px;
+    width: 520px;
+    margin: 71px 0 73px 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 85px 0 110px;
-    width: 1245px;
-    margin-bottom: 74px;
-  }
-}
-
-.owner-contacts__title::before {
-  @media (min-width: $tablet-width) {
-    content: "";
-    top: 22px;
-    border: 1px solid $basic-green;
-    position: absolute;
-    width: 28px;
-    left: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 68px;
-  }
-}
-
-.owner-contacts__title::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 16px;
-  display: block;
-  width: 96px;
-  border: 1px solid $basic-green;
-
-  @media (min-width: $tablet-width) {
-    top: 22px;
-    width: 143px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 776px;
+    padding: 16px 32px 0 40px;
+    margin: 0 74px 72px 70px;
   }
 }
 
@@ -73,9 +74,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-right: 20px;
   position: relative;
-  margin-bottom: 15px;
+  margin: 0 20px 15px 20px;
 
   @media (min-width: $tablet-width) {
     font-weight: 400;
@@ -140,10 +140,15 @@
 
 .owner-contacts__icon {
   position: absolute;
-  right: 14px;
-  top: 15px;
+  right: 13px;
+  top: 16px;
   width: 20px;
   height: 20px;
+
+  @media (min-width: $tablet-width) {
+    right: 15px;
+    top: 18px;
+  }
 }
 
 .owner-contacts__icon--email-icon {

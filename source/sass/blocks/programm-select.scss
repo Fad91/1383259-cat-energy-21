@@ -4,7 +4,7 @@
   border: none;
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
+  padding-top: 17px;
   padding-bottom: 8px;
   border-bottom: 1px solid $catalog-border-grey;
 
@@ -13,8 +13,8 @@
     font-size: 20px;
     line-height: 30px;
     margin-top: 43px;
-    margin-left: 20px;
-    margin-right: 12px;
+    margin-left: 71px;
+    margin-right: 65px;
     padding-bottom: 12px;
     border: 1px solid $form-border-grey;
   }
@@ -22,7 +22,10 @@
   @media (min-width: $desktop-width) {
     margin: 0;
     width: 540px;
-    padding-top: 24px;
+    padding-top: 26px;
+    padding-right: 19px;
+    margin-right: 68px;
+    padding-left: 12px;
   }
 }
 
@@ -48,7 +51,7 @@
   display: block;
   width: 30px;
   height: 30px;
-  background: url("../../img/radiobutton-icon.svg") no-repeat;
+  background: url("../img/radiobutton-icon.svg") no-repeat;
   position: absolute;
   left: 7px;
   top: 3px;
@@ -58,12 +61,12 @@
     height: 40px;
     left: 12px;
     top: 3px;
-    background: url("../../img/radiobutton-icon-tablet.svg") no-repeat;
+    background: url("../img/radiobutton-icon-tablet.svg") no-repeat;
   }
 }
 
 .programm-select__label > .programm-select__radio:checked + span::before {
-  background: url("../../img/radiobutton-active-icon.svg") no-repeat;
+  background: url("../img/radiobutton-active-icon.svg") no-repeat;
   display: block;
   cursor: pointer;
 
@@ -72,7 +75,7 @@
     height: 40px;
     left: 12px;
     top: 3px;
-    background: url("../../img/radiobutton-active-icon-tablet.svg") no-repeat;
+    background: url("../img/radiobutton-active-icon-tablet.svg") no-repeat;
   }
 }
 

@@ -4,6 +4,12 @@
   list-style: none;
   text-transform: uppercase;
 
+  &--closed {
+    @media (max-width: $mobile-width-only) {
+      display: none;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     margin: 0;
     display: flex;
@@ -84,11 +90,5 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 6px;
     border-bottom: 2px solid $basic-green;
-  }
-}
-
-.main-menu--closed {
-  @media (max-width: $mobile-width-only) {
-    display: none;
   }
 }

@@ -1,12 +1,23 @@
 // Блок для секции контактов
+.contacts {
+  background-color: $basic-grey;
+
+  @media (min-width: $desktop-width) {
+    @include desktop-blocks-width;
+    position: relative;
+  }
+}
+
 .contacts__wrapper {
   display: flex;
   justify-content: baseline;
   align-items: center;
-  background: $text-white;
+
+  @include mobile-blocks-width;
 
   @media (min-width: $tablet-width) {
-    padding: 36px 69px 49px;
+    @include tablet-blocks-width;
+    padding: 36px 0 49px;
     justify-content: space-between;
   }
 
@@ -37,10 +48,13 @@
     font-size: 20px;
     line-height: 22px;
     padding: 17px 10px 0 0;
+    margin-left: 70px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 14px 10px 0 0;
+    margin-left: 0;
+    margin-top: 10px;
   }
 }
 
@@ -60,10 +74,13 @@
     font-size: 16px;
     line-height: 20px;
     margin-top: 19px;
+    margin-right: 70px;
   }
 
   @media (min-width: $desktop-width) {
     text-align: left;
+    margin-right: 0;
+    margin-top: 10px;
   }
 }
 

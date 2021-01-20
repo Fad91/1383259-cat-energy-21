@@ -27,7 +27,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
     margin: 0;
     display: flex;
     flex-wrap: wrap;
@@ -65,6 +64,7 @@
     position: relative;
     min-height: 517px;
     overflow-x: hidden;
+    margin-top: -10px;
   }
 }
 
@@ -139,7 +139,7 @@
   }
 
   &-before {
-    width: 670px;
+    width: 680px;
   }
 }
 
@@ -181,12 +181,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 500px;
-    height: 521px;
+    height: 517px;
     position: absolute;
     overflow-x: hidden;
-    right: 414px;
-    top: -16px;
+    right: 395px;
+    top: -5px;
   }
 }
 

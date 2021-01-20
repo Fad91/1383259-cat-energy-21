@@ -1,12 +1,15 @@
 .form-wrapper-desktop {
+  @include mobile-blocks-width;
+
   @media (min-width: $tablet-width) {
-    margin: 61px 55px 19px 51px;
+    @include tablet-blocks-width;
   }
 
   @media (min-width: $desktop-width) {
+    width: 1440px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
-    margin: 64px 108px 20px 90px;
+    margin: 60px auto 20px auto;
   }
 }
