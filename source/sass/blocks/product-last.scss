@@ -44,7 +44,7 @@
 
   &::before {
     content: "";
-    background: url("../../img/plus-icon.svg");
+    background: url("../img/plus-icon.svg");
     width: 30px;
     height: 30px;
     position: absolute;
@@ -52,7 +52,7 @@
     left: 145px;
 
     @media (min-width: $tablet-width) {
-      background: url("../../img/plus-icon-desktop.svg");
+      background: url("../img/plus-icon-desktop.svg");
       width: 60px;
       height: 60px;
       top: 54px;
@@ -60,7 +60,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      background: url("../../img/plus-icon-desktop.svg");
+      background: url("../img/plus-icon-desktop.svg");
       width: 60px;
       height: 60px;
       top: 50px;

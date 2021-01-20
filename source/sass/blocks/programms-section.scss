@@ -108,7 +108,7 @@
 
 .programms-section__item:first-child .programms-section__title::before {
   content: "";
-  background-image: url("../../img/slim-cat-icon.svg");
+  background-image: url("../img/slim-cat-icon.svg");
   position: absolute;
   width: 50px;
   height: 52px;
@@ -116,7 +116,7 @@
   left: 22px;
 
   @media (min-width: $tablet-width) {
-    background-image: url("../../img/slim-cat-icon-tablet.svg");
+    background-image: url("../img/slim-cat-icon-tablet.svg");
     width: 200px;
     height: 211px;
     background-repeat: no-repeat;
@@ -136,7 +136,7 @@
 
 .programms-section__item:last-child .programms-section__title::before {
   content: "";
-  background-image: url("../../img/mass-cat-icon.svg");
+  background-image: url("../img/mass-cat-icon.svg");
   position: absolute;
   width: 67px;
   height: 50px;
@@ -144,7 +144,7 @@
   left: 13px;
 
   @media (min-width: $tablet-width) {
-    background-image: url("../../img/mass-cat-icon-tablet.svg");
+    background-image: url("../img/mass-cat-icon-tablet.svg");
     width: 268px;
     height: 200px;
     background-repeat: no-repeat;

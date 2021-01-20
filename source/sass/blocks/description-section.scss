@@ -48,14 +48,14 @@
 .description-section__item .description-section__content::before {
   content: "";
   position: absolute;
-  background-image: url("../../img/leaf-icon.svg");
+  background-image: url("../img/leaf-icon.svg");
   width: 60px;
   height: 60px;
   top: 0;
   left: 0;
 
   @media (min-width: $tablet-width) {
-    background-image: url("../../img/leaf-icon-tablet.svg");
+    background-image: url("../img/leaf-icon-tablet.svg");
     width: 80px;
     height: 80px;
     background-repeat: no-repeat;
@@ -67,7 +67,7 @@
   @media (min-width: $tablet-width) {
     content: "";
     position: absolute;
-    background-image: url("../../img/one-icon.svg");
+    background-image: url("../img/one-icon.svg");
     background-repeat: no-repeat;
     width: 112px;
     height: 280px;
@@ -81,7 +81,7 @@
   @media (min-width: $tablet-width) {
     content: "";
     position: absolute;
-    background-image: url("../../img/two-icon.svg");
+    background-image: url("../img/two-icon.svg");
     background-repeat: no-repeat;
     width: 112px;
     height: 280px;
@@ -93,7 +93,7 @@
   @media (min-width: $tablet-width) {
     content: "";
     position: absolute;
-    background-image: url("../../img/three-icon.svg");
+    background-image: url("../img/three-icon.svg");
     background-repeat: no-repeat;
     width: 112px;
     height: 280px;
@@ -105,7 +105,7 @@
   @media (min-width: $tablet-width) {
     content: "";
     position: absolute;
-    background-image: url("../../img/four-icon.svg");
+    background-image: url("../img/four-icon.svg");
     background-repeat: no-repeat;
     width: 120px;
     height: 280px;
@@ -115,29 +115,29 @@
 
 .description-section__item:nth-child(2) .description-section__content::before {
   content: "";
-  background-image: url("../../img/glass-icon.svg");
+  background-image: url("../img/glass-icon.svg");
 
   @media (min-width: $tablet-width) {
-    background-image: url("../../img/glass-icon-tablet.svg");
+    background-image: url("../img/glass-icon-tablet.svg");
   }
 }
 
 .description-section__item:nth-child(3) .description-section__content::before {
   content: "";
-  background-image: url("../../img/eat-icon.svg");
+  background-image: url("../img/eat-icon.svg");
 
   @media (min-width: $tablet-width) {
-    background-image: url("../../img/eat-icon-tablet.svg");
+    background-image: url("../img/eat-icon-tablet.svg");
   }
 }
 
 .description-section__item:last-child .description-section__content::before {
   content: "";
-  background-image: url("../../img/alarm-icon.svg");
+  background-image: url("../img/alarm-icon.svg");
   top: 0;
 
   @media (min-width: $tablet-width) {
-    background-image: url("../../img/alarm-icon-tablet.svg");
+    background-image: url("../img/alarm-icon-tablet.svg");
     top: 0;
   }
 }

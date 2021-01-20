@@ -51,7 +51,7 @@
   display: block;
   width: 30px;
   height: 30px;
-  background: url("../../img/radiobutton-icon.svg") no-repeat;
+  background: url("../img/radiobutton-icon.svg") no-repeat;
   position: absolute;
   left: 7px;
   top: 3px;
@@ -61,12 +61,12 @@
     height: 40px;
     left: 12px;
     top: 3px;
-    background: url("../../img/radiobutton-icon-tablet.svg") no-repeat;
+    background: url("../img/radiobutton-icon-tablet.svg") no-repeat;
   }
 }
 
 .programm-select__label > .programm-select__radio:checked + span::before {
-  background: url("../../img/radiobutton-active-icon.svg") no-repeat;
+  background: url("../img/radiobutton-active-icon.svg") no-repeat;
   display: block;
   cursor: pointer;
 
@@ -75,7 +75,7 @@
     height: 40px;
     left: 12px;
     top: 3px;
-    background: url("../../img/radiobutton-active-icon-tablet.svg") no-repeat;
+    background: url("../img/radiobutton-active-icon-tablet.svg") no-repeat;
   }
 }
 

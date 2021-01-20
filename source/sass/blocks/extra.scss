@@ -125,25 +125,25 @@
   display: block;
   width: 40px;
   height: 40px;
-  background: url("../../img/checkbox-off-icon.svg") no-repeat;
+  background: url("../img/checkbox-off-icon.svg") no-repeat;
   position: absolute;
   left: 2px;
   top: 5px;
 
   @media (min-width: $tablet-width) {
-    background: url("../../img/checkbox-off-tablet-icon.svg") no-repeat;
+    background: url("../img/checkbox-off-tablet-icon.svg") no-repeat;
     display: block;
   }
 }
 
 .extra__label > .extra__checkbox:checked + span::before {
-  background: url("../../img/checkbox-on-icon.svg") no-repeat 6px 8px, url("../../img/checkbox-off-icon.svg") no-repeat;
+  background: url("../img/checkbox-on-icon.svg") no-repeat 6px 8px, url("../../img/checkbox-off-icon.svg") no-repeat;
   display: block;
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    background: url("../../img/checkbox-on-icon.svg") no-repeat 11px 12px,
-      url("../../img/checkbox-off-tablet-icon.svg") no-repeat;
+    background: url("../img/checkbox-on-icon.svg") no-repeat 11px 12px,
+      url("../img/checkbox-off-tablet-icon.svg") no-repeat;
     display: block;
   }
 }
