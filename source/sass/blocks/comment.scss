@@ -13,9 +13,9 @@
     content: "";
     position: absolute;
     right: 0;
-    top: 17px;
+    top: 15px;
     display: block;
-    width: 50%;
+    width: 49%;
     border: 1px solid $basic-green;
 
     @media (min-width: $tablet-width) {
@@ -39,7 +39,7 @@
 
   @media (min-width: $desktop-width) {
     @include desktop-blocks-width;
-    margin: 42px auto;
+    margin: 54px auto 40px auto;
   }
 }
 
@@ -49,13 +49,14 @@
   margin-bottom: 39px;
   position: relative;
   margin-left: 20px;
+  margin-top: 11px;
 
   @media (min-width: $tablet-width) {
     @include title-text;
     margin-bottom: 77px;
     margin-left: 35px;
     padding-left: 34px;
-    margin-top: 41px;
+    margin-top: 45px;
     background-color: $text-white;
     z-index: 1;
     width: 220px;

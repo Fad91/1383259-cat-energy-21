@@ -27,6 +27,11 @@
   }
 }
 
+.product a:first-of-type {
+  grid-row: 1/2;
+  grid-column: 2/-1;
+}
+
 .product:nth-child(2n) {
   @media (min-width: $tablet-width) {
     margin-right: 0;

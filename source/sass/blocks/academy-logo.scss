@@ -11,7 +11,7 @@
   }
 }
 
-.academy__link-text {
+.academy-logo__link {
   @include arial-text-section;
   font-size: 16px;
 
@@ -20,15 +20,14 @@
   }
 }
 
-.academy__link:active,
-.academy__link-text:active {
+.academy-logo__link:active {
   opacity: 0.3;
 }
 
-.academy__link:hover path {
+.academy-logo__link:hover path {
   fill: $basic-green;
 }
 
-.academy__link:active path {
+.academy-logo__link:active path {
   opacity: 0.3;
 }

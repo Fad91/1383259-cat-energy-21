@@ -1,6 +1,6 @@
 // Блок секции с программами
 
-.programms-section__wrapper {
+.programs-section__wrapper {
   @include mobile-blocks-width;
 
   @media (min-width: $tablet-width) {
@@ -12,7 +12,7 @@
   }
 }
 
-.programms-section__list {
+.programs-section__list {
   padding: 0 20px;
   margin-top: 23px;
   margin-bottom: 27px;
@@ -30,7 +30,7 @@
   }
 }
 
-.programms-section__item {
+.programs-section__item {
   background-color: $basic-grey;
   padding-bottom: 17px;
   margin-bottom: 20px;
@@ -49,7 +49,7 @@
   }
 }
 
-.programms-section__title {
+.programs-section__title {
   position: relative;
   font-weight: 400;
   font-size: 24px;
@@ -78,7 +78,7 @@
   }
 }
 
-.programms-section__item:last-child .programms-section__title {
+.programs-section__item:last-child .programs-section__title {
   padding-top: 28px;
   padding-left: 39px;
 
@@ -93,7 +93,7 @@
   }
 }
 
-.programms-section__item:last-child .programms-section__content {
+.programs-section__item:last-child .programs-section__content {
   padding-top: 8px;
 
   @media (min-width: $tablet-width) {
@@ -106,7 +106,7 @@
   }
 }
 
-.programms-section__item:first-child .programms-section__title::before {
+.programs-section__item:first-child .programs-section__title::before {
   content: "";
   background-image: url("../img/slim-cat-icon.svg");
   position: absolute;
@@ -134,7 +134,7 @@
   }
 }
 
-.programms-section__item:last-child .programms-section__title::before {
+.programs-section__item:last-child .programs-section__title::before {
   content: "";
   background-image: url("../img/mass-cat-icon.svg");
   position: absolute;
@@ -162,7 +162,7 @@
   }
 }
 
-.programms-section__content {
+.programs-section__content {
   @include arial-text-section;
   margin-left: 20px;
   margin-right: 20px;
@@ -188,7 +188,7 @@
   }
 }
 
-.programms-section__link {
+.programs-section__link {
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
@@ -213,18 +213,29 @@
   }
 }
 
-.programms-section__link .programms-section__svg {
-  margin-left: 13px;
+.programs-section__link .programs-section__svg {
+  margin-left: 18px;
+  width: 32px;
+  position: absolute;
+  top: 4px;
 
   @media (min-width: $tablet-width) {
     margin-left: 21px;
-    width: 24px;
+    width: 40px;
     height: 12px;
-    margin-bottom: 2px;
+    top: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 23px;
   }
 }
 
-.programms-section__link:hover .programms-section__svg {
-  width: 32px;
-  height: 12px;
+.programs-section__link .programs-section__svg:hover {
+  width: 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 48px;
+    height: 12px;
+  }
 }

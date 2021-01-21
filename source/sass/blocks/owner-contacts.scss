@@ -1,6 +1,8 @@
 .owner-contacts {
   border: none;
   position: relative;
+  margin: 0;
+  padding: 0;
 
   @media (min-width: $desktop-width) {
     border: none;
@@ -47,10 +49,10 @@
 
 .owner-contacts__title {
   @include form-title();
-  margin-bottom: 33px;
+  margin-bottom: 34px;
   position: relative;
   padding: 0 0 0 19px;
-  margin-top: 22px;
+  margin-top: 27px;
   background-color: $text-white;
   z-index: 1;
   margin-right: 98px;
@@ -60,11 +62,11 @@
     padding-left: 39px;
     padding-right: 32px;
     width: 520px;
-    margin: 71px 0 73px 30px;
+    margin: 77px 0 73px 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 16px 32px 0 40px;
+    padding: 20px 32px 0 40px;
     margin: 0 74px 72px 70px;
   }
 }
@@ -83,7 +85,7 @@
     line-height: 30px;
     margin-right: 66px;
     margin-left: 72px;
-    margin-bottom: 17px;
+    margin-bottom: 20px;
 
     @media (min-width: $desktop-width) {
       margin-left: 111px;
@@ -155,8 +157,16 @@
   stroke: $text-dark-grey;
 }
 
+.owner-contacts__icon--phone-icon {
+  fill: $text-grey;
+}
+
 .owner-contacts__input:disabled ~ .owner-contacts__icon {
   stroke: $basic-green;
+}
+
+.owner-contacts__input:disabled ~ .owner-contacts__icon--phone-icon {
+  fill: $basic-green;
 }
 
 .owner-contacts__icon--error {

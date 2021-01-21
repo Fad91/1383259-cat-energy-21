@@ -1,5 +1,5 @@
 // Секция выбора программы
-.programm-select {
+.program-select {
   @include form-label-text();
   border: none;
   display: flex;
@@ -29,11 +29,12 @@
   }
 }
 
-.programm-select__label {
+.program-select__label {
   padding-bottom: 15px;
   padding-top: 10px;
   padding-left: 52px;
   position: relative;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     padding-top: 9px;
@@ -41,12 +42,12 @@
   }
 }
 
-.programm-select__label > .programm-select__radio {
+.program-select__label > .program-select__radio {
   appearance: none;
   position: absolute;
 }
 
-.programm-select__label > span::before {
+.program-select__label > span::before {
   content: "";
   display: block;
   width: 30px;
@@ -65,7 +66,11 @@
   }
 }
 
-.programm-select__label > .programm-select__radio:checked + span::before {
+.program-select__radio:focus + span {
+  border-bottom: 1px solid $text-grey;
+}
+
+.program-select__label > .program-select__radio:checked + span::before {
   background: url("../img/radiobutton-active-icon.svg") no-repeat;
   display: block;
   cursor: pointer;
@@ -79,10 +84,10 @@
   }
 }
 
-.programm-select__label > .programm-select__radio:disabled + span {
+.program-select__label > .program-select__radio:disabled + span {
   opacity: 0.3;
 }
 
-.programm-select__label > .programm-select__radio:checked:disabled + span {
+.program-select__label > .program-select__radio:checked:disabled + span {
   opacity: 0.3;
 }

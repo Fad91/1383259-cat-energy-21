@@ -59,9 +59,7 @@
 }
 
 .main-menu__link:hover {
-  color: $hover-link-black;
-  border-bottom: 2px solid $hover-link-black;
-  padding-bottom: 7px;
+  opacity: 0.6;
 
   &:active {
     color: $active-link-black;

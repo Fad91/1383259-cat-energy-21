@@ -21,6 +21,8 @@ const styles = () => {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
+    .pipe(gulp.dest("build/css"))
+    .pipe(rename("style.css"))
     .pipe(postcss([
       autoprefixer(),
       csso()
@@ -123,7 +125,7 @@ const clean = () => {
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'build'
+      baseDir: "build"
     },
     cors: true,
     notify: false,

@@ -15,7 +15,7 @@
 
 .slider__wrapper {
   @include mobile-blocks-width;
-  padding-bottom: 10px;
+  padding-bottom: 9px;
   display: flex;
   flex-wrap: wrap;
 
@@ -69,7 +69,7 @@
 }
 
 .slider__button {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   color: $text-black;
   border: none;
   text-transform: uppercase;
@@ -77,7 +77,7 @@
   font-size: 16px;
   line-height: 20px;
   padding: 0;
-  margin: 27px 5px 24px 61px;
+  margin: 27px 3px 24px 63px;
   text-align: right;
   background-color: inherit;
 
@@ -111,10 +111,10 @@
   }
 }
 
-.slider__button-after {
+.slider__button--after {
   text-align: left;
-  margin-left: 6px;
-  margin-right: 58px;
+  margin-left: 3px;
+  margin-right: 53px;
 
   @media (min-width: $tablet-width) {
     text-align: left;
@@ -208,7 +208,7 @@
   width: 82px;
   height: 12px;
   background-color: $text-white;
-  margin: 30px 12px;
+  margin: 30px 15px;
   border: 1px solid $catalog-additional-border-grey;
   border-radius: 10px;
 

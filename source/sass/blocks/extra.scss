@@ -11,7 +11,7 @@
     content: "";
     position: absolute;
     right: 0;
-    top: 32px;
+    top: 30px;
     display: block;
     width: 50%;
     border: 1px solid $basic-green;
@@ -150,4 +150,8 @@
 
 .extra__label > .extra__checkbox:disabled + span {
   opacity: 0.3;
+}
+
+.extra__checkbox:focus + span {
+  border-bottom: 1px solid $text-grey;
 }

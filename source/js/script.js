@@ -52,18 +52,18 @@ var valid = function (evt) {
 
   if (!nameInput.value) {
     alert("Заполните обязательные поля");
-    nameInput.classList.add("input-error");
+    nameInput.classList.add("text-input--error");
   } else if (!weightInput.value) {
     alert("Заполните обязательные поля");
-    weightInput.classList.add("input-error");
+    weightInput.classList.add("text-input--error");
   } else if (!emailInput.value) {
     alert("Заполните обязательные поля");
     inputIcon.classList.add("owner-contacts__icon--error");
-    emailInput.classList.add("input-error");
+    emailInput.classList.add("text-input--error");
   } else if (!telInput.value) {
     alert("Заполните обязательные поля");
     inputIcon.classList.add("owner-contacts__icon--error");
-    telInput.classList.add("input-error");
+    telInput.classList.add("text-input--error");
   } else {
     evt.submit();
   }

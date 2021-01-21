@@ -7,7 +7,7 @@
   border-bottom: 1px solid $contacts-grey;
   padding: 0;
   padding-bottom: 10px;
-  margin: 10px 20px 15px 20px;
+  margin: 8px 20px 15px 20px;
   height: 44px;
   list-style: none;
 
@@ -49,6 +49,10 @@
 
 .socials__svg:hover {
   stroke: $basic-green;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .socials__svg--facebook-icon {
@@ -67,6 +71,8 @@
 }
 
 .socials__svg--vk-icon {
+  stroke-width: 0.8px;
+
   @media (min-width: $tablet-width) {
     width: 30px;
     height: 30px;
